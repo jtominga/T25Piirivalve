@@ -6,6 +6,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.tostring.RooToString;
@@ -24,6 +26,12 @@ public class INTSIDENDI_LIIK extends BaseEntity implements Serializable  {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long intsidendi_liik_id;
+	@Size(min = 1, max = 20)
+	@NotNull
+	private String kood;
+	@Size(min = 1, max = 60)
+	@NotNull
+	private String nimetus;
 	private static final long serialVersionUID = 1L;
 
 	public INTSIDENDI_LIIK() {
@@ -35,6 +43,22 @@ public class INTSIDENDI_LIIK extends BaseEntity implements Serializable  {
 
 	public void setIntsidendi_liik_id(Long intsidendi_liik_id) {
 		this.intsidendi_liik_id = intsidendi_liik_id;
+	}
+	
+	public String getKood() {
+		return this.kood;
+	}
+
+	public void setKood(String kood) {
+		this.kood = kood;
+	}
+	
+	public String getNimetus() {
+		return this.nimetus;
+	}
+
+	public void setNimetus(String nimetus) {
+		this.nimetus = nimetus;
 	}
    
 }

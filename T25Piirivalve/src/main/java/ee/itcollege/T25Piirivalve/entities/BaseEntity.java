@@ -4,9 +4,11 @@ import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.MappedSuperclass;
+import javax.validation.constraints.*;
 
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.tostring.RooToString;
+import org.springframework.format.annotation.*;
 
 /**
  * Entity implementation class for Entity: BaseEntity
@@ -18,15 +20,30 @@ import org.springframework.roo.addon.tostring.RooToString;
 
 public class BaseEntity implements Serializable {
 
+	@Size(min = 1, max = 32)
+	@NotNull
 	private String avaja;
+	
+	@DateTimeFormat(pattern = "dd.MM.yyyy")
+	@NotNull
 	private Date avatud;
+	
+	@Size(min = 1, max = 32)
+	@NotNull
 	private String muutja;
+	
+	@DateTimeFormat(pattern = "dd.MM.yyyy")
+	@NotNull
 	private Date muudetud;
+	
+	@Size(min = 1, max = 32)
+	@NotNull
 	private String sulgeja;
+	
+	@DateTimeFormat(pattern = "dd.MM.yyyy")
+	@NotNull
 	private Date suletud;
-	private String kood;
-	private String nimetus;
-	private String kirjeldus;
+	
 	private String kommentaar;
 	private static final long serialVersionUID = 1L;
 
@@ -74,27 +91,8 @@ public class BaseEntity implements Serializable {
 
 	public void setSuletud(Date suletud) {
 		this.suletud = suletud;
-	}   
-	public String getKood() {
-		return this.kood;
 	}
-
-	public void setKood(String kood) {
-		this.kood = kood;
-	}   
-	public String getNimetus() {
-		return this.nimetus;
-	}
-
-	public void setNimetus(String nimetus) {
-		this.nimetus = nimetus;
-	}   
-	public String getKirjeldus() {
-		return kirjeldus;
-	}
-	public void setKirjeldus(String kirjeldus) {
-		this.kirjeldus = kirjeldus;
-	}
+	
 	public String getKommentaar() {
 		return this.kommentaar;
 	}

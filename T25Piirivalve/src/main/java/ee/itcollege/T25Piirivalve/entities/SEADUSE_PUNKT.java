@@ -5,7 +5,10 @@ import java.lang.Long;
 import java.lang.String;
 import java.util.Date;
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.tostring.RooToString;
 import ee.itcollege.T25Piirivalve.entities.SEADUS;
@@ -25,10 +28,20 @@ public class SEADUSE_PUNKT extends BaseEntity implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long seaduse_punkt_ID;
+	@Size(min = 1, max = 20)
+	@NotNull
 	private String paragrahv;
+	@Size(min = 1, max = 20)
+	@NotNull
 	private String pais;
+	@Size(min = 1, max = 20)
+	@NotNull
 	private String tekst;
+	@DateTimeFormat(pattern = "dd.MM.yyyy")
+	@NotNull
 	private Date kehtiv_alates;
+	@DateTimeFormat(pattern = "dd.MM.yyyy")
+	@NotNull
 	private Date kehtiv_kuni;
 	private static final long serialVersionUID = 1L;
 	@ManyToOne

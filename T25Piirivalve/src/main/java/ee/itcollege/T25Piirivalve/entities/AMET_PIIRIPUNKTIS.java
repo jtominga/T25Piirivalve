@@ -1,17 +1,20 @@
 package ee.itcollege.T25Piirivalve.entities;
 
 import java.io.Serializable;
+import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.tostring.RooToString;
 import ee.itcollege.T25Piirivalve.entities.AMET;
 import ee.itcollege.T25Piirivalve.entities.PIIRIPUNKT;
 import javax.persistence.ManyToOne;
+import javax.validation.constraints.NotNull;
 
 /**
  * Entity implementation class for Entity: AMET_PIIRIPUNKTIS
@@ -27,6 +30,12 @@ public class AMET_PIIRIPUNKTIS extends BaseEntity implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long amet_piiripunktis_id;
+	@DateTimeFormat(pattern = "dd.MM.yyyy")
+	@NotNull
+	private Date alates;
+	@DateTimeFormat(pattern = "dd.MM.yyyy")
+	@NotNull
+	private Date kuni;
 	private static final long serialVersionUID = 1L;
 	@ManyToOne
 	private AMET aMET;
@@ -42,6 +51,18 @@ public class AMET_PIIRIPUNKTIS extends BaseEntity implements Serializable {
 
 	public void setAmet_piiripunktis_id(Long amet_piiripunktis_id) {
 		this.amet_piiripunktis_id = amet_piiripunktis_id;
+	}
+	public Date getAlates() {
+		return alates;
+	}
+	public void setAlates(Date alates) {
+		this.alates = alates;
+	}
+	public Date getKuni() {
+		return kuni;
+	}
+	public void setKuni(Date kuni) {
+		this.kuni = kuni;
 	}
 	public AMET getAMET() {
 	    return aMET;

@@ -6,6 +6,9 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.validation.constraints.Digits;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.tostring.RooToString;
@@ -24,9 +27,16 @@ public class PIIRILOIK extends BaseEntity implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long piiriloik_ID;
+	@Size(min = 1, max = 20)
+	@NotNull
+	private String kood;
+	@Size(min = 1, max = 60)
+	@NotNull
+	private String nimetus;
+	@Digits(integer = 4, fraction = 5)
 	private Double GPS_Longtitude;
+	@Digits(integer = 4, fraction = 5)
 	private Double GPS_Latitude;
-	private String GPS_koordinaadid;
 	private static final long serialVersionUID = 1L;
 	public PIIRILOIK() {
 		super();
@@ -39,6 +49,18 @@ public class PIIRILOIK extends BaseEntity implements Serializable {
 		this.piiriloik_ID = piiriloik_ID;
 	}
 	
+	public String getKood() {
+		return kood;
+	}
+	public void setKood(String kood) {
+		this.kood = kood;
+	}
+	public String getNimetus() {
+		return nimetus;
+	}
+	public void setNimetus(String nimetus) {
+		this.nimetus = nimetus;
+	}
 	public Double getGPS_Longtitude() {
 		return this.GPS_Longtitude;
 	}

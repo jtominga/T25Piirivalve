@@ -8,7 +8,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.validation.constraints.NotNull;
 
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.tostring.RooToString;
 import ee.itcollege.T25Piirivalve.entities.VAEOSA;
@@ -26,7 +28,11 @@ public class PIIRILOIGU_HALDAJA extends BaseEntity implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long piiriloigu_haldaja_ID;
+	@DateTimeFormat(pattern = "dd.MM.yyyy")
+	@NotNull
 	private Date alates;
+	@DateTimeFormat(pattern = "dd.MM.yyyy")
+	@NotNull
 	private Date kuni;
 	private static final long serialVersionUID = 1L;
 	@ManyToOne

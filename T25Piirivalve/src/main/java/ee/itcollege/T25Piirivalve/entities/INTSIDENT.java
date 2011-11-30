@@ -8,11 +8,13 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.tostring.RooToString;
 import ee.itcollege.T25Piirivalve.entities.PIIRILOIK;
 import ee.itcollege.T25Piirivalve.entities.INTSIDENDI_LIIK;
 import javax.persistence.ManyToOne;
+import javax.validation.constraints.*;
 
 /**
  * Entity implementation class for Entity: INTSIDENT
@@ -28,10 +30,21 @@ public class INTSIDENT extends BaseEntity implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long intsident_ID;
+	@Size(min = 1, max = 20)
+	@NotNull
+	private String kood;
+	@DateTimeFormat(pattern = "dd.MM.yyyy")
+	@NotNull
 	private Date toimumise_algus;
+	@DateTimeFormat(pattern = "dd.MM.yyyy")
+	@NotNull
 	private Date toimumise_lopp;
+	@Digits(integer = 4, fraction = 5)
 	private Double GPS_Latitude;
+	@Digits(integer = 4, fraction = 5)
 	private Double GPS_Longtitude;
+	@NotNull
+	private String kirjeldus;
 	private static final long serialVersionUID = 1L;
 	@ManyToOne
 	private PIIRILOIK pIIRILOIK;
@@ -50,6 +63,12 @@ public class INTSIDENT extends BaseEntity implements Serializable {
 	}   
 	
 	
+	public String getKood() {
+		return kood;
+	}
+	public void setKood(String kood) {
+		this.kood = kood;
+	}
 	public Date getToimumise_algus() {
 		return this.toimumise_algus;
 	}
@@ -78,6 +97,12 @@ public class INTSIDENT extends BaseEntity implements Serializable {
 
 	public void setGPS_Longtitude(Double GPS_Longtitude) {
 		this.GPS_Longtitude = GPS_Longtitude;
+	}
+	public String getKirjeldus() {
+		return kirjeldus;
+	}
+	public void setKirjeldus(String kirjeldus) {
+		this.kirjeldus = kirjeldus;
 	}
 	public PIIRILOIK getPIIRILOIK() {
 	    return pIIRILOIK;
