@@ -48,10 +48,6 @@ public class VAEOSA extends BaseEntity implements Serializable {
 		return this.vaeosa_ID;
 	}
 
-	public void setRiigi_admin_yksus_ID(Long riigi_admin_yksus_ID) {
-		this.riigi_admin_yksus_ID = riigi_admin_yksus_ID;
-	}
-
 	public String getKood() {
 		return kood;
 	}
