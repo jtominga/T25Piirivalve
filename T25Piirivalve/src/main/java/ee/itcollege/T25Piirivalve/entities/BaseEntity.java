@@ -3,7 +3,10 @@ package ee.itcollege.T25Piirivalve.entities;
 import java.io.Serializable;
 import java.util.Date;
 
-import javax.persistence.*;
+import javax.persistence.MappedSuperclass;
+
+import org.springframework.roo.addon.entity.RooEntity;
+import org.springframework.roo.addon.tostring.RooToString;
 
 /**
  * Entity implementation class for Entity: BaseEntity

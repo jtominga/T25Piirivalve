@@ -1,11 +1,14 @@
 package ee.itcollege.T25Piirivalve.entities;
 
 import java.io.Serializable;
-import java.lang.Long;
-import java.lang.String;
-import java.util.Date;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+import org.springframework.roo.addon.entity.RooEntity;
+import org.springframework.roo.addon.tostring.RooToString;
 
 /**
  * Entity implementation class for Entity: PIIRILOIK
@@ -23,6 +26,7 @@ public class PIIRILOIK extends BaseEntity implements Serializable {
 	private Long piiriloik_ID;
 	private Double GPS_Longtitude;
 	private Double GPS_Latitude;
+	private String GPS_koordinaadid;
 	private static final long serialVersionUID = 1L;
 
 	public PIIRILOIK() {

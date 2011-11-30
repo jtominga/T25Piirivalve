@@ -1,9 +1,14 @@
 package ee.itcollege.T25Piirivalve.entities;
 
 import java.io.Serializable;
-import java.util.Date;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+import org.springframework.roo.addon.entity.RooEntity;
+import org.springframework.roo.addon.tostring.RooToString;
 
 /**
  * Entity implementation class for Entity: VAEOSA
@@ -17,7 +22,8 @@ public class VAEOSA extends BaseEntity implements Serializable {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long vaeosa_ID;  
+	private Long vaeosa_ID;
+	private Long riigi_admin_yksus_ID;  
 	private static final long serialVersionUID = 1L;
 
 	public VAEOSA() {

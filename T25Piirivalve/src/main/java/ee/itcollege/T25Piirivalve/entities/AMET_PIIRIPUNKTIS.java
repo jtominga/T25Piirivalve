@@ -1,8 +1,14 @@
 package ee.itcollege.T25Piirivalve.entities;
 
 import java.io.Serializable;
-import java.lang.Long;
-import javax.persistence.*;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+import org.springframework.roo.addon.entity.RooEntity;
+import org.springframework.roo.addon.tostring.RooToString;
 
 /**
  * Entity implementation class for Entity: AMET_PIIRIPUNKTIS
