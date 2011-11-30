@@ -22,8 +22,7 @@ public class VAEOSA extends BaseEntity implements Serializable {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long vaeosa_ID;
-	private Long riigi_admin_yksus_ID;  
+	private Long vaeosa_ID;  
 	private static final long serialVersionUID = 1L;
 
 	public VAEOSA() {

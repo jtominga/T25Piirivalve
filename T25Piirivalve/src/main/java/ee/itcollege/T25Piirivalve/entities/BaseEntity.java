@@ -89,6 +89,12 @@ public class BaseEntity implements Serializable {
 	public void setNimetus(String nimetus) {
 		this.nimetus = nimetus;
 	}   
+	public String getKirjeldus() {
+		return kirjeldus;
+	}
+	public void setKirjeldus(String kirjeldus) {
+		this.kirjeldus = kirjeldus;
+	}
 	public String getKommentaar() {
 		return this.kommentaar;
 	}

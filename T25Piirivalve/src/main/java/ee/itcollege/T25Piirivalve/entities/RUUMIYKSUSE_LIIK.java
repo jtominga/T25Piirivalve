@@ -18,7 +18,7 @@ import org.springframework.roo.addon.tostring.RooToString;
 @RooToString
 @RooEntity
 
-public class RUUMIYKSUSE_LIIK implements Serializable {
+public class RUUMIYKSUSE_LIIK extends BaseEntity implements Serializable {
 
 	   
 	@Id

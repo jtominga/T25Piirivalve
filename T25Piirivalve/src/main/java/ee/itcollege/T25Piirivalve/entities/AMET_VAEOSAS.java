@@ -18,7 +18,7 @@ import org.springframework.roo.addon.tostring.RooToString;
 @RooToString
 @RooEntity
 
-public class AMET_VAEOSAS implements Serializable {
+public class AMET_VAEOSAS extends BaseEntity implements Serializable {
 
 	   
 	@Id
