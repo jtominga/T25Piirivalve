@@ -10,12 +10,12 @@
         <field:display field="sulgeja" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_INTSIDENDIS_sulgeja" object="${piirivalvur_intsidendis}" z="zxyNn4KFG2Cb38ZmxoLNSBh+3Bw="/>
         <field:display date="true" dateTimePattern="${PIIRIVALVUR_INTSIDENDIS_suletud_date_format}" field="suletud" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_INTSIDENDIS_suletud" object="${piirivalvur_intsidendis}" z="LEw0yMVsKyqjxuHgAKxcNqslRvI="/>
         <field:display field="kommentaar" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_INTSIDENDIS_kommentaar" object="${piirivalvur_intsidendis}" z="m9tpaS0TY9ZxSDKYOE1hEbPu4AI="/>
-        <field:display field="piirivalvur_intsidendis_ID" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_INTSIDENDIS_piirivalvur_intsidendis_ID" object="${piirivalvur_intsidendis}" z="FhVytrH/BQMsNX1vvD2bnURrX04="/>
         <field:display date="true" dateTimePattern="${PIIRIVALVUR_INTSIDENDIS_alates_date_format}" field="alates" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_INTSIDENDIS_alates" object="${piirivalvur_intsidendis}" z="FFrgbd4hgIeuYvNOXloNXXMLaQ4="/>
         <field:display date="true" dateTimePattern="${PIIRIVALVUR_INTSIDENDIS_kuni_date_format}" field="kuni" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_INTSIDENDIS_kuni" object="${piirivalvur_intsidendis}" z="phOFacfGJtG8+yM9PdvIMk00JEw="/>
         <field:display field="kirjeldus" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_INTSIDENDIS_kirjeldus" object="${piirivalvur_intsidendis}" z="D6gwvA5v6QrFzbg6rSFkJ1G5U2k="/>
         <field:display field="VAHTKOND_INTSIDENDIS" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_INTSIDENDIS_vAHTKOND_INTSIDENDIS" object="${piirivalvur_intsidendis}" z="ejS4P3arInE3cu5AH+wjhIadUUA="/>
         <field:display field="PIIRIVALVUR" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_INTSIDENDIS_pIIRIVALVUR" object="${piirivalvur_intsidendis}" z="JUBP4IBxSnXJjdGrWIIaJNRtYRE="/>
         <field:display field="INTSIDENT" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_INTSIDENDIS_iNTSIDENT" object="${piirivalvur_intsidendis}" z="R+A8gBSxHY9KDanVngc18LFpOc8="/>
+        <field:display field="piirivalvur_intsidendis_ID" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_INTSIDENDIS_piirivalvur_intsidendis_ID" object="${piirivalvur_intsidendis}" z="FhVytrH/BQMsNX1vvD2bnURrX04="/>
     </page:show>
 </div>

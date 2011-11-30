@@ -10,10 +10,10 @@
         <field:display field="sulgeja" id="s_ee_itcollege_T25Piirivalve_entities_AMET_VAEOSAS_sulgeja" object="${amet_vaeosas}" z="OLYazBixI+PDJ0EGdOEw52h9aOA="/>
         <field:display date="true" dateTimePattern="${AMET_VAEOSAS_suletud_date_format}" field="suletud" id="s_ee_itcollege_T25Piirivalve_entities_AMET_VAEOSAS_suletud" object="${amet_vaeosas}" z="s6xPI/wMvA792tNnsF1lF3mJwDY="/>
         <field:display field="kommentaar" id="s_ee_itcollege_T25Piirivalve_entities_AMET_VAEOSAS_kommentaar" object="${amet_vaeosas}" z="7OwAMKqwxQUvEvt0GfUeb6AUSIc="/>
-        <field:display field="amet_vaeosas_ID" id="s_ee_itcollege_T25Piirivalve_entities_AMET_VAEOSAS_amet_vaeosas_ID" object="${amet_vaeosas}" z="yuNpbCza5H3nxqClTUjB7F5+a30="/>
         <field:display date="true" dateTimePattern="${AMET_VAEOSAS_alates_date_format}" field="alates" id="s_ee_itcollege_T25Piirivalve_entities_AMET_VAEOSAS_alates" object="${amet_vaeosas}" z="JdaYeDR/BTvE5bQqjim0tBUEvoo="/>
         <field:display date="true" dateTimePattern="${AMET_VAEOSAS_kuni_date_format}" field="kuni" id="s_ee_itcollege_T25Piirivalve_entities_AMET_VAEOSAS_kuni" object="${amet_vaeosas}" z="NlApWdJV5fUJXvor0gfDeVvo+uU="/>
         <field:display field="AMET" id="s_ee_itcollege_T25Piirivalve_entities_AMET_VAEOSAS_aMET" object="${amet_vaeosas}" z="dYQRi8wOKPLLe4NJyXqDtPMkBHE="/>
         <field:display field="VAEOSA" id="s_ee_itcollege_T25Piirivalve_entities_AMET_VAEOSAS_vAEOSA" object="${amet_vaeosas}" z="3aOO7Hnyl5bgfXB2fQnD+9ohtNk="/>
+        <field:display field="amet_vaeosas_ID" id="s_ee_itcollege_T25Piirivalve_entities_AMET_VAEOSAS_amet_vaeosas_ID" object="${amet_vaeosas}" z="yuNpbCza5H3nxqClTUjB7F5+a30="/>
     </page:show>
 </div>

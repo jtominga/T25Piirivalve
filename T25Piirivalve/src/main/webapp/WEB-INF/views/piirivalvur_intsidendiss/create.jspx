@@ -10,13 +10,13 @@
         <field:input field="sulgeja" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_INTSIDENDIS_sulgeja" z="mgElOfLGjwRxt/7Z6HOV4P9b4Tg="/>
         <field:datetime dateTimePattern="${PIIRIVALVUR_INTSIDENDIS_suletud_date_format}" field="suletud" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_INTSIDENDIS_suletud" z="AJAnwqftledly8ODcZ5dUwoy9Z0="/>
         <field:input field="kommentaar" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_INTSIDENDIS_kommentaar" z="zG+InLlgQ+8uyH43/0dhyzuCM/4="/>
-        <field:input field="piirivalvur_intsidendis_ID" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_INTSIDENDIS_piirivalvur_intsidendis_ID" validationMessageCode="field_invalid_integer" z="9ovSk5eaT6kG3sDOtnjYnmKmKPw="/>
         <field:datetime dateTimePattern="${PIIRIVALVUR_INTSIDENDIS_alates_date_format}" field="alates" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_INTSIDENDIS_alates" required="true" z="kDK0kwibpTa0dzMz/cjIqdTkoDs="/>
         <field:datetime dateTimePattern="${PIIRIVALVUR_INTSIDENDIS_kuni_date_format}" field="kuni" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_INTSIDENDIS_kuni" required="true" z="/4rL2eJLANPdhw7LRwttpfa31Mw="/>
         <field:input field="kirjeldus" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_INTSIDENDIS_kirjeldus" required="true" z="EmrDeAHP7Df0fGHOFGvwne2SUQI="/>
         <field:select field="vAHTKOND_INTSIDENDIS" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_INTSIDENDIS_vAHTKOND_INTSIDENDIS" itemValue="id" items="${vahtkond_intsidendiss}" path="/vahtkond_intsidendiss" z="9qcwQtfdt3NGGKiWVoKK5VXT020="/>
         <field:select field="pIIRIVALVUR" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_INTSIDENDIS_pIIRIVALVUR" itemValue="id" items="${piirivalvurs}" path="/piirivalvurs" z="WWgR4A5p/VcOLV+jKOHHDkKktew="/>
         <field:select field="iNTSIDENT" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_INTSIDENDIS_iNTSIDENT" itemValue="id" items="${intsidents}" path="/intsidents" z="SLT9HastaaW24p/HJyl8zZZL+pA="/>
+        <field:input field="piirivalvur_intsidendis_ID" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_INTSIDENDIS_piirivalvur_intsidendis_ID" validationMessageCode="field_invalid_integer" z="9ovSk5eaT6kG3sDOtnjYnmKmKPw="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_INTSIDENDIS" render="${not empty dependencies}" z="NHInudP1PdEAMYgDMX+nT4ksRaU="/>
 </div>

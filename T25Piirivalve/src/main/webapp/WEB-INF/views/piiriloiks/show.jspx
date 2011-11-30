@@ -10,10 +10,10 @@
         <field:display field="sulgeja" id="s_ee_itcollege_T25Piirivalve_entities_PIIRILOIK_sulgeja" object="${piiriloik}" z="klsfOmhpTN+p7kgoU26odFzJPjY="/>
         <field:display date="true" dateTimePattern="${PIIRILOIK_suletud_date_format}" field="suletud" id="s_ee_itcollege_T25Piirivalve_entities_PIIRILOIK_suletud" object="${piiriloik}" z="zYx2F3kdP1iUmYNggqZCTKsdR+4="/>
         <field:display field="kommentaar" id="s_ee_itcollege_T25Piirivalve_entities_PIIRILOIK_kommentaar" object="${piiriloik}" z="uTk2UPQJnpnn4bBNm/aeizCvbEA="/>
-        <field:display field="piiriloik_ID" id="s_ee_itcollege_T25Piirivalve_entities_PIIRILOIK_piiriloik_ID" object="${piiriloik}" z="tWfJTJRYZPjLV4VtLCjbs4owEFY="/>
         <field:display field="kood" id="s_ee_itcollege_T25Piirivalve_entities_PIIRILOIK_kood" object="${piiriloik}" z="GeZdHfW4qs80IfBSLdLbJGbYp9E="/>
         <field:display field="nimetus" id="s_ee_itcollege_T25Piirivalve_entities_PIIRILOIK_nimetus" object="${piiriloik}" z="fE20cRqVoYlYGN4LeElyBRTyQhU="/>
         <field:display field="GPS_Longtitude" id="s_ee_itcollege_T25Piirivalve_entities_PIIRILOIK_GPS_Longtitude" object="${piiriloik}" z="h3idMv3Rw8/8QQB26T14xij9snw="/>
         <field:display field="GPS_Latitude" id="s_ee_itcollege_T25Piirivalve_entities_PIIRILOIK_GPS_Latitude" object="${piiriloik}" z="/WnbFj+JMuig2FlvTlns6UuhNEk="/>
+        <field:display field="piiriloik_ID" id="s_ee_itcollege_T25Piirivalve_entities_PIIRILOIK_piiriloik_ID" object="${piiriloik}" z="tWfJTJRYZPjLV4VtLCjbs4owEFY="/>
     </page:show>
 </div>

@@ -10,8 +10,8 @@
         <field:display field="sulgeja" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKTI_LIIK_sulgeja" object="${objekti_liik}" z="h0kHwPnO09Qnv7XTn5Bn+FI2oBI="/>
         <field:display date="true" dateTimePattern="${OBJEKTI_LIIK_suletud_date_format}" field="suletud" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKTI_LIIK_suletud" object="${objekti_liik}" z="eZnW2/tAv1Xip5Ymtrezs2GUWTs="/>
         <field:display field="kommentaar" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKTI_LIIK_kommentaar" object="${objekti_liik}" z="F39qQQdXpY60KVrJtsTExrwJdQE="/>
-        <field:display field="objekti_liik_ID" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKTI_LIIK_objekti_liik_ID" object="${objekti_liik}" z="rdeFIUorDdcTwd7iFWL2CdvbT/I="/>
         <field:display field="kood" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKTI_LIIK_kood" object="${objekti_liik}" z="oAnC8Vz77pCepDBZuTx3RoYptPs="/>
         <field:display field="nimetus" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKTI_LIIK_nimetus" object="${objekti_liik}" z="tAEOIAkL1qqXbYIeV/kFDnMX1Pk="/>
+        <field:display field="objekti_liik_ID" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKTI_LIIK_objekti_liik_ID" object="${objekti_liik}" z="rdeFIUorDdcTwd7iFWL2CdvbT/I="/>
     </page:show>
 </div>

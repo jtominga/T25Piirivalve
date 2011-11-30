@@ -10,8 +10,8 @@
         <field:input field="sulgeja" id="c_ee_itcollege_T25Piirivalve_entities_OBJEKT_sulgeja" z="pyPlxPMJQjKYPcKS0Afw+D0CcWE="/>
         <field:datetime dateTimePattern="${OBJEKT_suletud_date_format}" field="suletud" id="c_ee_itcollege_T25Piirivalve_entities_OBJEKT_suletud" z="jRIfemTETvRMGmNsgOIdtonrdZc="/>
         <field:input field="kommentaar" id="c_ee_itcollege_T25Piirivalve_entities_OBJEKT_kommentaar" z="iM+PuVrEHgYZNYWdnWsJcWPDJGE="/>
-        <field:input field="objekt_ID" id="c_ee_itcollege_T25Piirivalve_entities_OBJEKT_objekt_ID" validationMessageCode="field_invalid_integer" z="9J8UUHUS6rGAyyw2CTkNseESp+g="/>
         <field:select field="oBJEKTI_LIIK" id="c_ee_itcollege_T25Piirivalve_entities_OBJEKT_oBJEKTI_LIIK" itemValue="id" items="${objekti_liiks}" path="/objekti_liiks" z="VrhTw8TDERzBW6NqJZOuHrJPDBo="/>
+        <field:input field="objekt_ID" id="c_ee_itcollege_T25Piirivalve_entities_OBJEKT_objekt_ID" validationMessageCode="field_invalid_integer" z="9J8UUHUS6rGAyyw2CTkNseESp+g="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_ee_itcollege_T25Piirivalve_entities_OBJEKT" render="${not empty dependencies}" z="PxNYroEwAYD8OPZ7ODMf4j3dXSU="/>
 </div>

@@ -10,11 +10,11 @@
         <field:display field="sulgeja" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_VAEOSAS_sulgeja" object="${piirivalvur_vaeosas}" z="cPAdW9FI53RSBsS1tW36kZldXUs="/>
         <field:display date="true" dateTimePattern="${PIIRIVALVUR_VAEOSAS_suletud_date_format}" field="suletud" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_VAEOSAS_suletud" object="${piirivalvur_vaeosas}" z="tZ/gu+Y9hd4jocKpYOcAUHJcnlM="/>
         <field:display field="kommentaar" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_VAEOSAS_kommentaar" object="${piirivalvur_vaeosas}" z="y2M73yR9hAlGy/yKxqIkpFlwtok="/>
-        <field:display field="piirivalvur_vaeosas_ID" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_VAEOSAS_piirivalvur_vaeosas_ID" object="${piirivalvur_vaeosas}" z="fDy/rnBvXOIsDihw2UxI95Io1Ak="/>
         <field:display date="true" dateTimePattern="${PIIRIVALVUR_VAEOSAS_alates_date_format}" field="alates" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_VAEOSAS_alates" object="${piirivalvur_vaeosas}" z="vyNjdY7XZFW54DlJNXmQ2Jod0v8="/>
         <field:display date="true" dateTimePattern="${PIIRIVALVUR_VAEOSAS_kuni_date_format}" field="kuni" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_VAEOSAS_kuni" object="${piirivalvur_vaeosas}" z="UjCacEE2ktUktzXWX3Ebx7hRy6k="/>
         <field:display field="koormus" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_VAEOSAS_koormus" object="${piirivalvur_vaeosas}" z="YL0f1ccS9LBmrsJExjrZV4+cYEI="/>
         <field:display field="PIIRIVALVUR" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_VAEOSAS_pIIRIVALVUR" object="${piirivalvur_vaeosas}" z="PJPdMtMILiTZ++crI2hD2uKwBIo="/>
         <field:display field="AMET_VAEOSAS" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_VAEOSAS_aMET_VAEOSAS" object="${piirivalvur_vaeosas}" z="37u/fWzQpAzr5+SAibIjZxrL/NY="/>
+        <field:display field="piirivalvur_vaeosas_ID" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_VAEOSAS_piirivalvur_vaeosas_ID" object="${piirivalvur_vaeosas}" z="fDy/rnBvXOIsDihw2UxI95Io1Ak="/>
     </page:show>
 </div>

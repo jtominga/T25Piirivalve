@@ -10,10 +10,10 @@
         <field:display field="sulgeja" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKOND_sulgeja" object="${vahtkond}" z="OIYT2e9mQL8qEmCOki2+15nHOoc="/>
         <field:display date="true" dateTimePattern="${VAHTKOND_suletud_date_format}" field="suletud" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKOND_suletud" object="${vahtkond}" z="MXQugZQC/L9f+4DsjtCcp8IQ7LY="/>
         <field:display field="kommentaar" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKOND_kommentaar" object="${vahtkond}" z="BcWM9PAAIGk1AeNg2Ljr7YwAHNo="/>
-        <field:display field="vahtkond_ID" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKOND_vahtkond_ID" object="${vahtkond}" z="wVZyg+1s0alIwta1lCq6SUdWQsw="/>
         <field:display field="kood" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKOND_kood" object="${vahtkond}" z="XZRE2cbzvCAJbYqUwSHz2AGnKiQ="/>
         <field:display field="nimetus" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKOND_nimetus" object="${vahtkond}" z="Pc1l72z9t3tpfpj2OVIqncUuRuY="/>
         <field:display date="true" dateTimePattern="${VAHTKOND_alates_date_format}" field="alates" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKOND_alates" object="${vahtkond}" z="K12R+XfTofGOr9h5nt0ENpR2IG4="/>
         <field:display date="true" dateTimePattern="${VAHTKOND_kuni_date_format}" field="kuni" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKOND_kuni" object="${vahtkond}" z="/tYzC/dyVTv+2jSQeqFt6w8/LU8="/>
+        <field:display field="vahtkond_ID" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKOND_vahtkond_ID" object="${vahtkond}" z="wVZyg+1s0alIwta1lCq6SUdWQsw="/>
     </page:show>
 </div>

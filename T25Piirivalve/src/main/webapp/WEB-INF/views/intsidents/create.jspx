@@ -10,7 +10,6 @@
         <field:input field="sulgeja" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_sulgeja" z="uSm8rsTJlBhS5kkG2pYgg/9JQNI="/>
         <field:datetime dateTimePattern="${INTSIDENT_suletud_date_format}" field="suletud" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_suletud" z="6sblBn5BYZ/hmI7ByJQMY7hXPZc="/>
         <field:input field="kommentaar" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_kommentaar" z="qZJMOvFRlivXXo7Vbgu+4VY7C4g="/>
-        <field:input field="intsident_ID" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_intsident_ID" validationMessageCode="field_invalid_integer" z="jeHyW6D6cRn4k8fRJLU646yS2w0="/>
         <field:input field="kood" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_kood" z="gZL5Yso5Mz7ySgPNvlMfxYAe3Cc="/>
         <field:datetime dateTimePattern="${INTSIDENT_toimumise_algus_date_format}" field="toimumise_algus" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_toimumise_algus" z="1gBQSTqxiRlwwpKWPIOWzy5kyyo="/>
         <field:datetime dateTimePattern="${INTSIDENT_toimumise_lopp_date_format}" field="toimumise_lopp" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_toimumise_lopp" z="9C+RtWyaVEWoIqKWlymODcP6f9s="/>
@@ -19,6 +18,7 @@
         <field:input field="kirjeldus" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_kirjeldus" z="C6YODaXg86KDZzT/rKW2FkOq5QQ="/>
         <field:select field="pIIRILOIK" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_pIIRILOIK" itemValue="id" items="${piiriloiks}" path="/piiriloiks" z="Q+taM86QEBRvBtNnyj7ydX7ffVk="/>
         <field:select field="iNTSIDENDI_LIIK" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_iNTSIDENDI_LIIK" itemValue="id" items="${intsidendi_liiks}" path="/intsidendi_liiks" z="ZmbB50/3T7Q0Gi0zNWHPwm5XX4Q="/>
+        <field:input field="intsident_ID" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_intsident_ID" validationMessageCode="field_invalid_integer" z="jeHyW6D6cRn4k8fRJLU646yS2w0="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_ee_itcollege_T25Piirivalve_entities_INTSIDENT" render="${not empty dependencies}" z="VtQYFzPdn2OL2tGvfOwvChK54KU="/>
 </div>

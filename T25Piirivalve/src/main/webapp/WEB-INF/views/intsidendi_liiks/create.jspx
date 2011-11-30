@@ -10,9 +10,9 @@
         <field:input field="sulgeja" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_sulgeja" z="TsUX5VJplO2QG63wpt0Jn/y4/bA="/>
         <field:datetime dateTimePattern="${INTSIDENDI_LIIK_suletud_date_format}" field="suletud" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_suletud" z="MguiJiROOZpneiNTlet0FlPpHyc="/>
         <field:input field="kommentaar" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_kommentaar" z="9Ca3En1sU1v5hjAiqMK2lGaM5EI="/>
-        <field:input field="intsidendi_liik_id" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_intsidendi_liik_id" validationMessageCode="field_invalid_integer" z="2jki6hKmCeZXRtzSrIDV1jqySHM="/>
         <field:input field="kood" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_kood" max="20" min="1" required="true" z="ofEBzmsOzvxHn/QELC0ugqocZSM="/>
         <field:textarea field="nimetus" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_nimetus" required="true" z="+FY+KKIVDY0ObmJ5kEZmAgB7DHo="/>
+        <field:input field="intsidendi_liik_id" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_intsidendi_liik_id" validationMessageCode="field_invalid_integer" z="2jki6hKmCeZXRtzSrIDV1jqySHM="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK" render="${not empty dependencies}" z="KX5t/xPTpZYRfkeu4mM4bUIGu3M="/>
 </div>

@@ -10,12 +10,12 @@
         <field:input field="sulgeja" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_sulgeja" z="zrzJ1P22wSTMt9T6FaMY4zmuMrk="/>
         <field:datetime dateTimePattern="${PIIRIVALVUR_suletud_date_format}" field="suletud" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_suletud" z="AyjOdHbFc8+Jjg3L26ckGJUrahk="/>
         <field:input field="kommentaar" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_kommentaar" z="MOLJuK9RAqXOPEKyLiTnC4Htops="/>
-        <field:input field="piirivalvur_ID" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_piirivalvur_ID" validationMessageCode="field_invalid_integer" z="wLupv99BYH5gNlQUxvUaOpvMMuM="/>
         <field:input field="isikukood" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_isikukood" max="20" min="1" required="true" z="AdpS6w6ALM69EJhP+D8lObnyWhg="/>
         <field:input field="eesnimed" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_eesnimed" max="25" min="1" required="true" z="aW1r9XAMijboWNmcmFWTyKuGBpc="/>
         <field:textarea field="perekonnanimi" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_perekonnanimi" required="true" z="AX7rWMti5XpqjLViph/0NIaaqoE="/>
         <field:input field="soduri_kood" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_soduri_kood" max="20" min="1" required="true" z="3SiDEh31dTercg092y28Du2gLr0="/>
         <field:input field="sugu" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_sugu" required="true" z="96wE2JfKxpmTZQ/KRvB2l73fBa4="/>
+        <field:input field="piirivalvur_ID" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_piirivalvur_ID" validationMessageCode="field_invalid_integer" z="wLupv99BYH5gNlQUxvUaOpvMMuM="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR" render="${not empty dependencies}" z="FoSf8Nw7oAMHKsWSSLI622ybq5A="/>
 </div>

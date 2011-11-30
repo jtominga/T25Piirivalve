@@ -10,11 +10,11 @@
         <field:display field="sulgeja" id="s_ee_itcollege_T25Piirivalve_entities_PIIRILOIGU_HALDAJA_sulgeja" object="${piiriloigu_haldaja}" z="MMMM5WVW/4UcMzI5hqVoH1v/5HA="/>
         <field:display date="true" dateTimePattern="${PIIRILOIGU_HALDAJA_suletud_date_format}" field="suletud" id="s_ee_itcollege_T25Piirivalve_entities_PIIRILOIGU_HALDAJA_suletud" object="${piiriloigu_haldaja}" z="i9F3F/E+/IDlmZnznV+31CKkIZ8="/>
         <field:display field="kommentaar" id="s_ee_itcollege_T25Piirivalve_entities_PIIRILOIGU_HALDAJA_kommentaar" object="${piiriloigu_haldaja}" z="9CnY/eoPhe9BZImHbSkTRjtw9gQ="/>
-        <field:display field="piiriloigu_haldaja_ID" id="s_ee_itcollege_T25Piirivalve_entities_PIIRILOIGU_HALDAJA_piiriloigu_haldaja_ID" object="${piiriloigu_haldaja}" z="vJb6bGLSshudExNEVLd5nDA6aSs="/>
         <field:display date="true" dateTimePattern="${PIIRILOIGU_HALDAJA_alates_date_format}" field="alates" id="s_ee_itcollege_T25Piirivalve_entities_PIIRILOIGU_HALDAJA_alates" object="${piiriloigu_haldaja}" z="Kox22kxmWhaPyJHlY5bOwXH63O8="/>
         <field:display date="true" dateTimePattern="${PIIRILOIGU_HALDAJA_kuni_date_format}" field="kuni" id="s_ee_itcollege_T25Piirivalve_entities_PIIRILOIGU_HALDAJA_kuni" object="${piiriloigu_haldaja}" z="Af+EuCQIZ5oadlFCLMLP5YOXhLE="/>
         <field:display field="PIIRILOIK" id="s_ee_itcollege_T25Piirivalve_entities_PIIRILOIGU_HALDAJA_pIIRILOIK" object="${piiriloigu_haldaja}" z="C6cPYRFVoSKZyttV4K7VkrW+B60="/>
         <field:display field="PIIRIPUNKT" id="s_ee_itcollege_T25Piirivalve_entities_PIIRILOIGU_HALDAJA_pIIRIPUNKT" object="${piiriloigu_haldaja}" z="ocAFp2M4C5dkU5jknu/pxEB8fJg="/>
         <field:display field="VAEOSA" id="s_ee_itcollege_T25Piirivalve_entities_PIIRILOIGU_HALDAJA_vAEOSA" object="${piiriloigu_haldaja}" z="QL0t+kQCEFctpjCyhEPvNbeKVjA="/>
+        <field:display field="piiriloigu_haldaja_ID" id="s_ee_itcollege_T25Piirivalve_entities_PIIRILOIGU_HALDAJA_piiriloigu_haldaja_ID" object="${piiriloigu_haldaja}" z="vJb6bGLSshudExNEVLd5nDA6aSs="/>
     </page:show>
 </div>

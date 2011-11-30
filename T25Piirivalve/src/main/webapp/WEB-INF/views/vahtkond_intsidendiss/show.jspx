@@ -10,11 +10,11 @@
         <field:display field="sulgeja" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_sulgeja" object="${vahtkond_intsidendis}" z="9e01eJhqEt2dACSPlEtGARAR0sU="/>
         <field:display date="true" dateTimePattern="${VAHTKOND_INTSIDENDIS_suletud_date_format}" field="suletud" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_suletud" object="${vahtkond_intsidendis}" z="bbLgZLDsdVedh9/BX/N+1oKJhAc="/>
         <field:display field="kommentaar" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_kommentaar" object="${vahtkond_intsidendis}" z="HgVSqniI9pCyuAKCI8U8M1KU9zI="/>
-        <field:display field="vahtkod_intsidendis_ID" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_vahtkod_intsidendis_ID" object="${vahtkond_intsidendis}" z="JhgbdiR4xrU8qyI5yoPRbRdIIP0="/>
         <field:display date="true" dateTimePattern="${VAHTKOND_INTSIDENDIS_alates_date_format}" field="alates" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_alates" object="${vahtkond_intsidendis}" z="nA4Q1lInW0kUsP1OOHqaZGaBkfU="/>
         <field:display date="true" dateTimePattern="${VAHTKOND_INTSIDENDIS_kuni_date_format}" field="kuni" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_kuni" object="${vahtkond_intsidendis}" z="5hSYYuJddjAk84p/MaNcDryYe84="/>
         <field:display field="kirjeldus" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_kirjeldus" object="${vahtkond_intsidendis}" z="N+O4rnEikCuPng0Hi1kr9pSRS6o="/>
         <field:display field="INTSIDENT" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_iNTSIDENT" object="${vahtkond_intsidendis}" z="VbpGK8EINhvPwopwRXj7wkaZivA="/>
         <field:display field="VAHTKOND" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_vAHTKOND" object="${vahtkond_intsidendis}" z="4eHaETZwhA2cj+eeFdOtRGMoQe8="/>
+        <field:display field="vahtkod_intsidendis_ID" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_vahtkod_intsidendis_ID" object="${vahtkond_intsidendis}" z="JhgbdiR4xrU8qyI5yoPRbRdIIP0="/>
     </page:show>
 </div>

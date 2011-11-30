@@ -10,7 +10,7 @@
         <field:display field="sulgeja" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKT_sulgeja" object="${objekt}" z="hsZ7CnCzhljxcjDnPF+JCwk35qA="/>
         <field:display date="true" dateTimePattern="${OBJEKT_suletud_date_format}" field="suletud" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKT_suletud" object="${objekt}" z="JOEMvuEFg/2PkYgvyTshPMG8yP8="/>
         <field:display field="kommentaar" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKT_kommentaar" object="${objekt}" z="v3wcqjdhFIzOuE/kEOgBwTqQSdk="/>
-        <field:display field="objekt_ID" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKT_objekt_ID" object="${objekt}" z="MePmqmQ73z4ryDCTlfG1Fe7ec+E="/>
         <field:display field="OBJEKTI_LIIK" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKT_oBJEKTI_LIIK" object="${objekt}" z="coYgbYKG3bab/Sgk/CcjxaFznKw="/>
+        <field:display field="objekt_ID" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKT_objekt_ID" object="${objekt}" z="MePmqmQ73z4ryDCTlfG1Fe7ec+E="/>
     </page:show>
 </div>

@@ -10,10 +10,10 @@
         <field:display field="sulgeja" id="s_ee_itcollege_T25Piirivalve_entities_AMET_PIIRIPUNKTIS_sulgeja" object="${amet_piiripunktis}" z="glwkYHW5eOJrwkDQ9g8bmfuTrfs="/>
         <field:display date="true" dateTimePattern="${AMET_PIIRIPUNKTIS_suletud_date_format}" field="suletud" id="s_ee_itcollege_T25Piirivalve_entities_AMET_PIIRIPUNKTIS_suletud" object="${amet_piiripunktis}" z="qn3yl2/1RHaEq9VLOlK/fz1lkHE="/>
         <field:display field="kommentaar" id="s_ee_itcollege_T25Piirivalve_entities_AMET_PIIRIPUNKTIS_kommentaar" object="${amet_piiripunktis}" z="iaQxbSh4mk8hYC9LQGc66NxxAMc="/>
-        <field:display field="amet_piiripunktis_id" id="s_ee_itcollege_T25Piirivalve_entities_AMET_PIIRIPUNKTIS_amet_piiripunktis_id" object="${amet_piiripunktis}" z="ulNx0WN/ujbMUrWQhEaZjfwQ35I="/>
         <field:display date="true" dateTimePattern="${AMET_PIIRIPUNKTIS_alates_date_format}" field="alates" id="s_ee_itcollege_T25Piirivalve_entities_AMET_PIIRIPUNKTIS_alates" object="${amet_piiripunktis}" z="CwN/gbEorsng8GDYagR1incJbfM="/>
         <field:display date="true" dateTimePattern="${AMET_PIIRIPUNKTIS_kuni_date_format}" field="kuni" id="s_ee_itcollege_T25Piirivalve_entities_AMET_PIIRIPUNKTIS_kuni" object="${amet_piiripunktis}" z="ouyicr93IzJCkzrKhgBv7lkUERc="/>
         <field:display field="AMET" id="s_ee_itcollege_T25Piirivalve_entities_AMET_PIIRIPUNKTIS_aMET" object="${amet_piiripunktis}" z="jnKEi3Iqp/C2j9REWGDHGNrclkE="/>
         <field:display field="PIIRIPUNKT" id="s_ee_itcollege_T25Piirivalve_entities_AMET_PIIRIPUNKTIS_pIIRIPUNKT" object="${amet_piiripunktis}" z="JWbQm/XdK+zMaUcfHL7NJOM/VZg="/>
+        <field:display field="amet_piiripunktis_id" id="s_ee_itcollege_T25Piirivalve_entities_AMET_PIIRIPUNKTIS_amet_piiripunktis_id" object="${amet_piiripunktis}" z="ulNx0WN/ujbMUrWQhEaZjfwQ35I="/>
     </page:show>
 </div>

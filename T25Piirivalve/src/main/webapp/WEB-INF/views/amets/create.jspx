@@ -10,9 +10,9 @@
         <field:input field="sulgeja" id="c_ee_itcollege_T25Piirivalve_entities_AMET_sulgeja" z="81PmyeZxIBOkRuO/gO5T0JV+rgU="/>
         <field:datetime dateTimePattern="${AMET_suletud_date_format}" field="suletud" id="c_ee_itcollege_T25Piirivalve_entities_AMET_suletud" z="uYhjqfKGQFAFF4sbDJJAk1UAGeE="/>
         <field:input field="kommentaar" id="c_ee_itcollege_T25Piirivalve_entities_AMET_kommentaar" z="Eei/x49G1IXRJrFxU2/t3KQemeQ="/>
-        <field:input field="amet_ID" id="c_ee_itcollege_T25Piirivalve_entities_AMET_amet_ID" validationMessageCode="field_invalid_integer" z="iTQZws3zXB2mVBvFJLvHHBntBlI="/>
         <field:input field="ISCO_kood" id="c_ee_itcollege_T25Piirivalve_entities_AMET_ISCO_kood" max="10" min="1" required="true" z="5C+xCad0eVn6v2qLTt5uJOvMxo4="/>
         <field:textarea field="nimetus" id="c_ee_itcollege_T25Piirivalve_entities_AMET_nimetus" required="true" z="Ho/GBo6AZvHvbeA2mOTPWVSe7+U="/>
+        <field:input field="amet_ID" id="c_ee_itcollege_T25Piirivalve_entities_AMET_amet_ID" validationMessageCode="field_invalid_integer" z="iTQZws3zXB2mVBvFJLvHHBntBlI="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_ee_itcollege_T25Piirivalve_entities_AMET" render="${not empty dependencies}" z="MiKIqbmkXUjjPlf9830CCtT4wJQ="/>
 </div>

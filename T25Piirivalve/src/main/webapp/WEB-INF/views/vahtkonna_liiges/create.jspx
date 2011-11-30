@@ -10,11 +10,11 @@
         <field:input field="sulgeja" id="c_ee_itcollege_T25Piirivalve_entities_VAHTKONNA_LIIGE_sulgeja" z="RWRcVylDLuJYz9H0tkrTPEK7kzU="/>
         <field:datetime dateTimePattern="${VAHTKONNA_LIIGE_suletud_date_format}" field="suletud" id="c_ee_itcollege_T25Piirivalve_entities_VAHTKONNA_LIIGE_suletud" z="ChlIAwaGoyMfD43+GN0oB93JNss="/>
         <field:input field="kommentaar" id="c_ee_itcollege_T25Piirivalve_entities_VAHTKONNA_LIIGE_kommentaar" z="i++UUHnqvTer8PeCD6/OWxsrTUs="/>
-        <field:input field="vahtkonna_liige_ID" id="c_ee_itcollege_T25Piirivalve_entities_VAHTKONNA_LIIGE_vahtkonna_liige_ID" validationMessageCode="field_invalid_integer" z="rft1H6UBPNYPtZOJ6wJ/Av5qcgg="/>
         <field:datetime dateTimePattern="${VAHTKONNA_LIIGE_alates_date_format}" field="alates" id="c_ee_itcollege_T25Piirivalve_entities_VAHTKONNA_LIIGE_alates" required="true" z="R3zUz/pHzZXqsJ5cMj6qwuoVCvA="/>
         <field:datetime dateTimePattern="${VAHTKONNA_LIIGE_kuni_date_format}" field="kuni" id="c_ee_itcollege_T25Piirivalve_entities_VAHTKONNA_LIIGE_kuni" required="true" z="vFnCfg7fAPXRjRW4uj2fPuMoR1I="/>
         <field:select field="vAHTKOND" id="c_ee_itcollege_T25Piirivalve_entities_VAHTKONNA_LIIGE_vAHTKOND" itemValue="id" items="${vahtkonds}" path="/vahtkonds" z="OCV0tdOs6e4nJsGmwnDdWS+U5nY="/>
         <field:select field="pIIRIVALVUR" id="c_ee_itcollege_T25Piirivalve_entities_VAHTKONNA_LIIGE_pIIRIVALVUR" itemValue="id" items="${piirivalvurs}" path="/piirivalvurs" z="ThgyMKiWijCWrsW5YQly9Pjej8g="/>
+        <field:input field="vahtkonna_liige_ID" id="c_ee_itcollege_T25Piirivalve_entities_VAHTKONNA_LIIGE_vahtkonna_liige_ID" validationMessageCode="field_invalid_integer" z="rft1H6UBPNYPtZOJ6wJ/Av5qcgg="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_ee_itcollege_T25Piirivalve_entities_VAHTKONNA_LIIGE" render="${not empty dependencies}" z="GlH9BZPDEhCej6VlA1Uk8G6SW0s="/>
 </div>

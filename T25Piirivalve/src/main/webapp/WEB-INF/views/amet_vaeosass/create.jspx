@@ -10,11 +10,11 @@
         <field:input field="sulgeja" id="c_ee_itcollege_T25Piirivalve_entities_AMET_VAEOSAS_sulgeja" z="OSEWHzrswJkvaJrP2i4Gq7K0rbA="/>
         <field:datetime dateTimePattern="${AMET_VAEOSAS_suletud_date_format}" field="suletud" id="c_ee_itcollege_T25Piirivalve_entities_AMET_VAEOSAS_suletud" z="UXpql5fewEBKeBhQZaQYLIsqYoA="/>
         <field:input field="kommentaar" id="c_ee_itcollege_T25Piirivalve_entities_AMET_VAEOSAS_kommentaar" z="TNRBBDt75XoRbSCzSzlIP9Ff8uM="/>
-        <field:input field="amet_vaeosas_ID" id="c_ee_itcollege_T25Piirivalve_entities_AMET_VAEOSAS_amet_vaeosas_ID" validationMessageCode="field_invalid_integer" z="hh5X2cGzaM8eMxBiEo3uz0cXWjQ="/>
         <field:datetime dateTimePattern="${AMET_VAEOSAS_alates_date_format}" field="alates" id="c_ee_itcollege_T25Piirivalve_entities_AMET_VAEOSAS_alates" required="true" z="4Rc5Kfg1crPWWyWi6Yar1xee6NA="/>
         <field:datetime dateTimePattern="${AMET_VAEOSAS_kuni_date_format}" field="kuni" id="c_ee_itcollege_T25Piirivalve_entities_AMET_VAEOSAS_kuni" required="true" z="PDsDXriDRBON2m/lQhf23/GZ9s4="/>
         <field:select field="aMET" id="c_ee_itcollege_T25Piirivalve_entities_AMET_VAEOSAS_aMET" itemValue="id" items="${amets}" path="/amets" z="CBz8Qc/fH6EFI62Ox7sa8kwcNH8="/>
         <field:select field="vAEOSA" id="c_ee_itcollege_T25Piirivalve_entities_AMET_VAEOSAS_vAEOSA" itemValue="id" items="${vaeosas}" path="/vaeosas" z="Z+8ojkqktSf4lkv0WRxu8hkFGy0="/>
+        <field:input field="amet_vaeosas_ID" id="c_ee_itcollege_T25Piirivalve_entities_AMET_VAEOSAS_amet_vaeosas_ID" validationMessageCode="field_invalid_integer" z="hh5X2cGzaM8eMxBiEo3uz0cXWjQ="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_ee_itcollege_T25Piirivalve_entities_AMET_VAEOSAS" render="${not empty dependencies}" z="DoOu2/fUIQXJin4qt058Or9WKA8="/>
 </div>

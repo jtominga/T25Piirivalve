@@ -10,7 +10,6 @@
         <field:display field="sulgeja" id="s_ee_itcollege_T25Piirivalve_entities_INTSIDENT_sulgeja" object="${intsident}" z="w61kcVuKpt6RevP5+XgrtDhF7Lo="/>
         <field:display date="true" dateTimePattern="${INTSIDENT_suletud_date_format}" field="suletud" id="s_ee_itcollege_T25Piirivalve_entities_INTSIDENT_suletud" object="${intsident}" z="/rhiqZh6lhUbsGIlqayqRCJ0OMA="/>
         <field:display field="kommentaar" id="s_ee_itcollege_T25Piirivalve_entities_INTSIDENT_kommentaar" object="${intsident}" z="5zJ4ESiyzdPNmGgtwNhg1Kp/wBM="/>
-        <field:display field="intsident_ID" id="s_ee_itcollege_T25Piirivalve_entities_INTSIDENT_intsident_ID" object="${intsident}" z="8/YlHOOXk5iYFEGU9fN4nLJQvTU="/>
         <field:display field="kood" id="s_ee_itcollege_T25Piirivalve_entities_INTSIDENT_kood" object="${intsident}" z="bqJkOyRdhrILTZ9tAJmKNZYkvVU="/>
         <field:display date="true" dateTimePattern="${INTSIDENT_toimumise_algus_date_format}" field="toimumise_algus" id="s_ee_itcollege_T25Piirivalve_entities_INTSIDENT_toimumise_algus" object="${intsident}" z="6OyZt1Q26Nst25OFSC+1CmoPo3k="/>
         <field:display date="true" dateTimePattern="${INTSIDENT_toimumise_lopp_date_format}" field="toimumise_lopp" id="s_ee_itcollege_T25Piirivalve_entities_INTSIDENT_toimumise_lopp" object="${intsident}" z="CNOM+GU6PPdTtwY9qrKdNU0ifFE="/>
@@ -19,5 +18,6 @@
         <field:display field="kirjeldus" id="s_ee_itcollege_T25Piirivalve_entities_INTSIDENT_kirjeldus" object="${intsident}" z="aSsZtLCfes43v3P70mXVylM3iRg="/>
         <field:display field="PIIRILOIK" id="s_ee_itcollege_T25Piirivalve_entities_INTSIDENT_pIIRILOIK" object="${intsident}" z="3dZHOYOQHCNGyxZhWeHIuixjak0="/>
         <field:display field="INTSIDENDI_LIIK" id="s_ee_itcollege_T25Piirivalve_entities_INTSIDENT_iNTSIDENDI_LIIK" object="${intsident}" z="MCD5UavhJQgO2Ir4tabSB9XNNDA="/>
+        <field:display field="intsident_ID" id="s_ee_itcollege_T25Piirivalve_entities_INTSIDENT_intsident_ID" object="${intsident}" z="8/YlHOOXk5iYFEGU9fN4nLJQvTU="/>
     </page:show>
 </div>

@@ -10,10 +10,10 @@
         <field:display field="sulgeja" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKONNA_LIIGE_sulgeja" object="${vahtkonna_liige}" z="nZEQbaFQBmDsa0uuOVinpaahZcA="/>
         <field:display date="true" dateTimePattern="${VAHTKONNA_LIIGE_suletud_date_format}" field="suletud" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKONNA_LIIGE_suletud" object="${vahtkonna_liige}" z="L5h8N7SjGWEqi5uYgrM+xLySeNM="/>
         <field:display field="kommentaar" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKONNA_LIIGE_kommentaar" object="${vahtkonna_liige}" z="qCHEpI1UzIv4SjH3y6F+TNoeE/A="/>
-        <field:display field="vahtkonna_liige_ID" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKONNA_LIIGE_vahtkonna_liige_ID" object="${vahtkonna_liige}" z="6zMArKcSAEngQqdE5JWhCxM7YHM="/>
         <field:display date="true" dateTimePattern="${VAHTKONNA_LIIGE_alates_date_format}" field="alates" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKONNA_LIIGE_alates" object="${vahtkonna_liige}" z="ul/jpIl9bUGQ57NxFztXNujJOvA="/>
         <field:display date="true" dateTimePattern="${VAHTKONNA_LIIGE_kuni_date_format}" field="kuni" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKONNA_LIIGE_kuni" object="${vahtkonna_liige}" z="P4lMzvRkgy615C+xjMhF1jgGkHQ="/>
         <field:display field="VAHTKOND" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKONNA_LIIGE_vAHTKOND" object="${vahtkonna_liige}" z="7ABed5jmTQscxtgQn3994OKIEHY="/>
         <field:display field="PIIRIVALVUR" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKONNA_LIIGE_pIIRIVALVUR" object="${vahtkonna_liige}" z="WcX4ilBcEBq/QZ6D4H/PPnRCWys="/>
+        <field:display field="vahtkonna_liige_ID" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKONNA_LIIGE_vahtkonna_liige_ID" object="${vahtkonna_liige}" z="6zMArKcSAEngQqdE5JWhCxM7YHM="/>
     </page:show>
 </div>
