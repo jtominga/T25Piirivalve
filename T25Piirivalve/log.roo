@@ -6,3 +6,4 @@ project --topLevelPackage ee.itcollege.veebirakendused.java.team25 --projectName
 persistence setup --provider HIBERNATE --database HYPERSONIC_PERSISTENT
 // Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-11-30 11:05:15
 // Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-11-30 11:15:13
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-11-30 14:24:19

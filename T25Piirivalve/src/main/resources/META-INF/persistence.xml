@@ -4,6 +4,8 @@
 		<class>ee.itcollege.T25Piirivalve.entities.RIIGI_ADMIN_YKSUSE_LIIK</class>
 		<class>ee.itcollege.T25Piirivalve.entities.RIIGI_ADMIN_YKSUS</class>
 		<class>ee.itcollege.T25Piirivalve.entities.VAEOSA</class>
+		<class>ee.itcollege.T25Piirivalve.entities.PIIRIPUNKT</class>
+		<class>ee.itcollege.T25Piirivalve.entities.VAHTKOND</class>
 		<properties>
 			<property name="javax.persistence.jdbc.url" value="jdbc:hsqldb:MyDB"/>
 			<property name="javax.persistence.jdbc.user" value="sa"/>
