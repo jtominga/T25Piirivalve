@@ -9,6 +9,8 @@ import javax.persistence.Id;
 
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.tostring.RooToString;
+import ee.itcollege.T25Piirivalve.entities.OBJEKTI_LIIK;
+import javax.persistence.ManyToOne;
 
 /**
  * Entity implementation class for Entity: OBJEKT
@@ -25,6 +27,8 @@ public class OBJEKT extends BaseEntity implements Serializable {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long objekt_ID;
 	private static final long serialVersionUID = 1L;
+	@ManyToOne
+	private OBJEKTI_LIIK oBJEKTI_LIIK;
 
 	public OBJEKT() {
 		super();
@@ -35,6 +39,12 @@ public class OBJEKT extends BaseEntity implements Serializable {
 
 	public void setObjekt_ID(Long objekt_ID) {
 		this.objekt_ID = objekt_ID;
+	}
+	public OBJEKTI_LIIK getOBJEKTI_LIIK() {
+	    return oBJEKTI_LIIK;
+	}
+	public void setOBJEKTI_LIIK(OBJEKTI_LIIK param) {
+	    this.oBJEKTI_LIIK = param;
 	}
    
 }

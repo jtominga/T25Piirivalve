@@ -7,6 +7,8 @@ import javax.persistence.*;
 
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.tostring.RooToString;
+import ee.itcollege.T25Piirivalve.entities.INTSIDENT;
+import ee.itcollege.T25Piirivalve.entities.OBJEKT;
 /**
  * Entity implementation class for Entity: OBJEKT_INTSIDENDIS
  *
@@ -24,6 +26,10 @@ public class OBJEKT_INTSIDENDIS extends BaseEntity implements Serializable {
 	private Date alates;
 	private Date kuni;
 	private static final long serialVersionUID = 1L;
+	@ManyToOne
+	private INTSIDENT iNTSIDENT;
+	@ManyToOne
+	private OBJEKT oBJEKT;
 
 	public OBJEKT_INTSIDENDIS() {
 		super();
@@ -48,6 +54,18 @@ public class OBJEKT_INTSIDENDIS extends BaseEntity implements Serializable {
 
 	public void setKuni(Date kuni) {
 		this.kuni = kuni;
+	}
+	public INTSIDENT getINTSIDENT() {
+	    return iNTSIDENT;
+	}
+	public void setINTSIDENT(INTSIDENT param) {
+	    this.iNTSIDENT = param;
+	}
+	public OBJEKT getOBJEKT() {
+	    return oBJEKT;
+	}
+	public void setOBJEKT(OBJEKT param) {
+	    this.oBJEKT = param;
 	}
    
 }

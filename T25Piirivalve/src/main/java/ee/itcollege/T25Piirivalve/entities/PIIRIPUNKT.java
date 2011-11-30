@@ -9,6 +9,11 @@ import javax.persistence.Id;
 
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.tostring.RooToString;
+import ee.itcollege.T25Piirivalve.entities.VAHTKOND;
+import java.util.Set;
+import ee.itcollege.T25Piirivalve.entities.PIIRIPUNKTI_ORG_YKSUS;
+import javax.persistence.OneToMany;
+import javax.persistence.JoinColumn;
 
 /**
  * Entity implementation class for Entity: PIIRIPUNKT
@@ -28,6 +33,12 @@ public class PIIRIPUNKT extends BaseEntity implements Serializable {
 	private Double GPS_Latitude;
 	private Double korgus_merepinnast;
 	private static final long serialVersionUID = 1L;
+	@OneToMany
+	@JoinColumn(name = "PIIRIPUNKT_piiripunkt_ID", referencedColumnName = "piiripunkt_ID")
+	private Set<VAHTKOND> vAHTKOND;
+	@OneToMany
+	@JoinColumn(name = "PIIRIPUNKT_piiripunkt_ID", referencedColumnName = "piiripunkt_ID")
+	private Set<PIIRIPUNKTI_ORG_YKSUS> pIIRIPUNKTI_ORG_YKSUS;
 
 	public PIIRIPUNKT() {
 		super();
@@ -60,6 +71,18 @@ public class PIIRIPUNKT extends BaseEntity implements Serializable {
 
 	public void setKorgus_merepinnast(Double korgus_merepinnast) {
 		this.korgus_merepinnast = korgus_merepinnast;
+	}
+	public Set<VAHTKOND> getVAHTKOND() {
+	    return vAHTKOND;
+	}
+	public void setVAHTKOND(Set<VAHTKOND> param) {
+	    this.vAHTKOND = param;
+	}
+	public Set<PIIRIPUNKTI_ORG_YKSUS> getPIIRIPUNKTI_ORG_YKSUS() {
+	    return pIIRIPUNKTI_ORG_YKSUS;
+	}
+	public void setPIIRIPUNKTI_ORG_YKSUS(Set<PIIRIPUNKTI_ORG_YKSUS> param) {
+	    this.pIIRIPUNKTI_ORG_YKSUS = param;
 	}
    
 }

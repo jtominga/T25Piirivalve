@@ -8,6 +8,8 @@ import javax.persistence.*;
 
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.tostring.RooToString;
+import ee.itcollege.T25Piirivalve.entities.SEADUS;
+import ee.itcollege.T25Piirivalve.entities.SEADUSE_PUNKT;
 
 /**
  * Entity implementation class for Entity: SEADUSE_PUNKT
@@ -29,6 +31,10 @@ public class SEADUSE_PUNKT extends BaseEntity implements Serializable {
 	private Date kehtiv_alates;
 	private Date kehtiv_kuni;
 	private static final long serialVersionUID = 1L;
+	@ManyToOne
+	private SEADUS sEADUS;
+	@ManyToOne
+	private SEADUSE_PUNKT YLEMUS_SEADUSE_PUNKT;
 
 	public SEADUSE_PUNKT() {
 		super();
@@ -74,6 +80,18 @@ public class SEADUSE_PUNKT extends BaseEntity implements Serializable {
 
 	public void setTekst(String tekst) {
 		this.tekst = tekst;
+	}
+	public SEADUS getSEADUS() {
+	    return sEADUS;
+	}
+	public void setSEADUS(SEADUS param) {
+	    this.sEADUS = param;
+	}
+	public SEADUSE_PUNKT getSEADUSE_PUNKT() {
+	    return sEADUSE_PUNKT;
+	}
+	public void setSEADUSE_PUNKT(SEADUSE_PUNKT param) {
+	    this.sEADUSE_PUNKT = param;
 	}
    
 }

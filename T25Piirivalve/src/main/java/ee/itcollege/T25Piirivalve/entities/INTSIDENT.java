@@ -10,6 +10,9 @@ import javax.persistence.Id;
 
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.tostring.RooToString;
+import ee.itcollege.T25Piirivalve.entities.PIIRILOIK;
+import ee.itcollege.T25Piirivalve.entities.INTSIDENDI_LIIK;
+import javax.persistence.ManyToOne;
 
 /**
  * Entity implementation class for Entity: INTSIDENT
@@ -30,6 +33,10 @@ public class INTSIDENT extends BaseEntity implements Serializable {
 	private Double GPS_Latitude;
 	private Double GPS_Longtitude;
 	private static final long serialVersionUID = 1L;
+	@ManyToOne
+	private PIIRILOIK pIIRILOIK;
+	@ManyToOne
+	private INTSIDENDI_LIIK iNTSIDENDI_LIIK;
 
 	public INTSIDENT() {
 		super();
@@ -71,6 +78,18 @@ public class INTSIDENT extends BaseEntity implements Serializable {
 
 	public void setGPS_Longtitude(Double GPS_Longtitude) {
 		this.GPS_Longtitude = GPS_Longtitude;
+	}
+	public PIIRILOIK getPIIRILOIK() {
+	    return pIIRILOIK;
+	}
+	public void setPIIRILOIK(PIIRILOIK param) {
+	    this.pIIRILOIK = param;
+	}
+	public INTSIDENDI_LIIK getINTSIDENDI_LIIK() {
+	    return iNTSIDENDI_LIIK;
+	}
+	public void setINTSIDENDI_LIIK(INTSIDENDI_LIIK param) {
+	    this.iNTSIDENDI_LIIK = param;
 	}
    
 }

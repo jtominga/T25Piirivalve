@@ -25,7 +25,6 @@ public class VAHTKOND extends BaseEntity implements Serializable {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long vahtkond_ID;
 	private static final long serialVersionUID = 1L;
-
 	public VAHTKOND() {
 		super();
 	}   

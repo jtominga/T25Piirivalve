@@ -9,6 +9,9 @@ import javax.persistence.Id;
 
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.tostring.RooToString;
+import ee.itcollege.T25Piirivalve.entities.VAHTKOND;
+import ee.itcollege.T25Piirivalve.entities.PIIRIVALVUR;
+import javax.persistence.ManyToOne;
 
 /**
  * Entity implementation class for Entity: VAHTKONNA_LIIGE
@@ -25,6 +28,10 @@ public class VAHTKONNA_LIIGE extends BaseEntity implements Serializable {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long vahtkonna_liige_ID;
 	private static final long serialVersionUID = 1L;
+	@ManyToOne
+	private VAHTKOND vAHTKOND;
+	@ManyToOne
+	private PIIRIVALVUR pIIRIVALVUR;
 
 	public VAHTKONNA_LIIGE() {
 		super();
@@ -35,6 +42,18 @@ public class VAHTKONNA_LIIGE extends BaseEntity implements Serializable {
 
 	public void setVahtkonna_liige_ID(Long vahtkonna_liige_ID) {
 		this.vahtkonna_liige_ID = vahtkonna_liige_ID;
+	}
+	public VAHTKOND getVAHTKOND() {
+	    return vAHTKOND;
+	}
+	public void setVAHTKOND(VAHTKOND param) {
+	    this.vAHTKOND = param;
+	}
+	public PIIRIVALVUR getPIIRIVALVUR() {
+	    return pIIRIVALVUR;
+	}
+	public void setPIIRIVALVUR(PIIRIVALVUR param) {
+	    this.pIIRIVALVUR = param;
 	}
    
 }

@@ -24,7 +24,6 @@ public class VAEOSA extends BaseEntity implements Serializable {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long vaeosa_ID;  
 	private static final long serialVersionUID = 1L;
-
 	public VAEOSA() {
 		super();
 	}

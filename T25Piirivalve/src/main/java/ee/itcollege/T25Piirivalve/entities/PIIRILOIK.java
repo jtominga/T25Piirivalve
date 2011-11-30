@@ -28,7 +28,6 @@ public class PIIRILOIK extends BaseEntity implements Serializable {
 	private Double GPS_Latitude;
 	private String GPS_koordinaadid;
 	private static final long serialVersionUID = 1L;
-
 	public PIIRILOIK() {
 		super();
 	}   

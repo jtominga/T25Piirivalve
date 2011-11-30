@@ -9,6 +9,9 @@ import javax.persistence.Id;
 
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.tostring.RooToString;
+import ee.itcollege.T25Piirivalve.entities.PIIRILOIK;
+import ee.itcollege.T25Piirivalve.entities.VAHTKOND;
+import javax.persistence.ManyToOne;
 
 /**
  * Entity implementation class for Entity: VAHTKOND_PIIRILOIGUL
@@ -21,20 +24,30 @@ import org.springframework.roo.addon.tostring.RooToString;
 public class VAHTKOND_PIIRILOIGUL extends BaseEntity implements Serializable {
 
 	   
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long vahtkond_piiriloigul_ID;
 	private static final long serialVersionUID = 1L;
+	@ManyToOne
+	private PIIRILOIK pIIRILOIK;
+	@ManyToOne
+	private VAHTKOND vAHTKOND;
 
 	public VAHTKOND_PIIRILOIGUL() {
 		super();
-	}   
-	public Long getVahtkond_piiriloigul_ID() {
-		return this.vahtkond_piiriloigul_ID;
 	}
 
-	public void setVahtkond_piiriloigul_ID(Long vahtkond_piiriloigul_ID) {
-		this.vahtkond_piiriloigul_ID = vahtkond_piiriloigul_ID;
+	public PIIRILOIK getPIIRILOIK() {
+	    return pIIRILOIK;
+	}
+
+	public void setPIIRILOIK(PIIRILOIK param) {
+	    this.pIIRILOIK = param;
+	}
+
+	public VAHTKOND getVAHTKOND() {
+	    return vAHTKOND;
+	}
+
+	public void setVAHTKOND(VAHTKOND param) {
+	    this.vAHTKOND = param;
 	}
    
 }
