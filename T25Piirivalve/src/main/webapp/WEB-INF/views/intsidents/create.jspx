@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_ee_itcollege_T25Piirivalve_entities_INTSIDENT" modelAttribute="INTSIDENT" path="/intsidents" render="${empty dependencies}" z="+X0iPGAntpt+hCCjT+2BA9QIEUQ=">
+        <field:input field="avaja" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_avaja" z="eS2+J63JJqFSZVksR0H589wTGpU="/>
+        <field:datetime dateTimePattern="${INTSIDENT_avatud_date_format}" field="avatud" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_avatud" z="miWH9vCf6Uwg9N7WQ9EPP5Nv+KI="/>
+        <field:input field="muutja" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_muutja" z="YPZq0xTz2839q8wR8Q64XdZO3bI="/>
+        <field:datetime dateTimePattern="${INTSIDENT_muudetud_date_format}" field="muudetud" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_muudetud" z="LHLutSfKB2+T+x2JrHZb8jmExr8="/>
+        <field:input field="sulgeja" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_sulgeja" z="uSm8rsTJlBhS5kkG2pYgg/9JQNI="/>
+        <field:datetime dateTimePattern="${INTSIDENT_suletud_date_format}" field="suletud" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_suletud" z="6sblBn5BYZ/hmI7ByJQMY7hXPZc="/>
+        <field:input field="kommentaar" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_kommentaar" z="qZJMOvFRlivXXo7Vbgu+4VY7C4g="/>
+        <field:input field="intsident_ID" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_intsident_ID" validationMessageCode="field_invalid_integer" z="jeHyW6D6cRn4k8fRJLU646yS2w0="/>
+        <field:input field="kood" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_kood" z="gZL5Yso5Mz7ySgPNvlMfxYAe3Cc="/>
+        <field:datetime dateTimePattern="${INTSIDENT_toimumise_algus_date_format}" field="toimumise_algus" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_toimumise_algus" z="1gBQSTqxiRlwwpKWPIOWzy5kyyo="/>
+        <field:datetime dateTimePattern="${INTSIDENT_toimumise_lopp_date_format}" field="toimumise_lopp" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_toimumise_lopp" z="9C+RtWyaVEWoIqKWlymODcP6f9s="/>
+        <field:input field="GPS_Latitude" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_GPS_Latitude" validationMessageCode="field_invalid_number" z="KkmnJVXiWBOxtYAuMcaVg6vm2Ww="/>
+        <field:input field="GPS_Longtitude" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_GPS_Longtitude" validationMessageCode="field_invalid_number" z="icFTtOB8jBK7sNVGAo4hKiGRwr0="/>
+        <field:input field="kirjeldus" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_kirjeldus" z="C6YODaXg86KDZzT/rKW2FkOq5QQ="/>
+        <field:select field="pIIRILOIK" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_pIIRILOIK" itemValue="id" items="${piiriloiks}" path="/piiriloiks" z="Q+taM86QEBRvBtNnyj7ydX7ffVk="/>
+        <field:select field="iNTSIDENDI_LIIK" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_iNTSIDENDI_LIIK" itemValue="id" items="${intsidendi_liiks}" path="/intsidendi_liiks" z="ZmbB50/3T7Q0Gi0zNWHPwm5XX4Q="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_ee_itcollege_T25Piirivalve_entities_INTSIDENT" render="${not empty dependencies}" z="VtQYFzPdn2OL2tGvfOwvChK54KU="/>
+</div>

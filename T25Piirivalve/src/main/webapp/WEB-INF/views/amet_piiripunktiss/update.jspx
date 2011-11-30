@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_ee_itcollege_T25Piirivalve_entities_AMET_PIIRIPUNKTIS" modelAttribute="AMET_PIIRIPUNKTIS" path="/amet_piiripunktiss" versionField="Version" z="/ODAsF3DwAxKYrm8+gwTnIELq/E=">
+        <field:input field="avaja" id="c_ee_itcollege_T25Piirivalve_entities_AMET_PIIRIPUNKTIS_avaja" z="rELtOq6g4dX0B12Na0mk8LB2B4o="/>
+        <field:datetime dateTimePattern="${AMET_PIIRIPUNKTIS_avatud_date_format}" field="avatud" id="c_ee_itcollege_T25Piirivalve_entities_AMET_PIIRIPUNKTIS_avatud" z="nZ70QDFeqI5JbhmGN4VHaHkgSxU="/>
+        <field:input field="muutja" id="c_ee_itcollege_T25Piirivalve_entities_AMET_PIIRIPUNKTIS_muutja" z="g4b9eB//hYnitDgGjGdBfR+9KTY="/>
+        <field:datetime dateTimePattern="${AMET_PIIRIPUNKTIS_muudetud_date_format}" field="muudetud" id="c_ee_itcollege_T25Piirivalve_entities_AMET_PIIRIPUNKTIS_muudetud" z="gv9ZtvkKsyeYV/+qzai5yeY57Ng="/>
+        <field:input field="sulgeja" id="c_ee_itcollege_T25Piirivalve_entities_AMET_PIIRIPUNKTIS_sulgeja" z="4hp8ki4vrgB0s6AHbSnz8mkHZGE="/>
+        <field:datetime dateTimePattern="${AMET_PIIRIPUNKTIS_suletud_date_format}" field="suletud" id="c_ee_itcollege_T25Piirivalve_entities_AMET_PIIRIPUNKTIS_suletud" z="Ay4gDO5xEHpgEThPJV3JmlJ6F5U="/>
+        <field:input field="kommentaar" id="c_ee_itcollege_T25Piirivalve_entities_AMET_PIIRIPUNKTIS_kommentaar" z="6prlIFSlB16Gp/dlLqNwCxywC3c="/>
+        <field:input field="amet_piiripunktis_id" id="c_ee_itcollege_T25Piirivalve_entities_AMET_PIIRIPUNKTIS_amet_piiripunktis_id" validationMessageCode="field_invalid_integer" z="TlMaM0FMUuPodLEuPvT3r67j+Cw="/>
+        <field:datetime dateTimePattern="${AMET_PIIRIPUNKTIS_alates_date_format}" field="alates" id="c_ee_itcollege_T25Piirivalve_entities_AMET_PIIRIPUNKTIS_alates" required="true" z="sR/Bpbt9+tzLX7Bu9EPlYugLQos="/>
+        <field:datetime dateTimePattern="${AMET_PIIRIPUNKTIS_kuni_date_format}" field="kuni" id="c_ee_itcollege_T25Piirivalve_entities_AMET_PIIRIPUNKTIS_kuni" required="true" z="Rt5f4issKzLRb6YcqHFpFx7v09k="/>
+        <field:select field="aMET" id="c_ee_itcollege_T25Piirivalve_entities_AMET_PIIRIPUNKTIS_aMET" itemValue="id" items="${amets}" path="/amets" z="ZwlLvAbrV2y+o0gWXTSHVOa3g80="/>
+        <field:select field="pIIRIPUNKT" id="c_ee_itcollege_T25Piirivalve_entities_AMET_PIIRIPUNKTIS_pIIRIPUNKT" itemValue="id" items="${piiripunkts}" path="/piiripunkts" z="NRdv/AP1uegZ2O66x8PQ+q+6YOA="/>
+    </form:update>
+</div>

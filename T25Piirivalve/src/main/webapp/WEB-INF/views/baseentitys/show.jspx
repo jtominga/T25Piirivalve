@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_ee_itcollege_T25Piirivalve_entities_BaseEntity" object="${baseentity}" path="/baseentitys" z="y1xxtqmVNqc8+BjP1Ki1yOXDxiM=">
+        <field:display field="avaja" id="s_ee_itcollege_T25Piirivalve_entities_BaseEntity_avaja" object="${baseentity}" z="sFSh2hFPoCWJeTheTNIWDxaSROY="/>
+        <field:display date="true" dateTimePattern="${baseEntity_avatud_date_format}" field="avatud" id="s_ee_itcollege_T25Piirivalve_entities_BaseEntity_avatud" object="${baseentity}" z="PUVaF9p7LakKM4CXWLhJY9hG61Y="/>
+        <field:display field="muutja" id="s_ee_itcollege_T25Piirivalve_entities_BaseEntity_muutja" object="${baseentity}" z="fsvPOoYEOObvFH4p9pkl0tRMif0="/>
+        <field:display date="true" dateTimePattern="${baseEntity_muudetud_date_format}" field="muudetud" id="s_ee_itcollege_T25Piirivalve_entities_BaseEntity_muudetud" object="${baseentity}" z="/pe5M06oyZtL8Nv280DQ2dXqWbM="/>
+        <field:display field="sulgeja" id="s_ee_itcollege_T25Piirivalve_entities_BaseEntity_sulgeja" object="${baseentity}" z="Vcr0dkJC5tb/eXhp3Pin1ZDTCpY="/>
+        <field:display date="true" dateTimePattern="${baseEntity_suletud_date_format}" field="suletud" id="s_ee_itcollege_T25Piirivalve_entities_BaseEntity_suletud" object="${baseentity}" z="etulMbNIhIY/adjsHo5oQL7/8XI="/>
+        <field:display field="kommentaar" id="s_ee_itcollege_T25Piirivalve_entities_BaseEntity_kommentaar" object="${baseentity}" z="Id6DNTNDPPOaNyxRiXDudsluUHE="/>
+    </page:show>
+</div>

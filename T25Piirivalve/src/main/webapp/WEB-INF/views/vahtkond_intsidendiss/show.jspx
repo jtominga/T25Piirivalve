@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS" object="${vahtkond_intsidendis}" path="/vahtkond_intsidendiss" z="tilO3CV7GIqcLndBuKK4gV9Bfh8=">
+        <field:display field="avaja" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_avaja" object="${vahtkond_intsidendis}" z="fMrNjGgdpR5DgCVP28jR7FiIXLA="/>
+        <field:display date="true" dateTimePattern="${VAHTKOND_INTSIDENDIS_avatud_date_format}" field="avatud" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_avatud" object="${vahtkond_intsidendis}" z="EBS66iK4OvkYQ6MQVHIwhdvHj+I="/>
+        <field:display field="muutja" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_muutja" object="${vahtkond_intsidendis}" z="KbQk9f83Xnp8Tu12h+Svlzo7qLA="/>
+        <field:display date="true" dateTimePattern="${VAHTKOND_INTSIDENDIS_muudetud_date_format}" field="muudetud" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_muudetud" object="${vahtkond_intsidendis}" z="AmjCpq8q4GJWtiTo/6Vi/4D8zfk="/>
+        <field:display field="sulgeja" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_sulgeja" object="${vahtkond_intsidendis}" z="9e01eJhqEt2dACSPlEtGARAR0sU="/>
+        <field:display date="true" dateTimePattern="${VAHTKOND_INTSIDENDIS_suletud_date_format}" field="suletud" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_suletud" object="${vahtkond_intsidendis}" z="bbLgZLDsdVedh9/BX/N+1oKJhAc="/>
+        <field:display field="kommentaar" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_kommentaar" object="${vahtkond_intsidendis}" z="HgVSqniI9pCyuAKCI8U8M1KU9zI="/>
+        <field:display field="vahtkod_intsidendis_ID" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_vahtkod_intsidendis_ID" object="${vahtkond_intsidendis}" z="JhgbdiR4xrU8qyI5yoPRbRdIIP0="/>
+        <field:display date="true" dateTimePattern="${VAHTKOND_INTSIDENDIS_alates_date_format}" field="alates" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_alates" object="${vahtkond_intsidendis}" z="nA4Q1lInW0kUsP1OOHqaZGaBkfU="/>
+        <field:display date="true" dateTimePattern="${VAHTKOND_INTSIDENDIS_kuni_date_format}" field="kuni" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_kuni" object="${vahtkond_intsidendis}" z="5hSYYuJddjAk84p/MaNcDryYe84="/>
+        <field:display field="kirjeldus" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_kirjeldus" object="${vahtkond_intsidendis}" z="N+O4rnEikCuPng0Hi1kr9pSRS6o="/>
+        <field:display field="INTSIDENT" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_iNTSIDENT" object="${vahtkond_intsidendis}" z="VbpGK8EINhvPwopwRXj7wkaZivA="/>
+        <field:display field="VAHTKOND" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_vAHTKOND" object="${vahtkond_intsidendis}" z="4eHaETZwhA2cj+eeFdOtRGMoQe8="/>
+    </page:show>
+</div>

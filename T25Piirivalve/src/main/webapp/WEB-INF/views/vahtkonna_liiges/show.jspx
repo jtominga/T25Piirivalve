@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_ee_itcollege_T25Piirivalve_entities_VAHTKONNA_LIIGE" object="${vahtkonna_liige}" path="/vahtkonna_liiges" z="z5uSuMRqJR+29sfqZD5L8wjxS6E=">
+        <field:display field="avaja" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKONNA_LIIGE_avaja" object="${vahtkonna_liige}" z="of81yk22DYHJYzM1ZLuGP8eFK0s="/>
+        <field:display date="true" dateTimePattern="${VAHTKONNA_LIIGE_avatud_date_format}" field="avatud" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKONNA_LIIGE_avatud" object="${vahtkonna_liige}" z="ZP5TkIsDK8u1DCsQK+cBNGJFmN4="/>
+        <field:display field="muutja" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKONNA_LIIGE_muutja" object="${vahtkonna_liige}" z="q+UWdmqBReJdRYz91S8sbrVsZ60="/>
+        <field:display date="true" dateTimePattern="${VAHTKONNA_LIIGE_muudetud_date_format}" field="muudetud" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKONNA_LIIGE_muudetud" object="${vahtkonna_liige}" z="kQuFlCAw9HdJ128iwD653uoxn5o="/>
+        <field:display field="sulgeja" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKONNA_LIIGE_sulgeja" object="${vahtkonna_liige}" z="nZEQbaFQBmDsa0uuOVinpaahZcA="/>
+        <field:display date="true" dateTimePattern="${VAHTKONNA_LIIGE_suletud_date_format}" field="suletud" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKONNA_LIIGE_suletud" object="${vahtkonna_liige}" z="L5h8N7SjGWEqi5uYgrM+xLySeNM="/>
+        <field:display field="kommentaar" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKONNA_LIIGE_kommentaar" object="${vahtkonna_liige}" z="qCHEpI1UzIv4SjH3y6F+TNoeE/A="/>
+        <field:display field="vahtkonna_liige_ID" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKONNA_LIIGE_vahtkonna_liige_ID" object="${vahtkonna_liige}" z="6zMArKcSAEngQqdE5JWhCxM7YHM="/>
+        <field:display date="true" dateTimePattern="${VAHTKONNA_LIIGE_alates_date_format}" field="alates" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKONNA_LIIGE_alates" object="${vahtkonna_liige}" z="ul/jpIl9bUGQ57NxFztXNujJOvA="/>
+        <field:display date="true" dateTimePattern="${VAHTKONNA_LIIGE_kuni_date_format}" field="kuni" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKONNA_LIIGE_kuni" object="${vahtkonna_liige}" z="P4lMzvRkgy615C+xjMhF1jgGkHQ="/>
+        <field:display field="VAHTKOND" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKONNA_LIIGE_vAHTKOND" object="${vahtkonna_liige}" z="7ABed5jmTQscxtgQn3994OKIEHY="/>
+        <field:display field="PIIRIVALVUR" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKONNA_LIIGE_pIIRIVALVUR" object="${vahtkonna_liige}" z="WcX4ilBcEBq/QZ6D4H/PPnRCWys="/>
+    </page:show>
+</div>

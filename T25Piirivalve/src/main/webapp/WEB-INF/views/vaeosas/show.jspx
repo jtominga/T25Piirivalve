@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_ee_itcollege_T25Piirivalve_entities_VAEOSA" object="${vaeosa}" path="/vaeosas" z="uxQk8PXYHPHLgke7rAoT6XB0BJA=">
+        <field:display field="avaja" id="s_ee_itcollege_T25Piirivalve_entities_VAEOSA_avaja" object="${vaeosa}" z="yWulk27IKp1YGAbj04hINyq770g="/>
+        <field:display date="true" dateTimePattern="${VAEOSA_avatud_date_format}" field="avatud" id="s_ee_itcollege_T25Piirivalve_entities_VAEOSA_avatud" object="${vaeosa}" z="9/YGfCwtYysJuUKOtawfnNo/xzs="/>
+        <field:display field="muutja" id="s_ee_itcollege_T25Piirivalve_entities_VAEOSA_muutja" object="${vaeosa}" z="cfgtDiNuCl3T4waxFnW2Y0yB2M4="/>
+        <field:display date="true" dateTimePattern="${VAEOSA_muudetud_date_format}" field="muudetud" id="s_ee_itcollege_T25Piirivalve_entities_VAEOSA_muudetud" object="${vaeosa}" z="9NGGgEJwKOk5uMTxFuuVOs83UwA="/>
+        <field:display field="sulgeja" id="s_ee_itcollege_T25Piirivalve_entities_VAEOSA_sulgeja" object="${vaeosa}" z="yP6WF6SAZj1hooCDFA+iN+Mo084="/>
+        <field:display date="true" dateTimePattern="${VAEOSA_suletud_date_format}" field="suletud" id="s_ee_itcollege_T25Piirivalve_entities_VAEOSA_suletud" object="${vaeosa}" z="JB62V+FYeV1fEnH42/4DIn8KYVU="/>
+        <field:display field="kommentaar" id="s_ee_itcollege_T25Piirivalve_entities_VAEOSA_kommentaar" object="${vaeosa}" z="j5n6hOaZo1C7xIGwm7xp9bJcZR8="/>
+        <field:display field="kood" id="s_ee_itcollege_T25Piirivalve_entities_VAEOSA_kood" object="${vaeosa}" z="/1mcYTyl2uH+3tv18AJh6/ctiPE="/>
+        <field:display field="nimetus" id="s_ee_itcollege_T25Piirivalve_entities_VAEOSA_nimetus" object="${vaeosa}" z="ZpiGfeimGnKL/mmZp7v2W+vIk58="/>
+        <field:display date="true" dateTimePattern="${VAEOSA_alates_date_format}" field="alates" id="s_ee_itcollege_T25Piirivalve_entities_VAEOSA_alates" object="${vaeosa}" z="rO1pPmejP77BEUpAKHl4X/MVabc="/>
+        <field:display date="true" dateTimePattern="${VAEOSA_kuni_date_format}" field="kuni" id="s_ee_itcollege_T25Piirivalve_entities_VAEOSA_kuni" object="${vaeosa}" z="pIXSVFLW4qf5vapsmgk/eDS8zow="/>
+    </page:show>
+</div>

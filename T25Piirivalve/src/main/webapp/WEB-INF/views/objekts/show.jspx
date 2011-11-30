@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_ee_itcollege_T25Piirivalve_entities_OBJEKT" object="${objekt}" path="/objekts" z="2CjamwpiCpSx+wPmpXbe3V0yUno=">
+        <field:display field="avaja" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKT_avaja" object="${objekt}" z="fr0F598tIhNjqSBj856yfrqC56E="/>
+        <field:display date="true" dateTimePattern="${OBJEKT_avatud_date_format}" field="avatud" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKT_avatud" object="${objekt}" z="G1XITB+2tGqm+inxt4z0EpdgZjs="/>
+        <field:display field="muutja" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKT_muutja" object="${objekt}" z="gUlA96ukJQ4aOXX3xvyMKmwea4E="/>
+        <field:display date="true" dateTimePattern="${OBJEKT_muudetud_date_format}" field="muudetud" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKT_muudetud" object="${objekt}" z="jaqT9+Ytql+ce+zT9L3sZd2+1RQ="/>
+        <field:display field="sulgeja" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKT_sulgeja" object="${objekt}" z="hsZ7CnCzhljxcjDnPF+JCwk35qA="/>
+        <field:display date="true" dateTimePattern="${OBJEKT_suletud_date_format}" field="suletud" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKT_suletud" object="${objekt}" z="JOEMvuEFg/2PkYgvyTshPMG8yP8="/>
+        <field:display field="kommentaar" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKT_kommentaar" object="${objekt}" z="v3wcqjdhFIzOuE/kEOgBwTqQSdk="/>
+        <field:display field="objekt_ID" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKT_objekt_ID" object="${objekt}" z="MePmqmQ73z4ryDCTlfG1Fe7ec+E="/>
+        <field:display field="OBJEKTI_LIIK" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKT_oBJEKTI_LIIK" object="${objekt}" z="coYgbYKG3bab/Sgk/CcjxaFznKw="/>
+    </page:show>
+</div>

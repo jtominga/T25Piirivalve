@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_ee_itcollege_T25Piirivalve_entities_OBJEKTI_SEADUS_INTSIDENDIS" object="${objekti_seadus_intsidendis}" path="/objekti_seadus_intsidendiss" z="jgcBJAxkkIVBqXKfyfbscYu1jSs=">
+        <field:display field="avaja" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKTI_SEADUS_INTSIDENDIS_avaja" object="${objekti_seadus_intsidendis}" z="ZfJRvm82Z46/hcFLADJkgQyawEM="/>
+        <field:display date="true" dateTimePattern="${OBJEKTI_SEADUS_INTSIDENDIS_avatud_date_format}" field="avatud" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKTI_SEADUS_INTSIDENDIS_avatud" object="${objekti_seadus_intsidendis}" z="tkGvMOHqi/a+8G1Z69ziwXRwej4="/>
+        <field:display field="muutja" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKTI_SEADUS_INTSIDENDIS_muutja" object="${objekti_seadus_intsidendis}" z="OtKzKG7ffTdSlV+U6cubOrtAudA="/>
+        <field:display date="true" dateTimePattern="${OBJEKTI_SEADUS_INTSIDENDIS_muudetud_date_format}" field="muudetud" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKTI_SEADUS_INTSIDENDIS_muudetud" object="${objekti_seadus_intsidendis}" z="/8n1odiFCjrJzaPj2Pp/u7ipI+4="/>
+        <field:display field="sulgeja" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKTI_SEADUS_INTSIDENDIS_sulgeja" object="${objekti_seadus_intsidendis}" z="2wUviYDPTf9WP18e1lkVJXgy0Ys="/>
+        <field:display date="true" dateTimePattern="${OBJEKTI_SEADUS_INTSIDENDIS_suletud_date_format}" field="suletud" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKTI_SEADUS_INTSIDENDIS_suletud" object="${objekti_seadus_intsidendis}" z="mNShvGP++wFnfCqWgItw8GP2Zlw="/>
+        <field:display field="kommentaar" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKTI_SEADUS_INTSIDENDIS_kommentaar" object="${objekti_seadus_intsidendis}" z="jgbhM8gxwEkWBhdYohPtc+l8a3s="/>
+        <field:display field="objekti_seadus_intsidendis_ID" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKTI_SEADUS_INTSIDENDIS_objekti_seadus_intsidendis_ID" object="${objekti_seadus_intsidendis}" z="H7oDQ78CpvgL6A/7/c+SJKndwyc="/>
+        <field:display date="true" dateTimePattern="${OBJEKTI_SEADUS_INTSIDENDIS_alates_date_format}" field="alates" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKTI_SEADUS_INTSIDENDIS_alates" object="${objekti_seadus_intsidendis}" z="x4JYQ0bHD0KgB3Gz8qF8q8WHRbA="/>
+        <field:display date="true" dateTimePattern="${OBJEKTI_SEADUS_INTSIDENDIS_kuni_date_format}" field="kuni" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKTI_SEADUS_INTSIDENDIS_kuni" object="${objekti_seadus_intsidendis}" z="y/TBWol+1ePjNuEChoRTEJZb+ig="/>
+        <field:display field="kirjeldus" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKTI_SEADUS_INTSIDENDIS_kirjeldus" object="${objekti_seadus_intsidendis}" z="9r0w5d2LoXS2IV5h1IVVf3jA4UM="/>
+        <field:display field="OBJEKT_INTSIDENDIS" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKTI_SEADUS_INTSIDENDIS_oBJEKT_INTSIDENDIS" object="${objekti_seadus_intsidendis}" z="yHoINHtmaz33GgEjfQ9t7nFjHkM="/>
+        <field:display field="SEADUS" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKTI_SEADUS_INTSIDENDIS_sEADUS" object="${objekti_seadus_intsidendis}" z="oLA9lA3YrdSHRV/mxG7mCIkml8c="/>
+    </page:show>
+</div>

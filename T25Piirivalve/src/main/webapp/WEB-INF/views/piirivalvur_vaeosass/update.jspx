@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_VAEOSAS" modelAttribute="PIIRIVALVUR_VAEOSAS" path="/piirivalvur_vaeosass" versionField="Version" z="jn71UUhgHzjpUj5TAN7cY94BpaE=">
+        <field:input field="avaja" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_VAEOSAS_avaja" z="tSwkpzfUMmuJ9K7qrT+KIMuWOrQ="/>
+        <field:datetime dateTimePattern="${PIIRIVALVUR_VAEOSAS_avatud_date_format}" field="avatud" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_VAEOSAS_avatud" z="t+RIIPG8uc6KFjlCQ+2cDXfjDzI="/>
+        <field:input field="muutja" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_VAEOSAS_muutja" z="O8dFXH1KbmLRw/SB0qDQdf+pwwU="/>
+        <field:datetime dateTimePattern="${PIIRIVALVUR_VAEOSAS_muudetud_date_format}" field="muudetud" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_VAEOSAS_muudetud" z="9kvz/p6aUQsbmZZVTTk4EerjX7w="/>
+        <field:input field="sulgeja" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_VAEOSAS_sulgeja" z="vb5Tr2f04HC+lfDYiAuQq+AnoRY="/>
+        <field:datetime dateTimePattern="${PIIRIVALVUR_VAEOSAS_suletud_date_format}" field="suletud" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_VAEOSAS_suletud" z="9Va6p79bAkSSsWR1KqS3nMW5Ilo="/>
+        <field:input field="kommentaar" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_VAEOSAS_kommentaar" z="8WTk3hBIELXrhAXokTYEK1xRbc8="/>
+        <field:input field="piirivalvur_vaeosas_ID" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_VAEOSAS_piirivalvur_vaeosas_ID" validationMessageCode="field_invalid_integer" z="ES0zunPE0mHOfVJQUxdap3VXuLc="/>
+        <field:datetime dateTimePattern="${PIIRIVALVUR_VAEOSAS_alates_date_format}" field="alates" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_VAEOSAS_alates" required="true" z="Q2BjhnLE2g9Kgd/ThWLOuB0OfHo="/>
+        <field:datetime dateTimePattern="${PIIRIVALVUR_VAEOSAS_kuni_date_format}" field="kuni" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_VAEOSAS_kuni" required="true" z="1KteTD/iv8CrMX4EOsvbdADVVtM="/>
+        <field:input field="koormus" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_VAEOSAS_koormus" validationMessageCode="field_invalid_number" z="QNitZrVGsCecHhqgOMXpiPtNau4="/>
+        <field:select field="pIIRIVALVUR" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_VAEOSAS_pIIRIVALVUR" itemValue="id" items="${piirivalvurs}" path="/piirivalvurs" z="TOUzZ3dmHOZKC7rMuARtqfVGrys="/>
+        <field:select field="aMET_VAEOSAS" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_VAEOSAS_aMET_VAEOSAS" itemValue="id" items="${amet_vaeosass}" path="/amet_vaeosass" z="DogQwiKURy6UOBxPqChA5VNxtj8="/>
+    </form:update>
+</div>

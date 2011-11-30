@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_ee_itcollege_T25Piirivalve_entities_PIIRIRIKKUJA" modelAttribute="PIIRIRIKKUJA" path="/piiririkkujas" render="${empty dependencies}" z="AhXbjveXPf+ysR7zNcST017BaxA=">
+        <field:input field="avaja" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIRIKKUJA_avaja" z="5q5x3+w2MeFUm5f4xt5fLbxcl8c="/>
+        <field:datetime dateTimePattern="${PIIRIRIKKUJA_avatud_date_format}" field="avatud" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIRIKKUJA_avatud" z="coXxsBSyX7RffuIjAEu8Nr0tJmY="/>
+        <field:input field="muutja" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIRIKKUJA_muutja" z="PPB4H2f9WQe0JRe+XLsQhMXTq9k="/>
+        <field:datetime dateTimePattern="${PIIRIRIKKUJA_muudetud_date_format}" field="muudetud" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIRIKKUJA_muudetud" z="tBhBGDiVSOn1TjF4rhicAa0rWMo="/>
+        <field:input field="sulgeja" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIRIKKUJA_sulgeja" z="9Y6t2MCK1GyMPrH/xfBV4xf1Xyg="/>
+        <field:datetime dateTimePattern="${PIIRIRIKKUJA_suletud_date_format}" field="suletud" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIRIKKUJA_suletud" z="fhDM8Bx/+GAU6nyxh2cujjA8ahE="/>
+        <field:input field="kommentaar" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIRIKKUJA_kommentaar" z="OjeOqi9A+UmpC1JB7apw/p9kRvw="/>
+        <field:input field="piiririkkuja_ID" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIRIKKUJA_piiririkkuja_ID" validationMessageCode="field_invalid_integer" z="Bf2xrJaqlsVxh6yM6gFTPx6nV04="/>
+        <field:input field="isikukood" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIRIKKUJA_isikukood" max="20" min="1" required="true" z="G8v/Mm9IhehoLEnAPf0A6fJ9h/c="/>
+        <field:input field="eesnimi" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIRIKKUJA_eesnimi" max="25" min="1" required="true" z="5IEKOyTEFbhnemQfaxW9/KyI5LE="/>
+        <field:textarea field="perenimi" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIRIKKUJA_perenimi" required="true" z="GHx8W6BRsII0V+A/yDvD/1scT5k="/>
+        <field:input field="sugu" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIRIKKUJA_sugu" required="true" z="Y1FEmCSnywtGhqlxQXERzIfPMGM="/>
+        <field:datetime dateTimePattern="${PIIRIRIKKUJA_synniaeg_date_format}" field="synniaeg" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIRIKKUJA_synniaeg" required="true" z="h3AbOFU/9tZ/vB88Q59QCYMwMbQ="/>
+        <field:input field="oBJEKT" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIRIKKUJA_oBJEKT" z="2GxfPQng2PmFCTtVLFIAhel8Twg="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_ee_itcollege_T25Piirivalve_entities_PIIRIRIKKUJA" render="${not empty dependencies}" z="H4HNrXD5hnCNyo0EBFv2ulvR0So="/>
+</div>

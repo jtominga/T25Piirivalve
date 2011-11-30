@@ -47,6 +47,18 @@ public class BaseEntity implements Serializable {
 	private String kommentaar;
 	private static final long serialVersionUID = 1L;
 
+	@PrePersist
+	public void recordCreated(){
+		this.setAvatud(new Date());
+	}
+	
+	@PreUpdate
+	public void recordUpdated() {
+		this.setMuudetud(new Date());
+	}
+	
+	
+	
 	public BaseEntity() {
 		super();
 	}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_PIIRIPUNKTIS" modelAttribute="PIIRIVALVUR_PIIRIPUNKTIS" path="/piirivalvur_piiripunktiss" versionField="Version" z="WzJicnitxm2N6WJa3gIdGOvOnpc=">
+        <field:input field="avaja" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_PIIRIPUNKTIS_avaja" z="3SGwBH38e8vY98hO4uEu9bs7K/I="/>
+        <field:datetime dateTimePattern="${PIIRIVALVUR_PIIRIPUNKTIS_avatud_date_format}" field="avatud" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_PIIRIPUNKTIS_avatud" z="pW5kvm/bRqCz0Jm9qLQstOdTJJM="/>
+        <field:input field="muutja" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_PIIRIPUNKTIS_muutja" z="XOCK0K+6/s9OpzNeOZ9K1TcsdKI="/>
+        <field:datetime dateTimePattern="${PIIRIVALVUR_PIIRIPUNKTIS_muudetud_date_format}" field="muudetud" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_PIIRIPUNKTIS_muudetud" z="j7K0spDB4p9mXnv8zSd2dvCJPwE="/>
+        <field:input field="sulgeja" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_PIIRIPUNKTIS_sulgeja" z="j2oOeYFlValxtxDEVTkPx0dBACM="/>
+        <field:datetime dateTimePattern="${PIIRIVALVUR_PIIRIPUNKTIS_suletud_date_format}" field="suletud" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_PIIRIPUNKTIS_suletud" z="pkq3GC3ejQ7HucU8rQzDCaz35/A="/>
+        <field:input field="kommentaar" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_PIIRIPUNKTIS_kommentaar" z="BHEsWh2GCmuW7HPbD5IXNy+mues="/>
+        <field:input field="piirivalvur_piiripunktis_ID" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_PIIRIPUNKTIS_piirivalvur_piiripunktis_ID" validationMessageCode="field_invalid_integer" z="NUrc4ZzNQbP5csBCPqNR3DwTnQc="/>
+        <field:datetime dateTimePattern="${PIIRIVALVUR_PIIRIPUNKTIS_alates_date_format}" field="alates" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_PIIRIPUNKTIS_alates" required="true" z="saxjpG1MEG4hxDH4T4YLe0e1Fdk="/>
+        <field:datetime dateTimePattern="${PIIRIVALVUR_PIIRIPUNKTIS_kuni_date_format}" field="kuni" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_PIIRIPUNKTIS_kuni" required="true" z="oEk42SenKZFtUV5wqzSSk55oMC0="/>
+        <field:input field="koormus" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_PIIRIPUNKTIS_koormus" validationMessageCode="field_invalid_number" z="NcJVylsApg8burKZDjN3Kv42ScA="/>
+        <field:select field="aMET_PIIRIPUNKTIS" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_PIIRIPUNKTIS_aMET_PIIRIPUNKTIS" itemValue="id" items="${amet_piiripunktiss}" path="/amet_piiripunktiss" z="DOLo9oVpVleuI4qlXaChSjJrx0I="/>
+        <field:select field="pIIRIVALVUR" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_PIIRIPUNKTIS_pIIRIVALVUR" itemValue="id" items="${piirivalvurs}" path="/piirivalvurs" z="yf8QLHmwD3weNIZaVXh56ewjX7w="/>
+    </form:update>
+</div>
