@@ -14,7 +14,6 @@ import ee.itcollege.T25Piirivalve.entities.VAHTKOND;
 
 import java.util.Date;
 import java.util.Set;
-import ee.itcollege.T25Piirivalve.entities.PIIRIPUNKTI_ORG_YKSUS;
 import javax.persistence.OneToMany;
 import javax.persistence.JoinColumn;
 import javax.validation.constraints.Digits;
@@ -57,9 +56,6 @@ public class PIIRIPUNKT extends BaseEntity implements Serializable {
 	@OneToMany
 	@JoinColumn(name = "PIIRIPUNKT_piiripunkt_ID", referencedColumnName = "piiripunkt_ID")
 	private Set<VAHTKOND> vAHTKOND;
-	@OneToMany
-	@JoinColumn(name = "PIIRIPUNKT_piiripunkt_ID", referencedColumnName = "piiripunkt_ID")
-	private Set<PIIRIPUNKTI_ORG_YKSUS> pIIRIPUNKTI_ORG_YKSUS;
 
 	public PIIRIPUNKT() {
 		super();
@@ -122,12 +118,6 @@ public class PIIRIPUNKT extends BaseEntity implements Serializable {
 	}
 	public void setVAHTKOND(Set<VAHTKOND> param) {
 	    this.vAHTKOND = param;
-	}
-	public Set<PIIRIPUNKTI_ORG_YKSUS> getPIIRIPUNKTI_ORG_YKSUS() {
-	    return pIIRIPUNKTI_ORG_YKSUS;
-	}
-	public void setPIIRIPUNKTI_ORG_YKSUS(Set<PIIRIPUNKTI_ORG_YKSUS> param) {
-	    this.pIIRIPUNKTI_ORG_YKSUS = param;
 	}
    
 }

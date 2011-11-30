@@ -74,10 +74,6 @@ public class PIIRILOIK extends BaseEntity implements Serializable {
 
 	public void setGPS_Latitude(Double GPS_Latitude) {
 		this.GPS_Latitude = GPS_Latitude;
-	}   
-	
-	public void setGPS_koordinaadid(String GPS_koordinaadid) {
-		this.GPS_koordinaadid = GPS_koordinaadid;
 	}
    
 }

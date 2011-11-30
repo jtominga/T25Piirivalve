@@ -101,10 +101,10 @@ public class SEADUSE_PUNKT extends BaseEntity implements Serializable {
 	    this.sEADUS = param;
 	}
 	public SEADUSE_PUNKT getSEADUSE_PUNKT() {
-	    return sEADUSE_PUNKT;
+	    return YLEMUS_SEADUSE_PUNKT;
 	}
-	public void setSEADUSE_PUNKT(SEADUSE_PUNKT param) {
-	    this.sEADUSE_PUNKT = param;
+	public void setYLEMUS_SEADUSE_PUNKT(SEADUSE_PUNKT param) {
+	    this.YLEMUS_SEADUSE_PUNKT = param;
 	}
    
 }
