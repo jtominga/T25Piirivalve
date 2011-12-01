@@ -54,7 +54,6 @@ public class PIIRIPUNKT extends BaseEntity implements Serializable {
 	private Date kuni;	
 	private static final long serialVersionUID = 1L;
 	@OneToMany
-	@JoinColumn(name = "PIIRIPUNKT_piiripunkt_ID", referencedColumnName = "piiripunkt_ID")
 	private Set<VAHTKOND> vAHTKOND;
 
 	public PIIRIPUNKT() {

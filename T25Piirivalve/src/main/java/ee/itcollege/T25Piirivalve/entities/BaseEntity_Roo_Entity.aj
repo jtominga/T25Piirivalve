@@ -87,7 +87,8 @@ privileged aspect BaseEntity_Roo_Entity {
     }
     
     public static final EntityManager BaseEntity.entityManager() {
-        EntityManager em = new BaseEntity().entityManager;
+        EntityManager em = new BaseEntity() {
+        }.entityManager;
         if (em == null) throw new IllegalStateException("Entity manager has not been injected (is the Spring Aspects JAR configured as an AJC/AJDT aspects library?)");
         return em;
     }
