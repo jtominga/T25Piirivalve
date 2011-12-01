@@ -16,9 +16,9 @@ import org.springframework.format.annotation.*;
  */
 @MappedSuperclass
 @RooToString
-@RooEntity
+@RooEntity(mappedSuperclass = true)
 
-public class BaseEntity implements Serializable {
+public abstract class BaseEntity implements Serializable {
 
 	@Size(min = 1, max = 32)
 	@NotNull
