@@ -25,8 +25,9 @@
     	<authentication-provider>
 	    	<password-encoder hash="sha-256"/>
 	        <user-service>
-	            <user name="admin" password="8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918" authorities="ROLE_ADMIN"/>
-		        <user name="user" password="04f8996da763b7a969b1028ee3007569eaf3a635486ddab211d512c85b9df8fb" authorities="ROLE_USER"/>
+	            <user name="admin" password="d17bd0792f499b6f1f22645c3b700c8da240ea1ee58f13800160626ce35c4c82" authorities="ROLE_ADMIN"/>
+		        <user name="valvur" password="573a56297fee36b0087a5562e445c193c3d3c6f7f3e7204d8b4807e4d8feac0f" authorities="ROLE_VALVUR"/>
+		        <user name="ylem" password="360945ee2f6f85323042dcc49051916ce36f17074a37fb25306d6fe2c6a94327" authorities="ROLE_YLEM"/>
 		    </user-service>
     	</authentication-provider>
 	</authentication-manager>
