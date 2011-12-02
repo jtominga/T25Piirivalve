@@ -28,3 +28,4 @@ web mvc setup
 web mvc all --package ~.web
 web mvc setup
 web mvc all --package ~.web
+security setup

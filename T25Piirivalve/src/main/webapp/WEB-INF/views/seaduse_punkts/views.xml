@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="seaduse_punkts/list">
+        <put-attribute name="body" value="/WEB-INF/views/seaduse_punkts/list.jspx"/>
+    </definition>
+<definition extends="default" name="seaduse_punkts/show">
+        <put-attribute name="body" value="/WEB-INF/views/seaduse_punkts/show.jspx"/>
+    </definition>
+<definition extends="default" name="seaduse_punkts/create">
+        <put-attribute name="body" value="/WEB-INF/views/seaduse_punkts/create.jspx"/>
+    </definition>
+<definition extends="default" name="seaduse_punkts/update">
+        <put-attribute name="body" value="/WEB-INF/views/seaduse_punkts/update.jspx"/>
+    </definition>
+</tiles-definitions>

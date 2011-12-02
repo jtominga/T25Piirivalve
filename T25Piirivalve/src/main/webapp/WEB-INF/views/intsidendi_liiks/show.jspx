@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK" object="${intsidendi_liik}" path="/intsidendi_liiks" z="D+r9cG8wep0p4Gn00YHeJV+9bKA=">
+        <field:display field="avaja" id="s_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_avaja" object="${intsidendi_liik}" z="TSD6RUurtzDy7lOR7k5Hnu5rCN8="/>
+        <field:display date="true" dateTimePattern="${INTSIDENDI_LIIK_avatud_date_format}" field="avatud" id="s_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_avatud" object="${intsidendi_liik}" z="3LJgOJE4wpb20U/VqQ/nLm2mLSs="/>
+        <field:display field="muutja" id="s_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_muutja" object="${intsidendi_liik}" z="qQGPqRMLywEgvcBs6cxnhH84vq8="/>
+        <field:display date="true" dateTimePattern="${INTSIDENDI_LIIK_muudetud_date_format}" field="muudetud" id="s_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_muudetud" object="${intsidendi_liik}" z="wAIcpX69XHidHzVHuZ9N8KWnCR0="/>
+        <field:display field="sulgeja" id="s_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_sulgeja" object="${intsidendi_liik}" z="+Sz65HcYk6oQT5dSetLcSQhtHGE="/>
+        <field:display date="true" dateTimePattern="${INTSIDENDI_LIIK_suletud_date_format}" field="suletud" id="s_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_suletud" object="${intsidendi_liik}" z="aBRvfaeanV4Dq9vu3kOx1E1b2o4="/>
+        <field:display field="kommentaar" id="s_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_kommentaar" object="${intsidendi_liik}" z="RRfp8VlmsRdbK2HxHPC2THVauRI="/>
+        <field:display field="kood" id="s_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_kood" object="${intsidendi_liik}" z="QcC3zisfMp0fq6ZhH9gRzAXx/18="/>
+        <field:display field="nimetus" id="s_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_nimetus" object="${intsidendi_liik}" z="1QRnRLBXTI6wN6fQ4z0xD4mwgJI="/>
+    </page:show>
+</div>

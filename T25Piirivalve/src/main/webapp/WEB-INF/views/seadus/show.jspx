@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_ee_itcollege_T25Piirivalve_entities_SEADUS" object="${seadus}" path="/seadus" z="3jMiXlRivwXtiHO05yXU7fLdyZE=">
+        <field:display field="avaja" id="s_ee_itcollege_T25Piirivalve_entities_SEADUS_avaja" object="${seadus}" z="eqwZehkd31qU5qp/NYxkbfiIQIg="/>
+        <field:display date="true" dateTimePattern="${SEADUS_avatud_date_format}" field="avatud" id="s_ee_itcollege_T25Piirivalve_entities_SEADUS_avatud" object="${seadus}" z="kqPPnLQQhnaZJsiSVOhPyH+pBRU="/>
+        <field:display field="muutja" id="s_ee_itcollege_T25Piirivalve_entities_SEADUS_muutja" object="${seadus}" z="fhaXtVHCgsEXIjPzHDLctzuo2HA="/>
+        <field:display date="true" dateTimePattern="${SEADUS_muudetud_date_format}" field="muudetud" id="s_ee_itcollege_T25Piirivalve_entities_SEADUS_muudetud" object="${seadus}" z="mWCjM2Lyqws+4AFBduPBJVLqKGk="/>
+        <field:display field="sulgeja" id="s_ee_itcollege_T25Piirivalve_entities_SEADUS_sulgeja" object="${seadus}" z="Mgsy+zbM82lvFceytvPzm5QAXXc="/>
+        <field:display date="true" dateTimePattern="${SEADUS_suletud_date_format}" field="suletud" id="s_ee_itcollege_T25Piirivalve_entities_SEADUS_suletud" object="${seadus}" z="VvyoLozajA4sUvWT8hv3H4QovjA="/>
+        <field:display field="kommentaar" id="s_ee_itcollege_T25Piirivalve_entities_SEADUS_kommentaar" object="${seadus}" z="2LW+KRmpi+LF/XYI4suN6Navmzg="/>
+        <field:display field="kood" id="s_ee_itcollege_T25Piirivalve_entities_SEADUS_kood" object="${seadus}" z="Starep0lpSJSECkKOU5rYN8gWX4="/>
+        <field:display date="true" dateTimePattern="${SEADUS_kehtiv_alates_date_format}" field="kehtiv_alates" id="s_ee_itcollege_T25Piirivalve_entities_SEADUS_kehtiv_alates" object="${seadus}" z="Fg3FQvj1qEh8td64pJ5nfnDZx2Y="/>
+        <field:display date="true" dateTimePattern="${SEADUS_kehtiv_kuni_date_format}" field="kehtiv_kuni" id="s_ee_itcollege_T25Piirivalve_entities_SEADUS_kehtiv_kuni" object="${seadus}" z="qVUE0e7VePkJUJc+Y40PbEsQ7ZI="/>
+    </page:show>
+</div>

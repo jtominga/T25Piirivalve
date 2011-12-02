@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR" object="${piirivalvur}" path="/piirivalvurs" z="OVVnpTU/E+l8TaKwRALmquo9mUI=">
+        <field:display field="avaja" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_avaja" object="${piirivalvur}" z="AcHV3hRiexg+MXgiWzLwDxYe2Sg="/>
+        <field:display date="true" dateTimePattern="${PIIRIVALVUR_avatud_date_format}" field="avatud" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_avatud" object="${piirivalvur}" z="+F0QlQk78DaCuVg9R9fzYWXv2XA="/>
+        <field:display field="muutja" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_muutja" object="${piirivalvur}" z="QWg0dKQLmQh+sHuOjOioxcPHylo="/>
+        <field:display date="true" dateTimePattern="${PIIRIVALVUR_muudetud_date_format}" field="muudetud" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_muudetud" object="${piirivalvur}" z="h7gAWg3UBEJ3MaRLK5uqXhPEq4Y="/>
+        <field:display field="sulgeja" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_sulgeja" object="${piirivalvur}" z="WsxuytFJmc545Iy1muYLraEUjx8="/>
+        <field:display date="true" dateTimePattern="${PIIRIVALVUR_suletud_date_format}" field="suletud" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_suletud" object="${piirivalvur}" z="49mxwp5bofRNqzCMZwswgRMdx1o="/>
+        <field:display field="kommentaar" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_kommentaar" object="${piirivalvur}" z="FnCEShDgvicevkrEVUXi0YBQwTI="/>
+        <field:display field="isikukood" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_isikukood" object="${piirivalvur}" z="KJ6NOQ2/xHSwUrU+2L9eqhfkYDA="/>
+        <field:display field="eesnimed" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_eesnimed" object="${piirivalvur}" z="KHyC+4Y+kSo/9PHn7avMjyoWsuI="/>
+        <field:display field="perekonnanimi" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_perekonnanimi" object="${piirivalvur}" z="zsFsvuOxCPlX45eVe6Oc+5XHFgo="/>
+        <field:display field="soduri_kood" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_soduri_kood" object="${piirivalvur}" z="pNGWmNRkzLmHQqAb+LBnYXyT9e0="/>
+        <field:display field="sugu" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_sugu" object="${piirivalvur}" z="VeM9yJPY0MCzTvmcc7OZYNgvu9s="/>
+    </page:show>
+</div>

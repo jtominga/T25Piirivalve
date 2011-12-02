@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_ee_itcollege_T25Piirivalve_entities_INTSIDENT" object="${intsident}" path="/intsidents" z="bQQw75fA5vkdP5sOX4OxMyrpQEs=">
+        <field:display field="avaja" id="s_ee_itcollege_T25Piirivalve_entities_INTSIDENT_avaja" object="${intsident}" z="XamD33rWouQFanuKfMZNCgsjSJo="/>
+        <field:display date="true" dateTimePattern="${INTSIDENT_avatud_date_format}" field="avatud" id="s_ee_itcollege_T25Piirivalve_entities_INTSIDENT_avatud" object="${intsident}" z="cW+dzZ/d++OrU5DK4Owzy2AgkIU="/>
+        <field:display field="muutja" id="s_ee_itcollege_T25Piirivalve_entities_INTSIDENT_muutja" object="${intsident}" z="cFnp+7H5mD+uRaHCpCMN1dZbAT8="/>
+        <field:display date="true" dateTimePattern="${INTSIDENT_muudetud_date_format}" field="muudetud" id="s_ee_itcollege_T25Piirivalve_entities_INTSIDENT_muudetud" object="${intsident}" z="rWfWYSLuSara9nZc8MUTmcqosuY="/>
+        <field:display field="sulgeja" id="s_ee_itcollege_T25Piirivalve_entities_INTSIDENT_sulgeja" object="${intsident}" z="w61kcVuKpt6RevP5+XgrtDhF7Lo="/>
+        <field:display date="true" dateTimePattern="${INTSIDENT_suletud_date_format}" field="suletud" id="s_ee_itcollege_T25Piirivalve_entities_INTSIDENT_suletud" object="${intsident}" z="/rhiqZh6lhUbsGIlqayqRCJ0OMA="/>
+        <field:display field="kommentaar" id="s_ee_itcollege_T25Piirivalve_entities_INTSIDENT_kommentaar" object="${intsident}" z="5zJ4ESiyzdPNmGgtwNhg1Kp/wBM="/>
+        <field:display field="kood" id="s_ee_itcollege_T25Piirivalve_entities_INTSIDENT_kood" object="${intsident}" z="bqJkOyRdhrILTZ9tAJmKNZYkvVU="/>
+        <field:display date="true" dateTimePattern="${INTSIDENT_toimumise_algus_date_format}" field="toimumise_algus" id="s_ee_itcollege_T25Piirivalve_entities_INTSIDENT_toimumise_algus" object="${intsident}" z="6OyZt1Q26Nst25OFSC+1CmoPo3k="/>
+        <field:display date="true" dateTimePattern="${INTSIDENT_toimumise_lopp_date_format}" field="toimumise_lopp" id="s_ee_itcollege_T25Piirivalve_entities_INTSIDENT_toimumise_lopp" object="${intsident}" z="CNOM+GU6PPdTtwY9qrKdNU0ifFE="/>
+        <field:display field="GPS_Latitude" id="s_ee_itcollege_T25Piirivalve_entities_INTSIDENT_GPS_Latitude" object="${intsident}" z="MTT1HaFnvJrBc5VrOpE32mNJ9s8="/>
+        <field:display field="GPS_Longtitude" id="s_ee_itcollege_T25Piirivalve_entities_INTSIDENT_GPS_Longtitude" object="${intsident}" z="wxj+586jpMzY2DXftj+SDCSDOAc="/>
+        <field:display field="kirjeldus" id="s_ee_itcollege_T25Piirivalve_entities_INTSIDENT_kirjeldus" object="${intsident}" z="aSsZtLCfes43v3P70mXVylM3iRg="/>
+        <field:display field="PIIRILOIK" id="s_ee_itcollege_T25Piirivalve_entities_INTSIDENT_pIIRILOIK" object="${intsident}" z="3dZHOYOQHCNGyxZhWeHIuixjak0="/>
+        <field:display field="INTSIDENDI_LIIK" id="s_ee_itcollege_T25Piirivalve_entities_INTSIDENT_iNTSIDENDI_LIIK" object="${intsident}" z="MCD5UavhJQgO2Ir4tabSB9XNNDA="/>
+    </page:show>
+</div>
