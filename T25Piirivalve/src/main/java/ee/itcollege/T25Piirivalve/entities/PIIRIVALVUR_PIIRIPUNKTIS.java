@@ -7,15 +7,14 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.validation.constraints.Digits;
+import javax.validation.constraints.NotNull;
 
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.tostring.RooToString;
-import ee.itcollege.T25Piirivalve.entities.AMET_PIIRIPUNKTIS;
 import ee.itcollege.T25Piirivalve.entities.PIIRIVALVUR;
-import javax.persistence.ManyToOne;
-import javax.validation.constraints.Digits;
-import javax.validation.constraints.NotNull;
 
 /**
  * Entity implementation class for Entity: PIIRIVALVUR_PIIRIPUNKTIS

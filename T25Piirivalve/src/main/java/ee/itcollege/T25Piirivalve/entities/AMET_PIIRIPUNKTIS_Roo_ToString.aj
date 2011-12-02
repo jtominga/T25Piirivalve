@@ -20,6 +20,7 @@ privileged aspect AMET_PIIRIPUNKTIS_Roo_ToString {
         sb.append("Muudetud: ").append(getMuudetud()).append(", ");
         sb.append("Muutja: ").append(getMuutja()).append(", ");
         sb.append("PIIRIPUNKT: ").append(getPIIRIPUNKT()).append(", ");
+        sb.append("PIIRIVALVUR_PIIRIPUNKTIS: ").append(getPIIRIVALVUR_PIIRIPUNKTIS() == null ? "null" : getPIIRIVALVUR_PIIRIPUNKTIS().size()).append(", ");
         sb.append("Suletud: ").append(getSuletud()).append(", ");
         sb.append("Sulgeja: ").append(getSulgeja()).append(", ");
         sb.append("Version: ").append(getVersion());

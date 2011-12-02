@@ -19,6 +19,7 @@ privileged aspect AMET_VAEOSAS_Roo_ToString {
         sb.append("Kuni: ").append(getKuni()).append(", ");
         sb.append("Muudetud: ").append(getMuudetud()).append(", ");
         sb.append("Muutja: ").append(getMuutja()).append(", ");
+        sb.append("PIIRIVALVUR_VAEOSAS: ").append(getPIIRIVALVUR_VAEOSAS() == null ? "null" : getPIIRIVALVUR_VAEOSAS().size()).append(", ");
         sb.append("Suletud: ").append(getSuletud()).append(", ");
         sb.append("Sulgeja: ").append(getSulgeja()).append(", ");
         sb.append("VAEOSA: ").append(getVAEOSA()).append(", ");

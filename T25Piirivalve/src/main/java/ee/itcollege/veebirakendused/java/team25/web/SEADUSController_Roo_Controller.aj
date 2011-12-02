@@ -3,7 +3,11 @@
 
 package ee.itcollege.veebirakendused.java.team25.web;
 
+import ee.itcollege.T25Piirivalve.entities.ISIKU_SEADUS_INTSIDENDIS;
+import ee.itcollege.T25Piirivalve.entities.OBJEKTI_SEADUS_INTSIDENDIS;
+import ee.itcollege.T25Piirivalve.entities.PIIRIVALVURI_SEADUS_INTSIDENDIS;
 import ee.itcollege.T25Piirivalve.entities.SEADUS;
+import ee.itcollege.T25Piirivalve.entities.SEADUSE_PUNKT;
 import java.io.UnsupportedEncodingException;
 import java.lang.Integer;
 import java.lang.Long;
@@ -92,9 +96,29 @@ privileged aspect SEADUSController_Roo_Controller {
         return "redirect:/seadus";
     }
     
+    @ModelAttribute("isiku_seadus_intsidendiss")
+    public Collection<ISIKU_SEADUS_INTSIDENDIS> SEADUSController.populateISIKU_SEADUS_INTSIDENDISs() {
+        return ISIKU_SEADUS_INTSIDENDIS.findAllISIKU_SEADUS_INTSIDENDISs();
+    }
+    
+    @ModelAttribute("objekti_seadus_intsidendiss")
+    public Collection<OBJEKTI_SEADUS_INTSIDENDIS> SEADUSController.populateOBJEKTI_SEADUS_INTSIDENDISs() {
+        return OBJEKTI_SEADUS_INTSIDENDIS.findAllOBJEKTI_SEADUS_INTSIDENDISs();
+    }
+    
+    @ModelAttribute("piirivalvuri_seadus_intsidendiss")
+    public Collection<PIIRIVALVURI_SEADUS_INTSIDENDIS> SEADUSController.populatePIIRIVALVURI_SEADUS_INTSIDENDISs() {
+        return PIIRIVALVURI_SEADUS_INTSIDENDIS.findAllPIIRIVALVURI_SEADUS_INTSIDENDISs();
+    }
+    
     @ModelAttribute("seadus")
     public Collection<SEADUS> SEADUSController.populateSEADUS() {
         return SEADUS.findAllSEADUS();
+    }
+    
+    @ModelAttribute("seaduse_punkts")
+    public Collection<SEADUSE_PUNKT> SEADUSController.populateSEADUSE_PUNKTs() {
+        return SEADUSE_PUNKT.findAllSEADUSE_PUNKTs();
     }
     
     void SEADUSController.addDateTimeFormatPatterns(Model uiModel) {

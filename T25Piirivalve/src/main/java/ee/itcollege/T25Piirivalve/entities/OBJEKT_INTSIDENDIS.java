@@ -1,15 +1,20 @@
 package ee.itcollege.T25Piirivalve.entities;
 
 import java.io.Serializable;
-import java.lang.Long;
 import java.util.Date;
-import javax.persistence.*;
+import java.util.Set;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.validation.constraints.NotNull;
 
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.tostring.RooToString;
-import ee.itcollege.T25Piirivalve.entities.INTSIDENT;
 import ee.itcollege.T25Piirivalve.entities.OBJEKT;
 /**
  * Entity implementation class for Entity: OBJEKT_INTSIDENDIS
@@ -36,6 +41,8 @@ public class OBJEKT_INTSIDENDIS extends BaseEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
 	@ManyToOne
 	private INTSIDENT iNTSIDENT;
+	@OneToMany(mappedBy = "oBJEKT_INTSIDENDIS")
+	private Set<OBJEKTI_SEADUS_INTSIDENDIS> oBJEKTI_SEADUS_INTSIDENDIS;
 	@ManyToOne
 	private OBJEKT oBJEKT;
 
@@ -74,6 +81,12 @@ public class OBJEKT_INTSIDENDIS extends BaseEntity implements Serializable {
 	}
 	public void setINTSIDENT(INTSIDENT param) {
 	    this.iNTSIDENT = param;
+	}
+	public Set<OBJEKTI_SEADUS_INTSIDENDIS> getOBJEKTI_SEADUS_INTSIDENDIS() {
+	    return oBJEKTI_SEADUS_INTSIDENDIS;
+	}
+	public void setOBJEKTI_SEADUS_INTSIDENDIS(Set<OBJEKTI_SEADUS_INTSIDENDIS> param) {
+	    this.oBJEKTI_SEADUS_INTSIDENDIS = param;
 	}
 	public OBJEKT getOBJEKT() {
 	    return oBJEKT;

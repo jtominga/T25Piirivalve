@@ -5,6 +5,7 @@ package ee.itcollege.veebirakendused.java.team25.web;
 
 import ee.itcollege.T25Piirivalve.entities.AMET;
 import ee.itcollege.T25Piirivalve.entities.AMET_VAEOSAS;
+import ee.itcollege.T25Piirivalve.entities.PIIRIVALVUR_VAEOSAS;
 import ee.itcollege.T25Piirivalve.entities.VAEOSA;
 import java.io.UnsupportedEncodingException;
 import java.lang.Integer;
@@ -102,6 +103,11 @@ privileged aspect AMET_VAEOSASController_Roo_Controller {
     @ModelAttribute("amet_vaeosass")
     public Collection<AMET_VAEOSAS> AMET_VAEOSASController.populateAMET_VAEOSASs() {
         return AMET_VAEOSAS.findAllAMET_VAEOSASs();
+    }
+    
+    @ModelAttribute("piirivalvur_vaeosass")
+    public Collection<PIIRIVALVUR_VAEOSAS> AMET_VAEOSASController.populatePIIRIVALVUR_VAEOSASs() {
+        return PIIRIVALVUR_VAEOSAS.findAllPIIRIVALVUR_VAEOSASs();
     }
     
     @ModelAttribute("vaeosas")

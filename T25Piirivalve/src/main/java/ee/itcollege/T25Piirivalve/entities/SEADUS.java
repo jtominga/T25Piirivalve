@@ -10,6 +10,11 @@ import javax.validation.constraints.Size;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.tostring.RooToString;
+import ee.itcollege.T25Piirivalve.entities.PIIRIVALVURI_SEADUS_INTSIDENDIS;
+import java.util.Set;
+import ee.itcollege.T25Piirivalve.entities.ISIKU_SEADUS_INTSIDENDIS;
+import ee.itcollege.T25Piirivalve.entities.OBJEKTI_SEADUS_INTSIDENDIS;
+import ee.itcollege.T25Piirivalve.entities.SEADUSE_PUNKT;
 
 /**
  * Entity implementation class for Entity: SEADUS
@@ -35,6 +40,14 @@ public class SEADUS extends BaseEntity implements Serializable {
 	@NotNull
 	private Date kehtiv_kuni;
 	private static final long serialVersionUID = 1L;
+	@OneToMany(mappedBy = "sEADUS")
+	private Set<PIIRIVALVURI_SEADUS_INTSIDENDIS> pIIRIVALVURI_SEADUS_INTSIDENDIS;
+	@OneToMany(mappedBy = "sEADUS")
+	private Set<ISIKU_SEADUS_INTSIDENDIS> iSIKU_SEADUS_INTSIDENDIS;
+	@OneToMany(mappedBy = "sEADUS")
+	private Set<OBJEKTI_SEADUS_INTSIDENDIS> oBJEKTI_SEADUS_INTSIDENDIS;
+	@OneToMany(mappedBy = "sEADUS")
+	private Set<SEADUSE_PUNKT> sEADUSE_PUNKT;
 
 	public SEADUS() {
 		super();
@@ -65,6 +78,30 @@ public class SEADUS extends BaseEntity implements Serializable {
 
 	public void setKehtiv_kuni(Date kehtiv_kuni) {
 		this.kehtiv_kuni = kehtiv_kuni;
+	}
+	public Set<PIIRIVALVURI_SEADUS_INTSIDENDIS> getPIIRIVALVURI_SEADUS_INTSIDENDIS() {
+	    return pIIRIVALVURI_SEADUS_INTSIDENDIS;
+	}
+	public void setPIIRIVALVURI_SEADUS_INTSIDENDIS(Set<PIIRIVALVURI_SEADUS_INTSIDENDIS> param) {
+	    this.pIIRIVALVURI_SEADUS_INTSIDENDIS = param;
+	}
+	public Set<ISIKU_SEADUS_INTSIDENDIS> getISIKU_SEADUS_INTSIDENDIS() {
+	    return iSIKU_SEADUS_INTSIDENDIS;
+	}
+	public void setISIKU_SEADUS_INTSIDENDIS(Set<ISIKU_SEADUS_INTSIDENDIS> param) {
+	    this.iSIKU_SEADUS_INTSIDENDIS = param;
+	}
+	public Set<OBJEKTI_SEADUS_INTSIDENDIS> getOBJEKTI_SEADUS_INTSIDENDIS() {
+	    return oBJEKTI_SEADUS_INTSIDENDIS;
+	}
+	public void setOBJEKTI_SEADUS_INTSIDENDIS(Set<OBJEKTI_SEADUS_INTSIDENDIS> param) {
+	    this.oBJEKTI_SEADUS_INTSIDENDIS = param;
+	}
+	public Set<SEADUSE_PUNKT> getSEADUSE_PUNKT() {
+	    return sEADUSE_PUNKT;
+	}
+	public void setSEADUSE_PUNKT(Set<SEADUSE_PUNKT> param) {
+	    this.sEADUSE_PUNKT = param;
 	}
    
 }

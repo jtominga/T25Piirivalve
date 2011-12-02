@@ -3,6 +3,7 @@
 
 package ee.itcollege.veebirakendused.java.team25.web;
 
+import ee.itcollege.T25Piirivalve.entities.ISIK_INTSIDENDIS;
 import ee.itcollege.T25Piirivalve.entities.OBJEKT;
 import ee.itcollege.T25Piirivalve.entities.PIIRIRIKKUJA;
 import java.io.UnsupportedEncodingException;
@@ -91,6 +92,11 @@ privileged aspect PIIRIRIKKUJAController_Roo_Controller {
         uiModel.addAttribute("page", (page == null) ? "1" : page.toString());
         uiModel.addAttribute("size", (size == null) ? "10" : size.toString());
         return "redirect:/piiririkkujas";
+    }
+    
+    @ModelAttribute("isik_intsidendiss")
+    public Collection<ISIK_INTSIDENDIS> PIIRIRIKKUJAController.populateISIK_INTSIDENDISs() {
+        return ISIK_INTSIDENDIS.findAllISIK_INTSIDENDISs();
     }
     
     @ModelAttribute("objekts")

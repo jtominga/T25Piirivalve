@@ -1,15 +1,20 @@
 package ee.itcollege.T25Piirivalve.entities;
 
 import java.io.Serializable;
-import java.lang.Long;
 import java.util.Date;
-import javax.persistence.*;
+import java.util.Set;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.validation.constraints.NotNull;
 
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.tostring.RooToString;
-import ee.itcollege.T25Piirivalve.entities.INTSIDENT;
 import ee.itcollege.T25Piirivalve.entities.PIIRIRIKKUJA;
 
 /**
@@ -37,6 +42,8 @@ public class ISIK_INTSIDENDIS extends BaseEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
 	@ManyToOne
 	private INTSIDENT iNTSIDENT;
+	@OneToMany(mappedBy = "iSIK_INTSIDENDIS")
+	private Set<ISIKU_SEADUS_INTSIDENDIS> iSIKU_SEADUS_INTSIDENDIS;
 	@ManyToOne
 	private PIIRIRIKKUJA pIIRIRIKKUJA;
 
@@ -75,6 +82,12 @@ public class ISIK_INTSIDENDIS extends BaseEntity implements Serializable {
 	}
 	public void setINTSIDENT(INTSIDENT param) {
 	    this.iNTSIDENT = param;
+	}
+	public Set<ISIKU_SEADUS_INTSIDENDIS> getISIKU_SEADUS_INTSIDENDIS() {
+	    return iSIKU_SEADUS_INTSIDENDIS;
+	}
+	public void setISIKU_SEADUS_INTSIDENDIS(Set<ISIKU_SEADUS_INTSIDENDIS> param) {
+	    this.iSIKU_SEADUS_INTSIDENDIS = param;
 	}
 	public PIIRIRIKKUJA getPIIRIRIKKUJA() {
 	    return pIIRIRIKKUJA;

@@ -1,24 +1,23 @@
 package ee.itcollege.T25Piirivalve.entities;
 
 import java.io.Serializable;
+import java.util.Date;
+import java.util.Set;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.validation.constraints.Digits;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.tostring.RooToString;
 import ee.itcollege.T25Piirivalve.entities.VAHTKOND;
-
-import java.util.Date;
-import java.util.Set;
-import javax.persistence.OneToMany;
-import javax.persistence.JoinColumn;
-import javax.validation.constraints.Digits;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
+import ee.itcollege.T25Piirivalve.entities.PIIRILOIGU_HALDAJA;
 
 /**
  * Entity implementation class for Entity: PIIRIPUNKT
@@ -53,8 +52,12 @@ public class PIIRIPUNKT extends BaseEntity implements Serializable {
 	@NotNull
 	private Date kuni;	
 	private static final long serialVersionUID = 1L;
-	@OneToMany
+	@OneToMany(mappedBy = "pIIRIPUNKT")
+	private Set<AMET_PIIRIPUNKTIS> aMET_PIIRIPUNKTIS;
+	@OneToMany(mappedBy = "pIIRIPUNKT")
 	private Set<VAHTKOND> vAHTKOND;
+	@OneToMany(mappedBy = "pIIRIPUNKT")
+	private Set<PIIRILOIGU_HALDAJA> pIIRILOIGU_HALDAJA;
 
 	public PIIRIPUNKT() {
 		super();
@@ -112,11 +115,23 @@ public class PIIRIPUNKT extends BaseEntity implements Serializable {
 	public void setKuni(Date kuni) {
 		this.kuni = kuni;
 	}
+	public Set<AMET_PIIRIPUNKTIS> getAMET_PIIRIPUNKTIS() {
+	    return aMET_PIIRIPUNKTIS;
+	}
+	public void setAMET_PIIRIPUNKTIS(Set<AMET_PIIRIPUNKTIS> param) {
+	    this.aMET_PIIRIPUNKTIS = param;
+	}
 	public Set<VAHTKOND> getVAHTKOND() {
 	    return vAHTKOND;
 	}
 	public void setVAHTKOND(Set<VAHTKOND> param) {
 	    this.vAHTKOND = param;
+	}
+	public Set<PIIRILOIGU_HALDAJA> getPIIRILOIGU_HALDAJA() {
+	    return pIIRILOIGU_HALDAJA;
+	}
+	public void setPIIRILOIGU_HALDAJA(Set<PIIRILOIGU_HALDAJA> param) {
+	    this.pIIRILOIGU_HALDAJA = param;
 	}
    
 }

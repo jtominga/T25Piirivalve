@@ -12,6 +12,11 @@ import javax.validation.constraints.Size;
 
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.tostring.RooToString;
+import ee.itcollege.T25Piirivalve.entities.PIIRILOIGU_HALDAJA;
+import java.util.Set;
+import ee.itcollege.T25Piirivalve.entities.VAHTKOND_PIIRILOIGUL;
+import javax.persistence.OneToMany;
+import ee.itcollege.T25Piirivalve.entities.INTSIDENT;
 
 /**
  * Entity implementation class for Entity: PIIRILOIK
@@ -38,6 +43,12 @@ public class PIIRILOIK extends BaseEntity implements Serializable {
 	@Digits(integer = 4, fraction = 5)
 	private Double GPS_Latitude;
 	private static final long serialVersionUID = 1L;
+	@OneToMany(mappedBy = "pIIRILOIK")
+	private Set<PIIRILOIGU_HALDAJA> pIIRILOIGU_HALDAJA;
+	@OneToMany(mappedBy = "pIIRILOIK")
+	private Set<VAHTKOND_PIIRILOIGUL> vAHTKOND_PIIRILOIGUL;
+	@OneToMany(mappedBy = "pIIRILOIK")
+	private Set<INTSIDENT> iNTSIDENT;
 	public PIIRILOIK() {
 		super();
 	}   
@@ -74,6 +85,24 @@ public class PIIRILOIK extends BaseEntity implements Serializable {
 
 	public void setGPS_Latitude(Double GPS_Latitude) {
 		this.GPS_Latitude = GPS_Latitude;
+	}
+	public Set<PIIRILOIGU_HALDAJA> getPIIRILOIGU_HALDAJA() {
+	    return pIIRILOIGU_HALDAJA;
+	}
+	public void setPIIRILOIGU_HALDAJA(Set<PIIRILOIGU_HALDAJA> param) {
+	    this.pIIRILOIGU_HALDAJA = param;
+	}
+	public Set<VAHTKOND_PIIRILOIGUL> getVAHTKOND_PIIRILOIGUL() {
+	    return vAHTKOND_PIIRILOIGUL;
+	}
+	public void setVAHTKOND_PIIRILOIGUL(Set<VAHTKOND_PIIRILOIGUL> param) {
+	    this.vAHTKOND_PIIRILOIGUL = param;
+	}
+	public Set<INTSIDENT> getINTSIDENT() {
+	    return iNTSIDENT;
+	}
+	public void setINTSIDENT(Set<INTSIDENT> param) {
+	    this.iNTSIDENT = param;
 	}
    
 }

@@ -9,6 +9,7 @@ privileged aspect SEADUSE_PUNKT_Roo_ToString {
     
     public String SEADUSE_PUNKT.toString() {
         StringBuilder sb = new StringBuilder();
+        sb.append("ALAM_SEADUSE_PUNKTID: ").append(getALAM_SEADUSE_PUNKTID() == null ? "null" : getALAM_SEADUSE_PUNKTID().size()).append(", ");
         sb.append("Avaja: ").append(getAvaja()).append(", ");
         sb.append("Avatud: ").append(getAvatud()).append(", ");
         sb.append("Id: ").append(getId()).append(", ");

@@ -3,6 +3,8 @@
 
 package ee.itcollege.veebirakendused.java.team25.web;
 
+import ee.itcollege.T25Piirivalve.entities.AMET_PIIRIPUNKTIS;
+import ee.itcollege.T25Piirivalve.entities.PIIRILOIGU_HALDAJA;
 import ee.itcollege.T25Piirivalve.entities.PIIRIPUNKT;
 import ee.itcollege.T25Piirivalve.entities.VAHTKOND;
 import java.io.UnsupportedEncodingException;
@@ -91,6 +93,16 @@ privileged aspect PIIRIPUNKTController_Roo_Controller {
         uiModel.addAttribute("page", (page == null) ? "1" : page.toString());
         uiModel.addAttribute("size", (size == null) ? "10" : size.toString());
         return "redirect:/piiripunkts";
+    }
+    
+    @ModelAttribute("amet_piiripunktiss")
+    public Collection<AMET_PIIRIPUNKTIS> PIIRIPUNKTController.populateAMET_PIIRIPUNKTISs() {
+        return AMET_PIIRIPUNKTIS.findAllAMET_PIIRIPUNKTISs();
+    }
+    
+    @ModelAttribute("piiriloigu_haldajas")
+    public Collection<PIIRILOIGU_HALDAJA> PIIRIPUNKTController.populatePIIRILOIGU_HALDAJAs() {
+        return PIIRILOIGU_HALDAJA.findAllPIIRILOIGU_HALDAJAs();
     }
     
     @ModelAttribute("piiripunkts")

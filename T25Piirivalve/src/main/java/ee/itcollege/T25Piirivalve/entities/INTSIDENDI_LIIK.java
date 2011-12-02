@@ -11,6 +11,9 @@ import javax.validation.constraints.Size;
 
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.tostring.RooToString;
+import ee.itcollege.T25Piirivalve.entities.INTSIDENT;
+import java.util.Set;
+import javax.persistence.OneToMany;
 
 /**
  * Entity implementation class for Entity: INTSIDENDI_LIIK
@@ -33,6 +36,8 @@ public class INTSIDENDI_LIIK extends BaseEntity implements Serializable  {
 	@NotNull
 	private String nimetus;
 	private static final long serialVersionUID = 1L;
+	@OneToMany(mappedBy = "iNTSIDENDI_LIIK")
+	private Set<INTSIDENT> iNTSIDENT;
 
 	public INTSIDENDI_LIIK() {
 		super();
@@ -59,6 +64,12 @@ public class INTSIDENDI_LIIK extends BaseEntity implements Serializable  {
 
 	public void setNimetus(String nimetus) {
 		this.nimetus = nimetus;
+	}
+	public Set<INTSIDENT> getINTSIDENT() {
+	    return iNTSIDENT;
+	}
+	public void setINTSIDENT(Set<INTSIDENT> param) {
+	    this.iNTSIDENT = param;
 	}
    
 }

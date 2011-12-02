@@ -9,6 +9,7 @@ privileged aspect PIIRIPUNKT_Roo_ToString {
     
     public String PIIRIPUNKT.toString() {
         StringBuilder sb = new StringBuilder();
+        sb.append("AMET_PIIRIPUNKTIS: ").append(getAMET_PIIRIPUNKTIS() == null ? "null" : getAMET_PIIRIPUNKTIS().size()).append(", ");
         sb.append("Alates: ").append(getAlates()).append(", ");
         sb.append("Avaja: ").append(getAvaja()).append(", ");
         sb.append("Avatud: ").append(getAvatud()).append(", ");
@@ -22,6 +23,7 @@ privileged aspect PIIRIPUNKT_Roo_ToString {
         sb.append("Muudetud: ").append(getMuudetud()).append(", ");
         sb.append("Muutja: ").append(getMuutja()).append(", ");
         sb.append("Nimetus: ").append(getNimetus()).append(", ");
+        sb.append("PIIRILOIGU_HALDAJA: ").append(getPIIRILOIGU_HALDAJA() == null ? "null" : getPIIRILOIGU_HALDAJA().size()).append(", ");
         sb.append("Piiripunkt_ID: ").append(getPiiripunkt_ID()).append(", ");
         sb.append("Suletud: ").append(getSuletud()).append(", ");
         sb.append("Sulgeja: ").append(getSulgeja()).append(", ");

@@ -12,6 +12,7 @@ privileged aspect PIIRIRIKKUJA_Roo_ToString {
         sb.append("Avaja: ").append(getAvaja()).append(", ");
         sb.append("Avatud: ").append(getAvatud()).append(", ");
         sb.append("Eesnimi: ").append(getEesnimi()).append(", ");
+        sb.append("ISIK_INTSIDENDIS: ").append(getISIK_INTSIDENDIS() == null ? "null" : getISIK_INTSIDENDIS().size()).append(", ");
         sb.append("Id: ").append(getId()).append(", ");
         sb.append("Isikukood: ").append(getIsikukood()).append(", ");
         sb.append("Kommentaar: ").append(getKommentaar()).append(", ");

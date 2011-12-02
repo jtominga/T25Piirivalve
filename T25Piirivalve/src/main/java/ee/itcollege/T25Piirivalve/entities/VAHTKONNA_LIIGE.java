@@ -7,14 +7,13 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.validation.constraints.NotNull;
 
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.tostring.RooToString;
 import ee.itcollege.T25Piirivalve.entities.VAHTKOND;
-import ee.itcollege.T25Piirivalve.entities.PIIRIVALVUR;
-import javax.persistence.ManyToOne;
-import javax.validation.constraints.NotNull;
 
 /**
  * Entity implementation class for Entity: VAHTKONNA_LIIGE
@@ -38,10 +37,9 @@ public class VAHTKONNA_LIIGE extends BaseEntity implements Serializable {
 	private Date kuni;	
 	private static final long serialVersionUID = 1L;
 	@ManyToOne
-	private VAHTKOND vAHTKOND;
-	@ManyToOne
 	private PIIRIVALVUR pIIRIVALVUR;
-
+	@ManyToOne
+	private VAHTKOND vAHTKOND;
 	public VAHTKONNA_LIIGE() {
 		super();
 	}   
@@ -64,17 +62,17 @@ public class VAHTKONNA_LIIGE extends BaseEntity implements Serializable {
 	public void setKuni(Date kuni) {
 		this.kuni = kuni;
 	}
-	public VAHTKOND getVAHTKOND() {
-	    return vAHTKOND;
-	}
-	public void setVAHTKOND(VAHTKOND param) {
-	    this.vAHTKOND = param;
-	}
 	public PIIRIVALVUR getPIIRIVALVUR() {
 	    return pIIRIVALVUR;
 	}
 	public void setPIIRIVALVUR(PIIRIVALVUR param) {
 	    this.pIIRIVALVUR = param;
+	}
+	public VAHTKOND getVAHTKOND() {
+	    return vAHTKOND;
+	}
+	public void setVAHTKOND(VAHTKOND param) {
+	    this.vAHTKOND = param;
 	}
    
 }

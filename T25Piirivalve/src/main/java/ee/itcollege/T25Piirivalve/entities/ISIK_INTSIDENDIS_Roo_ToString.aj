@@ -13,6 +13,7 @@ privileged aspect ISIK_INTSIDENDIS_Roo_ToString {
         sb.append("Avaja: ").append(getAvaja()).append(", ");
         sb.append("Avatud: ").append(getAvatud()).append(", ");
         sb.append("INTSIDENT: ").append(getINTSIDENT()).append(", ");
+        sb.append("ISIKU_SEADUS_INTSIDENDIS: ").append(getISIKU_SEADUS_INTSIDENDIS() == null ? "null" : getISIKU_SEADUS_INTSIDENDIS().size()).append(", ");
         sb.append("Id: ").append(getId()).append(", ");
         sb.append("Isik_intsidendis_ID: ").append(getIsik_intsidendis_ID()).append(", ");
         sb.append("Kirjeldus: ").append(getKirjeldus()).append(", ");

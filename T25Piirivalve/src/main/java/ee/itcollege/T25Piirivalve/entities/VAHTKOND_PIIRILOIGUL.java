@@ -7,14 +7,14 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
 
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.tostring.RooToString;
 import ee.itcollege.T25Piirivalve.entities.PIIRILOIK;
-import ee.itcollege.T25Piirivalve.entities.VAHTKOND;
 import javax.persistence.ManyToOne;
-import javax.validation.constraints.NotNull;
+import ee.itcollege.T25Piirivalve.entities.VAHTKOND;
 
 /**
  * Entity implementation class for Entity: VAHTKOND_PIIRILOIGUL
@@ -40,7 +40,6 @@ public class VAHTKOND_PIIRILOIGUL extends BaseEntity implements Serializable {
 	private PIIRILOIK pIIRILOIK;
 	@ManyToOne
 	private VAHTKOND vAHTKOND;
-
 	public VAHTKOND_PIIRILOIGUL() {
 		super();
 	}

@@ -4,6 +4,8 @@
 package ee.itcollege.veebirakendused.java.team25.web;
 
 import ee.itcollege.T25Piirivalve.entities.AMET;
+import ee.itcollege.T25Piirivalve.entities.AMET_PIIRIPUNKTIS;
+import ee.itcollege.T25Piirivalve.entities.AMET_VAEOSAS;
 import java.io.UnsupportedEncodingException;
 import java.lang.Integer;
 import java.lang.Long;
@@ -89,6 +91,16 @@ privileged aspect AMETController_Roo_Controller {
     @ModelAttribute("amets")
     public Collection<AMET> AMETController.populateAMETS() {
         return AMET.findAllAMETS();
+    }
+    
+    @ModelAttribute("amet_piiripunktiss")
+    public Collection<AMET_PIIRIPUNKTIS> AMETController.populateAMET_PIIRIPUNKTISs() {
+        return AMET_PIIRIPUNKTIS.findAllAMET_PIIRIPUNKTISs();
+    }
+    
+    @ModelAttribute("amet_vaeosass")
+    public Collection<AMET_VAEOSAS> AMETController.populateAMET_VAEOSASs() {
+        return AMET_VAEOSAS.findAllAMET_VAEOSASs();
     }
     
     String AMETController.encodeUrlPathSegment(String pathSegment, HttpServletRequest httpServletRequest) {

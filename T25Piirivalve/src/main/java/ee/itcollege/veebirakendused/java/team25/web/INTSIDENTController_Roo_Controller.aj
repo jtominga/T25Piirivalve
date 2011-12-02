@@ -5,7 +5,11 @@ package ee.itcollege.veebirakendused.java.team25.web;
 
 import ee.itcollege.T25Piirivalve.entities.INTSIDENDI_LIIK;
 import ee.itcollege.T25Piirivalve.entities.INTSIDENT;
+import ee.itcollege.T25Piirivalve.entities.ISIK_INTSIDENDIS;
+import ee.itcollege.T25Piirivalve.entities.OBJEKT_INTSIDENDIS;
 import ee.itcollege.T25Piirivalve.entities.PIIRILOIK;
+import ee.itcollege.T25Piirivalve.entities.PIIRIVALVUR_INTSIDENDIS;
+import ee.itcollege.T25Piirivalve.entities.VAHTKOND_INTSIDENDIS;
 import java.io.UnsupportedEncodingException;
 import java.lang.Integer;
 import java.lang.Long;
@@ -104,9 +108,29 @@ privileged aspect INTSIDENTController_Roo_Controller {
         return INTSIDENT.findAllINTSIDENTS();
     }
     
+    @ModelAttribute("isik_intsidendiss")
+    public Collection<ISIK_INTSIDENDIS> INTSIDENTController.populateISIK_INTSIDENDISs() {
+        return ISIK_INTSIDENDIS.findAllISIK_INTSIDENDISs();
+    }
+    
+    @ModelAttribute("objekt_intsidendiss")
+    public Collection<OBJEKT_INTSIDENDIS> INTSIDENTController.populateOBJEKT_INTSIDENDISs() {
+        return OBJEKT_INTSIDENDIS.findAllOBJEKT_INTSIDENDISs();
+    }
+    
     @ModelAttribute("piiriloiks")
     public Collection<PIIRILOIK> INTSIDENTController.populatePIIRILOIKS() {
         return PIIRILOIK.findAllPIIRILOIKS();
+    }
+    
+    @ModelAttribute("piirivalvur_intsidendiss")
+    public Collection<PIIRIVALVUR_INTSIDENDIS> INTSIDENTController.populatePIIRIVALVUR_INTSIDENDISs() {
+        return PIIRIVALVUR_INTSIDENDIS.findAllPIIRIVALVUR_INTSIDENDISs();
+    }
+    
+    @ModelAttribute("vahtkond_intsidendiss")
+    public Collection<VAHTKOND_INTSIDENDIS> INTSIDENTController.populateVAHTKOND_INTSIDENDISs() {
+        return VAHTKOND_INTSIDENDIS.findAllVAHTKOND_INTSIDENDISs();
     }
     
     void INTSIDENTController.addDateTimeFormatPatterns(Model uiModel) {

@@ -6,11 +6,8 @@ package ee.itcollege.T25Piirivalve.entities;
 import ee.itcollege.T25Piirivalve.entities.PIIRIRIKKUJA;
 import java.lang.Long;
 import java.util.List;
-import javax.persistence.Entity;
 
 privileged aspect PIIRIRIKKUJA_Roo_Entity {
-    
-    declare @type: PIIRIRIKKUJA: @Entity;
     
     public static long PIIRIRIKKUJA.countPIIRIRIKKUJAS() {
         return entityManager().createQuery("SELECT COUNT(o) FROM PIIRIRIKKUJA o", Long.class).getSingleResult();

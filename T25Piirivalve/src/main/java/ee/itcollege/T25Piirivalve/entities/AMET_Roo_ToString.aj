@@ -9,6 +9,8 @@ privileged aspect AMET_Roo_ToString {
     
     public String AMET.toString() {
         StringBuilder sb = new StringBuilder();
+        sb.append("AMET_PIIRIPUNKTIS: ").append(getAMET_PIIRIPUNKTIS() == null ? "null" : getAMET_PIIRIPUNKTIS().size()).append(", ");
+        sb.append("AMET_VAEOSAS: ").append(getAMET_VAEOSAS() == null ? "null" : getAMET_VAEOSAS().size()).append(", ");
         sb.append("Amet_ID: ").append(getAmet_ID()).append(", ");
         sb.append("Avaja: ").append(getAvaja()).append(", ");
         sb.append("Avatud: ").append(getAvatud()).append(", ");

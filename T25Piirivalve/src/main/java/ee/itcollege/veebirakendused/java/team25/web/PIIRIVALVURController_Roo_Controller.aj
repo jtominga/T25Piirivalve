@@ -4,6 +4,10 @@
 package ee.itcollege.veebirakendused.java.team25.web;
 
 import ee.itcollege.T25Piirivalve.entities.PIIRIVALVUR;
+import ee.itcollege.T25Piirivalve.entities.PIIRIVALVUR_INTSIDENDIS;
+import ee.itcollege.T25Piirivalve.entities.PIIRIVALVUR_PIIRIPUNKTIS;
+import ee.itcollege.T25Piirivalve.entities.PIIRIVALVUR_VAEOSAS;
+import ee.itcollege.T25Piirivalve.entities.VAHTKONNA_LIIGE;
 import java.io.UnsupportedEncodingException;
 import java.lang.Integer;
 import java.lang.Long;
@@ -89,6 +93,26 @@ privileged aspect PIIRIVALVURController_Roo_Controller {
     @ModelAttribute("piirivalvurs")
     public Collection<PIIRIVALVUR> PIIRIVALVURController.populatePIIRIVALVURS() {
         return PIIRIVALVUR.findAllPIIRIVALVURS();
+    }
+    
+    @ModelAttribute("piirivalvur_intsidendiss")
+    public Collection<PIIRIVALVUR_INTSIDENDIS> PIIRIVALVURController.populatePIIRIVALVUR_INTSIDENDISs() {
+        return PIIRIVALVUR_INTSIDENDIS.findAllPIIRIVALVUR_INTSIDENDISs();
+    }
+    
+    @ModelAttribute("piirivalvur_piiripunktiss")
+    public Collection<PIIRIVALVUR_PIIRIPUNKTIS> PIIRIVALVURController.populatePIIRIVALVUR_PIIRIPUNKTISs() {
+        return PIIRIVALVUR_PIIRIPUNKTIS.findAllPIIRIVALVUR_PIIRIPUNKTISs();
+    }
+    
+    @ModelAttribute("piirivalvur_vaeosass")
+    public Collection<PIIRIVALVUR_VAEOSAS> PIIRIVALVURController.populatePIIRIVALVUR_VAEOSASs() {
+        return PIIRIVALVUR_VAEOSAS.findAllPIIRIVALVUR_VAEOSASs();
+    }
+    
+    @ModelAttribute("vahtkonna_liiges")
+    public Collection<VAHTKONNA_LIIGE> PIIRIVALVURController.populateVAHTKONNA_LIIGEs() {
+        return VAHTKONNA_LIIGE.findAllVAHTKONNA_LIIGEs();
     }
     
     String PIIRIVALVURController.encodeUrlPathSegment(String pathSegment, HttpServletRequest httpServletRequest) {

@@ -5,6 +5,8 @@ package ee.itcollege.veebirakendused.java.team25.web;
 
 import ee.itcollege.T25Piirivalve.entities.OBJEKT;
 import ee.itcollege.T25Piirivalve.entities.OBJEKTI_LIIK;
+import ee.itcollege.T25Piirivalve.entities.OBJEKT_INTSIDENDIS;
+import ee.itcollege.T25Piirivalve.entities.PIIRIRIKKUJA;
 import java.io.UnsupportedEncodingException;
 import java.lang.Integer;
 import java.lang.Long;
@@ -95,6 +97,16 @@ privileged aspect OBJEKTController_Roo_Controller {
     @ModelAttribute("objekti_liiks")
     public Collection<OBJEKTI_LIIK> OBJEKTController.populateOBJEKTI_LIIKs() {
         return OBJEKTI_LIIK.findAllOBJEKTI_LIIKs();
+    }
+    
+    @ModelAttribute("objekt_intsidendiss")
+    public Collection<OBJEKT_INTSIDENDIS> OBJEKTController.populateOBJEKT_INTSIDENDISs() {
+        return OBJEKT_INTSIDENDIS.findAllOBJEKT_INTSIDENDISs();
+    }
+    
+    @ModelAttribute("piiririkkujas")
+    public Collection<PIIRIRIKKUJA> OBJEKTController.populatePIIRIRIKKUJAS() {
+        return PIIRIRIKKUJA.findAllPIIRIRIKKUJAS();
     }
     
     String OBJEKTController.encodeUrlPathSegment(String pathSegment, HttpServletRequest httpServletRequest) {

@@ -6,6 +6,7 @@ package ee.itcollege.veebirakendused.java.team25.web;
 import ee.itcollege.T25Piirivalve.entities.AMET;
 import ee.itcollege.T25Piirivalve.entities.AMET_PIIRIPUNKTIS;
 import ee.itcollege.T25Piirivalve.entities.PIIRIPUNKT;
+import ee.itcollege.T25Piirivalve.entities.PIIRIVALVUR_PIIRIPUNKTIS;
 import java.io.UnsupportedEncodingException;
 import java.lang.Integer;
 import java.lang.Long;
@@ -107,6 +108,11 @@ privileged aspect AMET_PIIRIPUNKTISController_Roo_Controller {
     @ModelAttribute("piiripunkts")
     public Collection<PIIRIPUNKT> AMET_PIIRIPUNKTISController.populatePIIRIPUNKTS() {
         return PIIRIPUNKT.findAllPIIRIPUNKTS();
+    }
+    
+    @ModelAttribute("piirivalvur_piiripunktiss")
+    public Collection<PIIRIVALVUR_PIIRIPUNKTIS> AMET_PIIRIPUNKTISController.populatePIIRIVALVUR_PIIRIPUNKTISs() {
+        return PIIRIVALVUR_PIIRIPUNKTIS.findAllPIIRIVALVUR_PIIRIPUNKTISs();
     }
     
     void AMET_PIIRIPUNKTISController.addDateTimeFormatPatterns(Model uiModel) {

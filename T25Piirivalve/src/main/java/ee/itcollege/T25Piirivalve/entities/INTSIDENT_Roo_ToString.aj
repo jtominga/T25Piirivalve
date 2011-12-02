@@ -14,6 +14,7 @@ privileged aspect INTSIDENT_Roo_ToString {
         sb.append("GPS_Latitude: ").append(getGPS_Latitude()).append(", ");
         sb.append("GPS_Longtitude: ").append(getGPS_Longtitude()).append(", ");
         sb.append("INTSIDENDI_LIIK: ").append(getINTSIDENDI_LIIK()).append(", ");
+        sb.append("ISIK_INTSIDENDIS: ").append(getISIK_INTSIDENDIS() == null ? "null" : getISIK_INTSIDENDIS().size()).append(", ");
         sb.append("Id: ").append(getId()).append(", ");
         sb.append("Intsident_ID: ").append(getIntsident_ID()).append(", ");
         sb.append("Kirjeldus: ").append(getKirjeldus()).append(", ");
@@ -21,11 +22,14 @@ privileged aspect INTSIDENT_Roo_ToString {
         sb.append("Kood: ").append(getKood()).append(", ");
         sb.append("Muudetud: ").append(getMuudetud()).append(", ");
         sb.append("Muutja: ").append(getMuutja()).append(", ");
+        sb.append("OBJEKT_INTSIDENDIS: ").append(getOBJEKT_INTSIDENDIS() == null ? "null" : getOBJEKT_INTSIDENDIS().size()).append(", ");
         sb.append("PIIRILOIK: ").append(getPIIRILOIK()).append(", ");
+        sb.append("PIIRIVALVUR_INTSIDENDIS: ").append(getPIIRIVALVUR_INTSIDENDIS() == null ? "null" : getPIIRIVALVUR_INTSIDENDIS().size()).append(", ");
         sb.append("Suletud: ").append(getSuletud()).append(", ");
         sb.append("Sulgeja: ").append(getSulgeja()).append(", ");
         sb.append("Toimumise_algus: ").append(getToimumise_algus()).append(", ");
         sb.append("Toimumise_lopp: ").append(getToimumise_lopp()).append(", ");
+        sb.append("VAHTKOND_INTSIDENDIS: ").append(getVAHTKOND_INTSIDENDIS() == null ? "null" : getVAHTKOND_INTSIDENDIS().size()).append(", ");
         sb.append("Version: ").append(getVersion());
         return sb.toString();
     }

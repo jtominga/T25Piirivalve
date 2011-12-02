@@ -5,6 +5,7 @@ package ee.itcollege.veebirakendused.java.team25.web;
 
 import ee.itcollege.T25Piirivalve.entities.INTSIDENT;
 import ee.itcollege.T25Piirivalve.entities.OBJEKT;
+import ee.itcollege.T25Piirivalve.entities.OBJEKTI_SEADUS_INTSIDENDIS;
 import ee.itcollege.T25Piirivalve.entities.OBJEKT_INTSIDENDIS;
 import java.io.UnsupportedEncodingException;
 import java.lang.Integer;
@@ -102,6 +103,11 @@ privileged aspect OBJEKT_INTSIDENDISController_Roo_Controller {
     @ModelAttribute("objekts")
     public Collection<OBJEKT> OBJEKT_INTSIDENDISController.populateOBJEKTS() {
         return OBJEKT.findAllOBJEKTS();
+    }
+    
+    @ModelAttribute("objekti_seadus_intsidendiss")
+    public Collection<OBJEKTI_SEADUS_INTSIDENDIS> OBJEKT_INTSIDENDISController.populateOBJEKTI_SEADUS_INTSIDENDISs() {
+        return OBJEKTI_SEADUS_INTSIDENDIS.findAllOBJEKTI_SEADUS_INTSIDENDISs();
     }
     
     @ModelAttribute("objekt_intsidendiss")

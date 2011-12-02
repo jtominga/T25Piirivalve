@@ -11,6 +11,10 @@ import javax.validation.constraints.Size;
 
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.tostring.RooToString;
+import ee.itcollege.T25Piirivalve.entities.AMET_VAEOSAS;
+import java.util.Set;
+import javax.persistence.OneToMany;
+import ee.itcollege.T25Piirivalve.entities.AMET_PIIRIPUNKTIS;
 
 /**
  * Entity implementation class for Entity: AMET
@@ -32,6 +36,10 @@ public class AMET extends BaseEntity implements Serializable {
 	@NotNull
 	private String nimetus;
 	private static final long serialVersionUID = 1L;
+	@OneToMany(mappedBy = "aMET")
+	private Set<AMET_VAEOSAS> aMET_VAEOSAS;
+	@OneToMany(mappedBy = "aMET")
+	private Set<AMET_PIIRIPUNKTIS> aMET_PIIRIPUNKTIS;
 
 	public AMET() {
 		super();
@@ -56,6 +64,22 @@ public class AMET extends BaseEntity implements Serializable {
 	}
 	public void setNimetus(String nimetus) {
 		this.nimetus = nimetus;
+	}
+
+	public Set<AMET_VAEOSAS> getAMET_VAEOSAS() {
+	    return aMET_VAEOSAS;
+	}
+
+	public void setAMET_VAEOSAS(Set<AMET_VAEOSAS> param) {
+	    this.aMET_VAEOSAS = param;
+	}
+
+	public Set<AMET_PIIRIPUNKTIS> getAMET_PIIRIPUNKTIS() {
+	    return aMET_PIIRIPUNKTIS;
+	}
+
+	public void setAMET_PIIRIPUNKTIS(Set<AMET_PIIRIPUNKTIS> param) {
+	    this.aMET_PIIRIPUNKTIS = param;
 	}
    
 }

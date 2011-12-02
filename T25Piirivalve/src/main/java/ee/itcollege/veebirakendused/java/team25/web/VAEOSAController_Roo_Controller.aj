@@ -3,6 +3,8 @@
 
 package ee.itcollege.veebirakendused.java.team25.web;
 
+import ee.itcollege.T25Piirivalve.entities.AMET_VAEOSAS;
+import ee.itcollege.T25Piirivalve.entities.PIIRILOIGU_HALDAJA;
 import ee.itcollege.T25Piirivalve.entities.VAEOSA;
 import java.io.UnsupportedEncodingException;
 import java.lang.Integer;
@@ -90,6 +92,16 @@ privileged aspect VAEOSAController_Roo_Controller {
         uiModel.addAttribute("page", (page == null) ? "1" : page.toString());
         uiModel.addAttribute("size", (size == null) ? "10" : size.toString());
         return "redirect:/vaeosas";
+    }
+    
+    @ModelAttribute("amet_vaeosass")
+    public Collection<AMET_VAEOSAS> VAEOSAController.populateAMET_VAEOSASs() {
+        return AMET_VAEOSAS.findAllAMET_VAEOSASs();
+    }
+    
+    @ModelAttribute("piiriloigu_haldajas")
+    public Collection<PIIRILOIGU_HALDAJA> VAEOSAController.populatePIIRILOIGU_HALDAJAs() {
+        return PIIRILOIGU_HALDAJA.findAllPIIRILOIGU_HALDAJAs();
     }
     
     @ModelAttribute("vaeosas")

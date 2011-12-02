@@ -4,6 +4,7 @@
 package ee.itcollege.veebirakendused.java.team25.web;
 
 import ee.itcollege.T25Piirivalve.entities.INTSIDENDI_LIIK;
+import ee.itcollege.T25Piirivalve.entities.INTSIDENT;
 import java.io.UnsupportedEncodingException;
 import java.lang.Integer;
 import java.lang.Long;
@@ -89,6 +90,11 @@ privileged aspect INTSIDENDI_LIIKController_Roo_Controller {
     @ModelAttribute("intsidendi_liiks")
     public Collection<INTSIDENDI_LIIK> INTSIDENDI_LIIKController.populateINTSIDENDI_LIIKs() {
         return INTSIDENDI_LIIK.findAllINTSIDENDI_LIIKs();
+    }
+    
+    @ModelAttribute("intsidents")
+    public Collection<INTSIDENT> INTSIDENDI_LIIKController.populateINTSIDENTS() {
+        return INTSIDENT.findAllINTSIDENTS();
     }
     
     String INTSIDENDI_LIIKController.encodeUrlPathSegment(String pathSegment, HttpServletRequest httpServletRequest) {

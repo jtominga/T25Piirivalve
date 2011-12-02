@@ -11,6 +11,7 @@ privileged aspect SEADUS_Roo_ToString {
         StringBuilder sb = new StringBuilder();
         sb.append("Avaja: ").append(getAvaja()).append(", ");
         sb.append("Avatud: ").append(getAvatud()).append(", ");
+        sb.append("ISIKU_SEADUS_INTSIDENDIS: ").append(getISIKU_SEADUS_INTSIDENDIS() == null ? "null" : getISIKU_SEADUS_INTSIDENDIS().size()).append(", ");
         sb.append("Id: ").append(getId()).append(", ");
         sb.append("Kehtiv_alates: ").append(getKehtiv_alates()).append(", ");
         sb.append("Kehtiv_kuni: ").append(getKehtiv_kuni()).append(", ");
@@ -18,6 +19,9 @@ privileged aspect SEADUS_Roo_ToString {
         sb.append("Kood: ").append(getKood()).append(", ");
         sb.append("Muudetud: ").append(getMuudetud()).append(", ");
         sb.append("Muutja: ").append(getMuutja()).append(", ");
+        sb.append("OBJEKTI_SEADUS_INTSIDENDIS: ").append(getOBJEKTI_SEADUS_INTSIDENDIS() == null ? "null" : getOBJEKTI_SEADUS_INTSIDENDIS().size()).append(", ");
+        sb.append("PIIRIVALVURI_SEADUS_INTSIDENDIS: ").append(getPIIRIVALVURI_SEADUS_INTSIDENDIS() == null ? "null" : getPIIRIVALVURI_SEADUS_INTSIDENDIS().size()).append(", ");
+        sb.append("SEADUSE_PUNKT: ").append(getSEADUSE_PUNKT() == null ? "null" : getSEADUSE_PUNKT().size()).append(", ");
         sb.append("Seadus_ID: ").append(getSeadus_ID()).append(", ");
         sb.append("Suletud: ").append(getSuletud()).append(", ");
         sb.append("Sulgeja: ").append(getSulgeja()).append(", ");

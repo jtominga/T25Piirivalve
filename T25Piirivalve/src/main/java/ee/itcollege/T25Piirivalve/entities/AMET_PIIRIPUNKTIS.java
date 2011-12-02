@@ -2,19 +2,20 @@ package ee.itcollege.T25Piirivalve.entities;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.Set;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.validation.constraints.NotNull;
 
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.tostring.RooToString;
-import ee.itcollege.T25Piirivalve.entities.AMET;
 import ee.itcollege.T25Piirivalve.entities.PIIRIPUNKT;
-import javax.persistence.ManyToOne;
-import javax.validation.constraints.NotNull;
 
 /**
  * Entity implementation class for Entity: AMET_PIIRIPUNKTIS
@@ -39,6 +40,8 @@ public class AMET_PIIRIPUNKTIS extends BaseEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
 	@ManyToOne
 	private AMET aMET;
+	@OneToMany(mappedBy = "aMET_PIIRIPUNKTIS")
+	private Set<PIIRIVALVUR_PIIRIPUNKTIS> pIIRIVALVUR_PIIRIPUNKTIS;
 	@ManyToOne
 	private PIIRIPUNKT pIIRIPUNKT;
 
@@ -69,6 +72,12 @@ public class AMET_PIIRIPUNKTIS extends BaseEntity implements Serializable {
 	}
 	public void setAMET(AMET param) {
 	    this.aMET = param;
+	}
+	public Set<PIIRIVALVUR_PIIRIPUNKTIS> getPIIRIVALVUR_PIIRIPUNKTIS() {
+	    return pIIRIVALVUR_PIIRIPUNKTIS;
+	}
+	public void setPIIRIVALVUR_PIIRIPUNKTIS(Set<PIIRIVALVUR_PIIRIPUNKTIS> param) {
+	    this.pIIRIVALVUR_PIIRIPUNKTIS = param;
 	}
 	public PIIRIPUNKT getPIIRIPUNKT() {
 	    return pIIRIPUNKT;

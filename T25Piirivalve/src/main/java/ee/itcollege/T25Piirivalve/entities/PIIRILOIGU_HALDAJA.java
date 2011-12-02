@@ -13,7 +13,7 @@ import javax.validation.constraints.NotNull;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.tostring.RooToString;
-import ee.itcollege.T25Piirivalve.entities.VAEOSA;
+import ee.itcollege.T25Piirivalve.entities.PIIRILOIK;
 /**
  * Entity implementation class for Entity: PIIRILOIGU_HALDAJA
  *
@@ -36,11 +36,11 @@ public class PIIRILOIGU_HALDAJA extends BaseEntity implements Serializable {
 	private Date kuni;
 	private static final long serialVersionUID = 1L;
 	@ManyToOne
-	private PIIRILOIK pIIRILOIK;
+	private VAEOSA vAEOSA;
 	@ManyToOne
 	private PIIRIPUNKT pIIRIPUNKT;
 	@ManyToOne
-	private VAEOSA vAEOSA;
+	private PIIRILOIK pIIRILOIK;
 	public PIIRILOIGU_HALDAJA() {
 		super();
 	}   
@@ -65,11 +65,11 @@ public class PIIRILOIGU_HALDAJA extends BaseEntity implements Serializable {
 	public void setKuni(Date kuni) {
 		this.kuni = kuni;
 	}
-	public PIIRILOIK getPIIRILOIK() {
-	    return pIIRILOIK;
+	public VAEOSA getVAEOSA() {
+	    return vAEOSA;
 	}
-	public void setPIIRILOIK(PIIRILOIK param) {
-	    this.pIIRILOIK = param;
+	public void setVAEOSA(VAEOSA param) {
+	    this.vAEOSA = param;
 	}
 	public PIIRIPUNKT getPIIRIPUNKT() {
 	    return pIIRIPUNKT;
@@ -77,11 +77,11 @@ public class PIIRILOIGU_HALDAJA extends BaseEntity implements Serializable {
 	public void setPIIRIPUNKT(PIIRIPUNKT param) {
 	    this.pIIRIPUNKT = param;
 	}
-	public VAEOSA getVAEOSA() {
-	    return vAEOSA;
+	public PIIRILOIK getPIIRILOIK() {
+	    return pIIRILOIK;
 	}
-	public void setVAEOSA(VAEOSA param) {
-	    this.vAEOSA = param;
+	public void setPIIRILOIK(PIIRILOIK param) {
+	    this.pIIRILOIK = param;
 	}
    
 }

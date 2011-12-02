@@ -13,6 +13,10 @@ import javax.validation.constraints.NotNull;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.tostring.RooToString;
+import ee.itcollege.T25Piirivalve.entities.AMET;
+import ee.itcollege.T25Piirivalve.entities.PIIRIVALVUR_VAEOSAS;
+import java.util.Set;
+import javax.persistence.OneToMany;
 
 /**
  * Entity implementation class for Entity: AMET_VAEOSAS
@@ -36,9 +40,11 @@ public class AMET_VAEOSAS extends BaseEntity implements Serializable {
 	private Date kuni;	
 	private static final long serialVersionUID = 1L;
 	@ManyToOne
-	private AMET aMET;
-	@ManyToOne
 	private VAEOSA vAEOSA;
+	@ManyToOne
+	private AMET aMET;
+	@OneToMany(mappedBy = "aMET_VAEOSAS")
+	private Set<PIIRIVALVUR_VAEOSAS> pIIRIVALVUR_VAEOSAS;
 	public AMET_VAEOSAS() {
 		super();
 	}   
@@ -61,17 +67,23 @@ public class AMET_VAEOSAS extends BaseEntity implements Serializable {
 	public void setKuni(Date kuni) {
 		this.kuni = kuni;
 	}
+	public VAEOSA getVAEOSA() {
+	    return vAEOSA;
+	}
+	public void setVAEOSA(VAEOSA param) {
+	    this.vAEOSA = param;
+	}
 	public AMET getAMET() {
 	    return aMET;
 	}
 	public void setAMET(AMET param) {
 	    this.aMET = param;
 	}
-	public VAEOSA getVAEOSA() {
-	    return vAEOSA;
+	public Set<PIIRIVALVUR_VAEOSAS> getPIIRIVALVUR_VAEOSAS() {
+	    return pIIRIVALVUR_VAEOSAS;
 	}
-	public void setVAEOSA(VAEOSA param) {
-	    this.vAEOSA = param;
+	public void setPIIRIVALVUR_VAEOSAS(Set<PIIRIVALVUR_VAEOSAS> param) {
+	    this.pIIRIVALVUR_VAEOSAS = param;
 	}
    
 }

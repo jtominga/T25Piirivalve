@@ -3,6 +3,7 @@
 
 package ee.itcollege.veebirakendused.java.team25.web;
 
+import ee.itcollege.T25Piirivalve.entities.OBJEKT;
 import ee.itcollege.T25Piirivalve.entities.OBJEKTI_LIIK;
 import java.io.UnsupportedEncodingException;
 import java.lang.Integer;
@@ -84,6 +85,11 @@ privileged aspect OBJEKTI_LIIKController_Roo_Controller {
         uiModel.addAttribute("page", (page == null) ? "1" : page.toString());
         uiModel.addAttribute("size", (size == null) ? "10" : size.toString());
         return "redirect:/objekti_liiks";
+    }
+    
+    @ModelAttribute("objekts")
+    public Collection<OBJEKT> OBJEKTI_LIIKController.populateOBJEKTS() {
+        return OBJEKT.findAllOBJEKTS();
     }
     
     @ModelAttribute("objekti_liiks")

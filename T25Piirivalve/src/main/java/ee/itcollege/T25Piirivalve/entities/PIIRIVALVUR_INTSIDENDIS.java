@@ -7,16 +7,16 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.validation.constraints.NotNull;
 
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.tostring.RooToString;
-import ee.itcollege.T25Piirivalve.entities.VAHTKOND_INTSIDENDIS;
-import ee.itcollege.T25Piirivalve.entities.PIIRIVALVUR;
-import javax.persistence.ManyToOne;
-import javax.validation.constraints.NotNull;
-
 import ee.itcollege.T25Piirivalve.entities.INTSIDENT;
+import ee.itcollege.T25Piirivalve.entities.PIIRIVALVURI_SEADUS_INTSIDENDIS;
+import java.util.Set;
+import javax.persistence.OneToMany;
 
 /**
  * Entity implementation class for Entity: PIRIVALVUR_INTSIDENDIS
@@ -42,11 +42,13 @@ public class PIIRIVALVUR_INTSIDENDIS extends BaseEntity implements Serializable 
 	private String kirjeldus;
 	private static final long serialVersionUID = 1L;
 	@ManyToOne
-	private VAHTKOND_INTSIDENDIS vAHTKOND_INTSIDENDIS;
-	@ManyToOne
 	private PIIRIVALVUR pIIRIVALVUR;
 	@ManyToOne
+	private VAHTKOND_INTSIDENDIS vAHTKOND_INTSIDENDIS;
+	@ManyToOne
 	private INTSIDENT iNTSIDENT;
+	@OneToMany(mappedBy = "pIIRIVALVUR_INTSIDENDIS")
+	private Set<PIIRIVALVURI_SEADUS_INTSIDENDIS> pIIRIVALVURI_SEADUS_INTSIDENDIS;
 
 	public PIIRIVALVUR_INTSIDENDIS() {
 		super();
@@ -76,23 +78,29 @@ public class PIIRIVALVUR_INTSIDENDIS extends BaseEntity implements Serializable 
 	public void setKirjeldus(String kirjeldus) {
 		this.kirjeldus = kirjeldus;
 	}
-	public VAHTKOND_INTSIDENDIS getVAHTKOND_INTSIDENDIS() {
-	    return vAHTKOND_INTSIDENDIS;
-	}
-	public void setVAHTKOND_INTSIDENDIS(VAHTKOND_INTSIDENDIS param) {
-	    this.vAHTKOND_INTSIDENDIS = param;
-	}
 	public PIIRIVALVUR getPIIRIVALVUR() {
 	    return pIIRIVALVUR;
 	}
 	public void setPIIRIVALVUR(PIIRIVALVUR param) {
 	    this.pIIRIVALVUR = param;
 	}
+	public VAHTKOND_INTSIDENDIS getVAHTKOND_INTSIDENDIS() {
+	    return vAHTKOND_INTSIDENDIS;
+	}
+	public void setVAHTKOND_INTSIDENDIS(VAHTKOND_INTSIDENDIS param) {
+	    this.vAHTKOND_INTSIDENDIS = param;
+	}
 	public INTSIDENT getINTSIDENT() {
 	    return iNTSIDENT;
 	}
 	public void setINTSIDENT(INTSIDENT param) {
 	    this.iNTSIDENT = param;
+	}
+	public Set<PIIRIVALVURI_SEADUS_INTSIDENDIS> getPIIRIVALVURI_SEADUS_INTSIDENDIS() {
+	    return pIIRIVALVURI_SEADUS_INTSIDENDIS;
+	}
+	public void setPIIRIVALVURI_SEADUS_INTSIDENDIS(Set<PIIRIVALVURI_SEADUS_INTSIDENDIS> param) {
+	    this.pIIRIVALVURI_SEADUS_INTSIDENDIS = param;
 	}
    
 }

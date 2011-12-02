@@ -6,11 +6,8 @@ package ee.itcollege.T25Piirivalve.entities;
 import ee.itcollege.T25Piirivalve.entities.SEADUSE_PUNKT;
 import java.lang.Long;
 import java.util.List;
-import javax.persistence.Entity;
 
 privileged aspect SEADUSE_PUNKT_Roo_Entity {
-    
-    declare @type: SEADUSE_PUNKT: @Entity;
     
     public static long SEADUSE_PUNKT.countSEADUSE_PUNKTs() {
         return entityManager().createQuery("SELECT COUNT(o) FROM SEADUSE_PUNKT o", Long.class).getSingleResult();

@@ -6,11 +6,8 @@ package ee.itcollege.T25Piirivalve.entities;
 import ee.itcollege.T25Piirivalve.entities.OBJEKT_INTSIDENDIS;
 import java.lang.Long;
 import java.util.List;
-import javax.persistence.Entity;
 
 privileged aspect OBJEKT_INTSIDENDIS_Roo_Entity {
-    
-    declare @type: OBJEKT_INTSIDENDIS: @Entity;
     
     public static long OBJEKT_INTSIDENDIS.countOBJEKT_INTSIDENDISs() {
         return entityManager().createQuery("SELECT COUNT(o) FROM OBJEKT_INTSIDENDIS o", Long.class).getSingleResult();

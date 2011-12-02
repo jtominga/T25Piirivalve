@@ -7,5 +7,33 @@
             <menu:item id="i_piiripunkt_new" messageCode="global_menu_new" url="/piiripunkts?form" z="T58iGphdJaY8s+xZcmQSAcH58ZA="/>
             <menu:item id="i_piiripunkt_list" messageCode="global_menu_list" url="/piiripunkts?page=1&amp;size=${empty param.size ? 10 : param.size}" z="G6o3sJqemKsOdnHvut/ONkfuH8Y="/>
         </menu:category>
+        <menu:category id="c_seaduse_punkt" z="Lr2awMkgJrpP8xJusXZcURQCguw=">
+            <menu:item id="i_seaduse_punkt_new" messageCode="global_menu_new" url="/seaduse_punkts?form" z="HvRBPwJZwRb/XrD/1Ijfhz1qvxY="/>
+            <menu:item id="i_seaduse_punkt_list" messageCode="global_menu_list" url="/seaduse_punkts?page=1&amp;size=${empty param.size ? 10 : param.size}" z="DZ0txEDf0QzznkE6o3li5PzRLX8="/>
+        </menu:category>
+        <menu:category id="c_piiririkkuja" z="JMlBoa5Zk33SRu+AsyTwMO+66T0=">
+            <menu:item id="i_piiririkkuja_new" messageCode="global_menu_new" url="/piiririkkujas?form" z="SCaVFfGzCq9PMaYCiefQM+0Hir8="/>
+            <menu:item id="i_piiririkkuja_list" messageCode="global_menu_list" url="/piiririkkujas?page=1&amp;size=${empty param.size ? 10 : param.size}" z="ZtbTlYCoTxzaDW+jM5SusvFZgK8="/>
+        </menu:category>
+        <menu:category id="c_isiku_seadus_intsidendis" z="VcaRH/hkjIRXXRZ1h/452QJetdo=">
+            <menu:item id="i_isiku_seadus_intsidendis_new" messageCode="global_menu_new" url="/isiku_seadus_intsidendiss?form" z="q/GMsbrBkFmHPQlV/PSR+wLbtiI="/>
+            <menu:item id="i_isiku_seadus_intsidendis_list" messageCode="global_menu_list" url="/isiku_seadus_intsidendiss?page=1&amp;size=${empty param.size ? 10 : param.size}" z="KjfR9klNDAb7MuF+abmirV03grw="/>
+        </menu:category>
+        <menu:category id="c_objekt_intsidendis" z="I8Nh7gN3mQ6BJloSoYS2QvaDPsA=">
+            <menu:item id="i_objekt_intsidendis_new" messageCode="global_menu_new" url="/objekt_intsidendiss?form" z="9/yynwA56QyInK34IKImvxWaxQw="/>
+            <menu:item id="i_objekt_intsidendis_list" messageCode="global_menu_list" url="/objekt_intsidendiss?page=1&amp;size=${empty param.size ? 10 : param.size}" z="Su9ZqwdLFzRh6h+l2DgOTvkPGjc="/>
+        </menu:category>
+        <menu:category id="c_isik_intsidendis" z="2mbkJMj3BLjtlol3X2j22sjCJPg=">
+            <menu:item id="i_isik_intsidendis_new" messageCode="global_menu_new" url="/isik_intsidendiss?form" z="ekT9e7G5iHorLBR0Md3Kfy7Rk2U="/>
+            <menu:item id="i_isik_intsidendis_list" messageCode="global_menu_list" url="/isik_intsidendiss?page=1&amp;size=${empty param.size ? 10 : param.size}" z="CJVHSvu02z/FTC5wqZMGviER8Yg="/>
+        </menu:category>
+        <menu:category id="c_objekti_seadus_intsidendis" z="41QY5TH+4Ci+UiMuCsSPPIFK8ck=">
+            <menu:item id="i_objekti_seadus_intsidendis_new" messageCode="global_menu_new" url="/objekti_seadus_intsidendiss?form" z="poVIAVaQ36TYWVGECPItD76/IwQ="/>
+            <menu:item id="i_objekti_seadus_intsidendis_list" messageCode="global_menu_list" url="/objekti_seadus_intsidendiss?page=1&amp;size=${empty param.size ? 10 : param.size}" z="wENmKZxTpK5aAcht4ubNL6pwRt0="/>
+        </menu:category>
+        <menu:category id="c_piirivalvuri_seadus_intsidendis" z="wGtwsWua4Wloojrn4ZxFbsGEhXg=">
+            <menu:item id="i_piirivalvuri_seadus_intsidendis_new" messageCode="global_menu_new" url="/piirivalvuri_seadus_intsidendiss?form" z="ABx+D8LtSNLaJTRpbJCQjL3yBtc="/>
+            <menu:item id="i_piirivalvuri_seadus_intsidendis_list" messageCode="global_menu_list" url="/piirivalvuri_seadus_intsidendiss?page=1&amp;size=${empty param.size ? 10 : param.size}" z="4F7PUCQe+O+MERRTfW9qFTxcKKI="/>
+        </menu:category>
     </menu:menu>
 </div>

@@ -2,14 +2,18 @@ package ee.itcollege.T25Piirivalve.entities;
 
 import java.io.Serializable;
 import java.util.Date;
-import javax.persistence.*;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.validation.constraints.NotNull;
 
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.tostring.RooToString;
 import ee.itcollege.T25Piirivalve.entities.SEADUS;
-import ee.itcollege.T25Piirivalve.entities.ISIK_INTSIDENDIS;
 
 /**
  * Entity implementation class for Entity: OBJEKTI_SEADUS_INTSIDENDIS
@@ -34,10 +38,9 @@ public class ISIKU_SEADUS_INTSIDENDIS extends BaseEntity implements Serializable
 	private String kirjeldus;
 	private static final long serialVersionUID = 1L;
 	@ManyToOne
-	private SEADUS sEADUS;
-	@ManyToOne
 	private ISIK_INTSIDENDIS iSIK_INTSIDENDIS;
-
+	@ManyToOne
+	private SEADUS sEADUS;
 	public ISIKU_SEADUS_INTSIDENDIS() {
 		super();
 	}   
@@ -68,17 +71,17 @@ public class ISIKU_SEADUS_INTSIDENDIS extends BaseEntity implements Serializable
 	public void setKirjeldus(String kirjeldus) {
 		this.kirjeldus = kirjeldus;
 	}
-	public SEADUS getSEADUS() {
-	    return sEADUS;
-	}
-	public void setSEADUS(SEADUS param) {
-	    this.sEADUS = param;
-	}
 	public ISIK_INTSIDENDIS getISIK_INTSIDENDIS() {
 	    return iSIK_INTSIDENDIS;
 	}
 	public void setISIK_INTSIDENDIS(ISIK_INTSIDENDIS param) {
 	    this.iSIK_INTSIDENDIS = param;
+	}
+	public SEADUS getSEADUS() {
+	    return sEADUS;
+	}
+	public void setSEADUS(SEADUS param) {
+	    this.sEADUS = param;
 	}
    
 }

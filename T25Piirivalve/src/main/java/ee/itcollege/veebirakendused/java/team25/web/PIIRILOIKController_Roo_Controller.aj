@@ -3,7 +3,10 @@
 
 package ee.itcollege.veebirakendused.java.team25.web;
 
+import ee.itcollege.T25Piirivalve.entities.INTSIDENT;
+import ee.itcollege.T25Piirivalve.entities.PIIRILOIGU_HALDAJA;
 import ee.itcollege.T25Piirivalve.entities.PIIRILOIK;
+import ee.itcollege.T25Piirivalve.entities.VAHTKOND_PIIRILOIGUL;
 import java.io.UnsupportedEncodingException;
 import java.lang.Integer;
 import java.lang.Long;
@@ -86,9 +89,24 @@ privileged aspect PIIRILOIKController_Roo_Controller {
         return "redirect:/piiriloiks";
     }
     
+    @ModelAttribute("intsidents")
+    public Collection<INTSIDENT> PIIRILOIKController.populateINTSIDENTS() {
+        return INTSIDENT.findAllINTSIDENTS();
+    }
+    
+    @ModelAttribute("piiriloigu_haldajas")
+    public Collection<PIIRILOIGU_HALDAJA> PIIRILOIKController.populatePIIRILOIGU_HALDAJAs() {
+        return PIIRILOIGU_HALDAJA.findAllPIIRILOIGU_HALDAJAs();
+    }
+    
     @ModelAttribute("piiriloiks")
     public Collection<PIIRILOIK> PIIRILOIKController.populatePIIRILOIKS() {
         return PIIRILOIK.findAllPIIRILOIKS();
+    }
+    
+    @ModelAttribute("vahtkond_piiriloiguls")
+    public Collection<VAHTKOND_PIIRILOIGUL> PIIRILOIKController.populateVAHTKOND_PIIRILOIGULs() {
+        return VAHTKOND_PIIRILOIGUL.findAllVAHTKOND_PIIRILOIGULs();
     }
     
     String PIIRILOIKController.encodeUrlPathSegment(String pathSegment, HttpServletRequest httpServletRequest) {

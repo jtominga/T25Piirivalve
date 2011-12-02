@@ -3,7 +3,11 @@
 
 package ee.itcollege.veebirakendused.java.team25.web;
 
+import ee.itcollege.T25Piirivalve.entities.PIIRIPUNKT;
 import ee.itcollege.T25Piirivalve.entities.VAHTKOND;
+import ee.itcollege.T25Piirivalve.entities.VAHTKOND_INTSIDENDIS;
+import ee.itcollege.T25Piirivalve.entities.VAHTKOND_PIIRILOIGUL;
+import ee.itcollege.T25Piirivalve.entities.VAHTKONNA_LIIGE;
 import java.io.UnsupportedEncodingException;
 import java.lang.Integer;
 import java.lang.Long;
@@ -92,9 +96,29 @@ privileged aspect VAHTKONDController_Roo_Controller {
         return "redirect:/vahtkonds";
     }
     
+    @ModelAttribute("piiripunkts")
+    public Collection<PIIRIPUNKT> VAHTKONDController.populatePIIRIPUNKTS() {
+        return PIIRIPUNKT.findAllPIIRIPUNKTS();
+    }
+    
     @ModelAttribute("vahtkonds")
     public Collection<VAHTKOND> VAHTKONDController.populateVAHTKONDS() {
         return VAHTKOND.findAllVAHTKONDS();
+    }
+    
+    @ModelAttribute("vahtkond_intsidendiss")
+    public Collection<VAHTKOND_INTSIDENDIS> VAHTKONDController.populateVAHTKOND_INTSIDENDISs() {
+        return VAHTKOND_INTSIDENDIS.findAllVAHTKOND_INTSIDENDISs();
+    }
+    
+    @ModelAttribute("vahtkond_piiriloiguls")
+    public Collection<VAHTKOND_PIIRILOIGUL> VAHTKONDController.populateVAHTKOND_PIIRILOIGULs() {
+        return VAHTKOND_PIIRILOIGUL.findAllVAHTKOND_PIIRILOIGULs();
+    }
+    
+    @ModelAttribute("vahtkonna_liiges")
+    public Collection<VAHTKONNA_LIIGE> VAHTKONDController.populateVAHTKONNA_LIIGEs() {
+        return VAHTKONNA_LIIGE.findAllVAHTKONNA_LIIGEs();
     }
     
     void VAHTKONDController.addDateTimeFormatPatterns(Model uiModel) {
