@@ -9,7 +9,6 @@ privileged aspect PIIRIVALVUR_VAEOSAS_Roo_ToString {
     
     public String PIIRIVALVUR_VAEOSAS.toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("AMET_VAEOSAS: ").append(getAMET_VAEOSAS()).append(", ");
         sb.append("Alates: ").append(getAlates()).append(", ");
         sb.append("Avaja: ").append(getAvaja()).append(", ");
         sb.append("Avatud: ").append(getAvatud()).append(", ");
@@ -20,9 +19,9 @@ privileged aspect PIIRIVALVUR_VAEOSAS_Roo_ToString {
         sb.append("Muudetud: ").append(getMuudetud()).append(", ");
         sb.append("Muutja: ").append(getMuutja()).append(", ");
         sb.append("PIIRIVALVUR: ").append(getPIIRIVALVUR()).append(", ");
-        sb.append("Piirivalvur_vaeosas_ID: ").append(getPiirivalvur_vaeosas_ID()).append(", ");
         sb.append("Suletud: ").append(getSuletud()).append(", ");
         sb.append("Sulgeja: ").append(getSulgeja()).append(", ");
+        sb.append("VAEOSA: ").append(getVAEOSA()).append(", ");
         sb.append("Version: ").append(getVersion());
         return sb.toString();
     }

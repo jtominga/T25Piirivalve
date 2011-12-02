@@ -23,10 +23,6 @@ import org.springframework.roo.addon.tostring.RooToString;
 
 public class PIIRILOIGU_HALDAJA extends BaseEntity implements Serializable {
 
-	   
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long piiriloigu_haldaja_ID;
 	@DateTimeFormat(pattern = "dd.MM.yyyy")
 	@NotNull
 	private Date alates;
@@ -41,13 +37,7 @@ public class PIIRILOIGU_HALDAJA extends BaseEntity implements Serializable {
 	public PIIRILOIGU_HALDAJA() {
 		super();
 	}   
-	public Long getPiiriloigu_haldaja_ID() {
-		return this.piiriloigu_haldaja_ID;
-	}
-
-	public void setPiiriloigu_haldaja_ID(Long piiriloigu_haldaja_ID) {
-		this.piiriloigu_haldaja_ID = piiriloigu_haldaja_ID;
-	}   
+	  
 	public Date getAlates() {
 		return this.alates;
 	}

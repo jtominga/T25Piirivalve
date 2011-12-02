@@ -25,10 +25,6 @@ import ee.itcollege.T25Piirivalve.entities.VAHTKOND;
 
 public class VAHTKONNA_LIIGE extends BaseEntity implements Serializable {
 
-	   
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long vahtkonna_liige_ID;
 	@DateTimeFormat(pattern = "dd.MM.yyyy")
 	@NotNull
 	private Date alates;
@@ -43,13 +39,7 @@ public class VAHTKONNA_LIIGE extends BaseEntity implements Serializable {
 	public VAHTKONNA_LIIGE() {
 		super();
 	}   
-	public Long getVahtkonna_liige_ID() {
-		return this.vahtkonna_liige_ID;
-	}
-
-	public void setVahtkonna_liige_ID(Long vahtkonna_liige_ID) {
-		this.vahtkonna_liige_ID = vahtkonna_liige_ID;
-	}
+	
 	public Date getAlates() {
 		return alates;
 	}

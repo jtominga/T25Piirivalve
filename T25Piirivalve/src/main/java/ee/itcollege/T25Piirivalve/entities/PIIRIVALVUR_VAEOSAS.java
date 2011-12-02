@@ -26,10 +26,6 @@ import ee.itcollege.T25Piirivalve.entities.VAEOSA;
 
 public class PIIRIVALVUR_VAEOSAS extends BaseEntity implements Serializable {
 
-	   
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long piirivalvur_vaeosas_ID;
 	@DateTimeFormat(pattern = "dd.MM.yyyy")
 	@NotNull
 	private Date alates;
@@ -46,13 +42,7 @@ public class PIIRIVALVUR_VAEOSAS extends BaseEntity implements Serializable {
 	public PIIRIVALVUR_VAEOSAS() {
 		super();
 	}   
-	public Long getPiirivalvur_vaeosas_ID() {
-		return this.piirivalvur_vaeosas_ID;
-	}
-
-	public void setPiirivalvur_vaeosas_ID(Long piirivalvur_vaeosas_ID) {
-		this.piirivalvur_vaeosas_ID = piirivalvur_vaeosas_ID;
-	}   
+	
 	public Date getAlates() {
 		return alates;
 	}

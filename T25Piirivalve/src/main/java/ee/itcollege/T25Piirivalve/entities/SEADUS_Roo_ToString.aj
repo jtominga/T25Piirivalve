@@ -22,7 +22,6 @@ privileged aspect SEADUS_Roo_ToString {
         sb.append("OBJEKTI_SEADUS_INTSIDENDIS: ").append(getOBJEKTI_SEADUS_INTSIDENDIS() == null ? "null" : getOBJEKTI_SEADUS_INTSIDENDIS().size()).append(", ");
         sb.append("PIIRIVALVURI_SEADUS_INTSIDENDIS: ").append(getPIIRIVALVURI_SEADUS_INTSIDENDIS() == null ? "null" : getPIIRIVALVURI_SEADUS_INTSIDENDIS().size()).append(", ");
         sb.append("SEADUSE_PUNKT: ").append(getSEADUSE_PUNKT() == null ? "null" : getSEADUSE_PUNKT().size()).append(", ");
-        sb.append("Seadus_ID: ").append(getSeadus_ID()).append(", ");
         sb.append("Suletud: ").append(getSuletud()).append(", ");
         sb.append("Sulgeja: ").append(getSulgeja()).append(", ");
         sb.append("Version: ").append(getVersion());

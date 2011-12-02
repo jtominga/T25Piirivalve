@@ -25,9 +25,6 @@ import ee.itcollege.T25Piirivalve.entities.SEADUS;
 
 public class PIIRIVALVURI_SEADUS_INTSIDENDIS extends BaseEntity implements Serializable {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long piirivalvuri_seadus_intsidendis_ID;
 	@DateTimeFormat(pattern = "dd.MM.yyyy")
 	@NotNull
 	private Date alates;
@@ -43,13 +40,6 @@ public class PIIRIVALVURI_SEADUS_INTSIDENDIS extends BaseEntity implements Seria
 	private SEADUS sEADUS;
 	public PIIRIVALVURI_SEADUS_INTSIDENDIS() {
 		super();
-	}   
-	public Long getPiirivalvuri_seadus_intsidendis_ID() {
-		return piirivalvuri_seadus_intsidendis_ID;
-	}
-	public void setPiirivalvuri_seadus_intsidendis_ID(
-			Long piirivalvuri_seadus_intsidendis_ID) {
-		this.piirivalvuri_seadus_intsidendis_ID = piirivalvuri_seadus_intsidendis_ID;
 	}
 	public Date getAlates() {
 		return this.alates;

@@ -19,7 +19,6 @@ privileged aspect OBJEKTI_SEADUS_INTSIDENDIS_Roo_ToString {
         sb.append("Muudetud: ").append(getMuudetud()).append(", ");
         sb.append("Muutja: ").append(getMuutja()).append(", ");
         sb.append("OBJEKT_INTSIDENDIS: ").append(getOBJEKT_INTSIDENDIS()).append(", ");
-        sb.append("Objekti_seadus_intsidendis_ID: ").append(getObjekti_seadus_intsidendis_ID()).append(", ");
         sb.append("SEADUS: ").append(getSEADUS()).append(", ");
         sb.append("Suletud: ").append(getSuletud()).append(", ");
         sb.append("Sulgeja: ").append(getSulgeja()).append(", ");

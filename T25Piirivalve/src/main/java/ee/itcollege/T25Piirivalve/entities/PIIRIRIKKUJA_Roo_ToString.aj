@@ -20,7 +20,6 @@ privileged aspect PIIRIRIKKUJA_Roo_ToString {
         sb.append("Muutja: ").append(getMuutja()).append(", ");
         sb.append("OBJEKT: ").append(getOBJEKT()).append(", ");
         sb.append("Perenimi: ").append(getPerenimi()).append(", ");
-        sb.append("Piiririkkuja_ID: ").append(getPiiririkkuja_ID()).append(", ");
         sb.append("Sugu: ").append(getSugu()).append(", ");
         sb.append("Suletud: ").append(getSuletud()).append(", ");
         sb.append("Sulgeja: ").append(getSulgeja()).append(", ");

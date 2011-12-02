@@ -27,10 +27,6 @@ import javax.persistence.OneToMany;
 
 public class PIIRIVALVUR_INTSIDENDIS extends BaseEntity implements Serializable {
 
-	   
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long piirivalvur_intsidendis_ID;
 	@DateTimeFormat(pattern = "dd.MM.yyyy")
 	@NotNull
 	private Date alates;
@@ -52,13 +48,7 @@ public class PIIRIVALVUR_INTSIDENDIS extends BaseEntity implements Serializable 
 	public PIIRIVALVUR_INTSIDENDIS() {
 		super();
 	}   
-	public Long getPiirivalvur_intsidendis_ID() {
-		return this.piirivalvur_intsidendis_ID;
-	}
-
-	public void setPiirivalvur_intsidendis_ID(Long piirivalvur_intsidendis_ID) {
-		this.piirivalvur_intsidendis_ID = piirivalvur_intsidendis_ID;
-	}
+	
 	public Date getAlates() {
 		return alates;
 	}

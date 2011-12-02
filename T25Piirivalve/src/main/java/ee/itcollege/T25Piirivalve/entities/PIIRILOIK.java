@@ -26,10 +26,6 @@ import ee.itcollege.T25Piirivalve.entities.INTSIDENT;
 
 public class PIIRILOIK extends BaseEntity implements Serializable {
 
-	   
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long piiriloik_ID;
 	@Size(min = 1, max = 20)
 	@NotNull
 	private String kood;
@@ -49,13 +45,6 @@ public class PIIRILOIK extends BaseEntity implements Serializable {
 	private Collection<INTSIDENT> iNTSIDENT;
 	public PIIRILOIK() {
 		super();
-	}   
-	public Long getPiiriloik_ID() {
-		return this.piiriloik_ID;
-	}
-
-	public void setPiiriloik_ID(Long piiriloik_ID) {
-		this.piiriloik_ID = piiriloik_ID;
 	}
 	
 	public String getKood() {

@@ -14,7 +14,6 @@ privileged aspect ISIKU_SEADUS_INTSIDENDIS_Roo_ToString {
         sb.append("Avatud: ").append(getAvatud()).append(", ");
         sb.append("ISIK_INTSIDENDIS: ").append(getISIK_INTSIDENDIS()).append(", ");
         sb.append("Id: ").append(getId()).append(", ");
-        sb.append("Isiku_seadus_intsidendis_ID: ").append(getIsiku_seadus_intsidendis_ID()).append(", ");
         sb.append("Kirjeldus: ").append(getKirjeldus()).append(", ");
         sb.append("Kommentaar: ").append(getKommentaar()).append(", ");
         sb.append("Kuni: ").append(getKuni()).append(", ");

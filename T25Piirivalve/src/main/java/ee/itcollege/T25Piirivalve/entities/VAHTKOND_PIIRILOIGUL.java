@@ -25,9 +25,6 @@ import ee.itcollege.T25Piirivalve.entities.PIIRILOIK;
 
 public class VAHTKOND_PIIRILOIGUL extends BaseEntity implements Serializable {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long vahtkond_piiriloigul_ID;
 	@DateTimeFormat(pattern = "dd.MM.yyyy")
 	@NotNull
 	private Date alates;
@@ -41,14 +38,6 @@ public class VAHTKOND_PIIRILOIGUL extends BaseEntity implements Serializable {
 	private PIIRILOIK pIIRILOIK;
 	public VAHTKOND_PIIRILOIGUL() {
 		super();
-	}
-
-	public Long getVahtkond_piiriloigul_ID() {
-		return vahtkond_piiriloigul_ID;
-	}
-
-	public void setVahtkond_piiriloigul_ID(Long vahtkond_piiriloigul_ID) {
-		this.vahtkond_piiriloigul_ID = vahtkond_piiriloigul_ID;
 	}
 
 	public Date getAlates() {

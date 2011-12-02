@@ -3,6 +3,9 @@ package ee.itcollege.T25Piirivalve.entities;
 import java.io.Serializable;
 import java.util.Date;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 import javax.validation.constraints.*;
 
@@ -20,6 +23,10 @@ import org.springframework.format.annotation.*;
 
 public abstract class BaseEntity implements Serializable {
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long id;
+	
 	@Size(min = 1, max = 32)
 	@NotNull
 	private String avaja;
@@ -47,6 +54,14 @@ public abstract class BaseEntity implements Serializable {
 	private String kommentaar;
 	private static final long serialVersionUID = 1L;	
 	
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
 	public String getAvaja() {
 		return this.avaja;
 	}

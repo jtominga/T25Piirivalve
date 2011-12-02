@@ -25,9 +25,6 @@ import ee.itcollege.T25Piirivalve.entities.SEADUS;
 
 public class OBJEKTI_SEADUS_INTSIDENDIS extends BaseEntity implements Serializable {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long objekti_seadus_intsidendis_ID;
 	@DateTimeFormat(pattern = "dd.MM.yyyy")
 	@NotNull
 	private Date alates;
@@ -44,14 +41,8 @@ public class OBJEKTI_SEADUS_INTSIDENDIS extends BaseEntity implements Serializab
 
 	public OBJEKTI_SEADUS_INTSIDENDIS() {
 		super();
-	}   
-	public Long getObjekti_seadus_intsidendis_ID() {
-		return objekti_seadus_intsidendis_ID;
 	}
-	public void setObjekti_seadus_intsidendis_ID(
-			Long objekti_seadus_intsidendis_ID) {
-		this.objekti_seadus_intsidendis_ID = objekti_seadus_intsidendis_ID;
-	}
+	
 	public Date getAlates() {
 		return this.alates;
 	}

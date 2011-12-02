@@ -24,10 +24,6 @@ import ee.itcollege.T25Piirivalve.entities.PIIRIRIKKUJA;
 
 public class OBJEKT extends BaseEntity implements Serializable {
 
-	   
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long objekt_ID;
 	private static final long serialVersionUID = 1L;
 	@ManyToOne
 	private OBJEKTI_LIIK oBJEKTI_LIIK;
@@ -38,13 +34,7 @@ public class OBJEKT extends BaseEntity implements Serializable {
 	public OBJEKT() {
 		super();
 	}   
-	public Long getObjekt_ID() {
-		return this.objekt_ID;
-	}
-
-	public void setObjekt_ID(Long objekt_ID) {
-		this.objekt_ID = objekt_ID;
-	}
+	
 	public OBJEKTI_LIIK getOBJEKTI_LIIK() {
 	    return oBJEKTI_LIIK;
 	}

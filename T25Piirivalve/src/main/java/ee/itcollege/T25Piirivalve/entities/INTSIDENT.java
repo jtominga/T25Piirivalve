@@ -30,10 +30,6 @@ import ee.itcollege.T25Piirivalve.entities.ISIK_INTSIDENDIS;
 
 public class INTSIDENT extends BaseEntity implements Serializable {
 
-	   
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long intsident_ID;
 	@Size(min = 1, max = 20)
 	@NotNull
 	private String kood;
@@ -50,31 +46,30 @@ public class INTSIDENT extends BaseEntity implements Serializable {
 	@NotNull
 	private String kirjeldus;
 	private static final long serialVersionUID = 1L;
+	
 	@ManyToOne
 	@NotNull
 	private PIIRILOIK pIIRILOIK;
+	
 	@OneToMany(mappedBy = "iNTSIDENT")
 	private Collection<VAHTKOND_INTSIDENDIS> vAHTKOND_INTSIDENDIS;
+	
 	@OneToMany(mappedBy = "iNTSIDENT")
 	private Collection<PIIRIVALVUR_INTSIDENDIS> pIIRIVALVUR_INTSIDENDIS;
+	
 	@ManyToOne
+	@NotNull
 	private INTSIDENDI_LIIK iNTSIDENDI_LIIK;
+	
 	@OneToMany(mappedBy = "iNTSIDENT")
 	private Collection<OBJEKT_INTSIDENDIS> oBJEKT_INTSIDENDIS;
+	
 	@OneToMany(mappedBy = "iNTSIDENT")
 	private Collection<ISIK_INTSIDENDIS> iSIK_INTSIDENDIS;
 
 	public INTSIDENT() {
 		super();
-	}   
-	public Long getIntsident_ID() {
-		return this.intsident_ID;
-	}
-
-	public void setIntsident_ID(Long intsident_ID) {
-		this.intsident_ID = intsident_ID;
-	}   
-	
+	}	
 	
 	public String getKood() {
 		return kood;

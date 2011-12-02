@@ -27,10 +27,6 @@ import ee.itcollege.T25Piirivalve.entities.OBJEKTI_SEADUS_INTSIDENDIS;
 
 public class SEADUS extends BaseEntity implements Serializable {
 
-	   
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long seadus_ID;
 	@Size(min = 1, max = 20)
 	@NotNull
 	private String kood;
@@ -52,14 +48,7 @@ public class SEADUS extends BaseEntity implements Serializable {
 
 	public SEADUS() {
 		super();
-	}   
-	public Long getSeadus_ID() {
-		return this.seadus_ID;
-	}
-
-	public void setSeadus_ID(Long seadus_ID) {
-		this.seadus_ID = seadus_ID;
-	}   
+	} 
 	public String getKood() {
 		return kood;
 	}

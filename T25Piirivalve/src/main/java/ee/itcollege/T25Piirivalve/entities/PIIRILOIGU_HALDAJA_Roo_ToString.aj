@@ -18,8 +18,6 @@ privileged aspect PIIRILOIGU_HALDAJA_Roo_ToString {
         sb.append("Muudetud: ").append(getMuudetud()).append(", ");
         sb.append("Muutja: ").append(getMuutja()).append(", ");
         sb.append("PIIRILOIK: ").append(getPIIRILOIK()).append(", ");
-        sb.append("PIIRIPUNKT: ").append(getPIIRIPUNKT()).append(", ");
-        sb.append("Piiriloigu_haldaja_ID: ").append(getPiiriloigu_haldaja_ID()).append(", ");
         sb.append("Suletud: ").append(getSuletud()).append(", ");
         sb.append("Sulgeja: ").append(getSulgeja()).append(", ");
         sb.append("VAEOSA: ").append(getVAEOSA()).append(", ");

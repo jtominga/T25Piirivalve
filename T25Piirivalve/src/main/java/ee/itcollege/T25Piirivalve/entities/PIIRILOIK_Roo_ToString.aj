@@ -21,7 +21,6 @@ privileged aspect PIIRILOIK_Roo_ToString {
         sb.append("Muutja: ").append(getMuutja()).append(", ");
         sb.append("Nimetus: ").append(getNimetus()).append(", ");
         sb.append("PIIRILOIGU_HALDAJA: ").append(getPIIRILOIGU_HALDAJA() == null ? "null" : getPIIRILOIGU_HALDAJA().size()).append(", ");
-        sb.append("Piiriloik_ID: ").append(getPiiriloik_ID()).append(", ");
         sb.append("Suletud: ").append(getSuletud()).append(", ");
         sb.append("Sulgeja: ").append(getSulgeja()).append(", ");
         sb.append("VAHTKOND_PIIRILOIGUL: ").append(getVAHTKOND_PIIRILOIGUL() == null ? "null" : getVAHTKOND_PIIRILOIGUL().size()).append(", ");

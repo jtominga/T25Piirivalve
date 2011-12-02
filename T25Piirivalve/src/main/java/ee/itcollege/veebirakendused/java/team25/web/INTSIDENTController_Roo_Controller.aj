@@ -51,6 +51,9 @@ privileged aspect INTSIDENTController_Roo_Controller {
         if (PIIRILOIK.countPIIRILOIKS() == 0) {
             dependencies.add(new String[]{"piiriloik", "piiriloiks"});
         }
+        if (INTSIDENDI_LIIK.countINTSIDENDI_LIIKs() == 0) {
+            dependencies.add(new String[]{"intsidendi_liik", "intsidendi_liiks"});
+        }
         uiModel.addAttribute("dependencies", dependencies);
         return "intsidents/create";
     }

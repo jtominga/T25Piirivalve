@@ -13,7 +13,6 @@ privileged aspect INTSIDENDI_LIIK_Roo_ToString {
         sb.append("Avatud: ").append(getAvatud()).append(", ");
         sb.append("INTSIDENT: ").append(getINTSIDENT() == null ? "null" : getINTSIDENT().size()).append(", ");
         sb.append("Id: ").append(getId()).append(", ");
-        sb.append("Intsidendi_liik_id: ").append(getIntsidendi_liik_id()).append(", ");
         sb.append("Kommentaar: ").append(getKommentaar()).append(", ");
         sb.append("Kood: ").append(getKood()).append(", ");
         sb.append("Muudetud: ").append(getMuudetud()).append(", ");

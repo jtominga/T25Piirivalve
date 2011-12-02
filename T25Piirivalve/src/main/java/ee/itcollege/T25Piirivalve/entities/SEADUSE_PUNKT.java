@@ -29,10 +29,6 @@ import javax.persistence.OneToMany;
 
 public class SEADUSE_PUNKT extends BaseEntity implements Serializable {
 
-	   
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long seaduse_punkt_ID;
 	@Size(min = 1, max = 20)
 	@NotNull
 	private String paragrahv;
@@ -58,13 +54,7 @@ public class SEADUSE_PUNKT extends BaseEntity implements Serializable {
 	public SEADUSE_PUNKT() {
 		super();
 	}   
-	public Long getSeaduse_punkt_ID() {
-		return this.seaduse_punkt_ID;
-	}
-
-	public void setSeaduse_punkt_ID(Long seaduse_punkt_ID) {
-		this.seaduse_punkt_ID = seaduse_punkt_ID;
-	}   
+	 
 	public String getParagrahv() {
 		return this.paragrahv;
 	}

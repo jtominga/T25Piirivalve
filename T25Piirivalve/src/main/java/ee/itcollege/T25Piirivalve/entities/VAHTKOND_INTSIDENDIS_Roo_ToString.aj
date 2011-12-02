@@ -23,7 +23,6 @@ privileged aspect VAHTKOND_INTSIDENDIS_Roo_ToString {
         sb.append("Suletud: ").append(getSuletud()).append(", ");
         sb.append("Sulgeja: ").append(getSulgeja()).append(", ");
         sb.append("VAHTKOND: ").append(getVAHTKOND()).append(", ");
-        sb.append("Vahtkod_intsidendis_ID: ").append(getVahtkod_intsidendis_ID()).append(", ");
         sb.append("Version: ").append(getVersion());
         return sb.toString();
     }

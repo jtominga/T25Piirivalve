@@ -24,10 +24,6 @@ import org.springframework.roo.addon.tostring.RooToString;
 
 public class PIIRIVALVUR extends BaseEntity implements Serializable {
 
-	   
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long piirivalvur_ID;
 	@Size(min = 1, max = 20)
 	@NotNull
 	private String isikukood;
@@ -52,13 +48,7 @@ public class PIIRIVALVUR extends BaseEntity implements Serializable {
 	public PIIRIVALVUR() {
 		super();
 	}   
-	public Long getPiirivalvur_ID() {
-		return this.piirivalvur_ID;
-	}
-
-	public void setPiirivalvur_ID(Long piirivalvur_ID) {
-		this.piirivalvur_ID = piirivalvur_ID;
-	}   
+	
 	public String getIsikukood() {
 		return this.isikukood;
 	}

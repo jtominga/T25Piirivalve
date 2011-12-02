@@ -4,6 +4,7 @@
 package ee.itcollege.veebirakendused.java.team25.web;
 
 import ee.itcollege.T25Piirivalve.entities.PIIRILOIGU_HALDAJA;
+import ee.itcollege.T25Piirivalve.entities.PIIRIVALVUR_VAEOSAS;
 import ee.itcollege.T25Piirivalve.entities.VAEOSA;
 import java.io.UnsupportedEncodingException;
 import java.lang.Integer;
@@ -96,6 +97,11 @@ privileged aspect VAEOSAController_Roo_Controller {
     @ModelAttribute("piiriloigu_haldajas")
     public Collection<PIIRILOIGU_HALDAJA> VAEOSAController.populatePIIRILOIGU_HALDAJAs() {
         return PIIRILOIGU_HALDAJA.findAllPIIRILOIGU_HALDAJAs();
+    }
+    
+    @ModelAttribute("piirivalvur_vaeosass")
+    public Collection<PIIRIVALVUR_VAEOSAS> VAEOSAController.populatePIIRIVALVUR_VAEOSASs() {
+        return PIIRIVALVUR_VAEOSAS.findAllPIIRIVALVUR_VAEOSASs();
     }
     
     @ModelAttribute("vaeosas")

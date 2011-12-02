@@ -26,10 +26,6 @@ import org.springframework.roo.addon.tostring.RooToString;
 
 public class VAHTKOND extends BaseEntity implements Serializable {
 
-	   
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long vahtkond_ID;
 	@Size(min = 1, max = 20)
 	@NotNull
 	private String kood;
@@ -52,13 +48,7 @@ public class VAHTKOND extends BaseEntity implements Serializable {
 	public VAHTKOND() {
 		super();
 	}   
-	public Long getVahtkond_ID() {
-		return this.vahtkond_ID;
-	}
-
-	public void setVahtkond_ID(Long vahtkond_ID) {
-		this.vahtkond_ID = vahtkond_ID;
-	}
+	
 	public String getKood() {
 		return kood;
 	}

@@ -16,7 +16,6 @@ privileged aspect INTSIDENT_Roo_ToString {
         sb.append("INTSIDENDI_LIIK: ").append(getINTSIDENDI_LIIK()).append(", ");
         sb.append("ISIK_INTSIDENDIS: ").append(getISIK_INTSIDENDIS() == null ? "null" : getISIK_INTSIDENDIS().size()).append(", ");
         sb.append("Id: ").append(getId()).append(", ");
-        sb.append("Intsident_ID: ").append(getIntsident_ID()).append(", ");
         sb.append("Kirjeldus: ").append(getKirjeldus()).append(", ");
         sb.append("Kommentaar: ").append(getKommentaar()).append(", ");
         sb.append("Kood: ").append(getKood()).append(", ");

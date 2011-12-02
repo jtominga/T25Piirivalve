@@ -19,7 +19,6 @@ privileged aspect PIIRIVALVURI_SEADUS_INTSIDENDIS_Roo_ToString {
         sb.append("Muudetud: ").append(getMuudetud()).append(", ");
         sb.append("Muutja: ").append(getMuutja()).append(", ");
         sb.append("PIIRIVALVUR_INTSIDENDIS: ").append(getPIIRIVALVUR_INTSIDENDIS()).append(", ");
-        sb.append("Piirivalvuri_seadus_intsidendis_ID: ").append(getPiirivalvuri_seadus_intsidendis_ID()).append(", ");
         sb.append("SEADUS: ").append(getSEADUS()).append(", ");
         sb.append("Suletud: ").append(getSuletud()).append(", ");
         sb.append("Sulgeja: ").append(getSulgeja()).append(", ");

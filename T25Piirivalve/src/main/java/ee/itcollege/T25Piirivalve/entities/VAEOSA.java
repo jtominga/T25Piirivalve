@@ -27,9 +27,6 @@ import ee.itcollege.T25Piirivalve.entities.PIIRIVALVUR_VAEOSAS;
 
 public class VAEOSA extends BaseEntity implements Serializable {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long vaeosa_ID;  
 	@Size(min = 1, max = 20)
 	@NotNull
 	private String kood;
@@ -49,10 +46,6 @@ public class VAEOSA extends BaseEntity implements Serializable {
 	private Collection<PIIRIVALVUR_VAEOSAS> pIIRIVALVUR_VAEOSAS;
 	public VAEOSA() {
 		super();
-	}
-	
-	public Long getVaeosa_ID() {
-		return this.vaeosa_ID;
 	}
 
 	public String getKood() {

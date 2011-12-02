@@ -25,10 +25,6 @@ import javax.persistence.OneToMany;
 
 public class INTSIDENDI_LIIK extends BaseEntity implements Serializable  {
 
-	   
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long intsidendi_liik_id;
 	@Size(min = 1, max = 20)
 	@NotNull
 	private String kood;
@@ -40,13 +36,6 @@ public class INTSIDENDI_LIIK extends BaseEntity implements Serializable  {
 	private Collection<INTSIDENT> iNTSIDENT;
 	public INTSIDENDI_LIIK() {
 		super();
-	}   
-	public Long getIntsidendi_liik_id() {
-		return this.intsidendi_liik_id;
-	}
-
-	public void setIntsidendi_liik_id(Long intsidendi_liik_id) {
-		this.intsidendi_liik_id = intsidendi_liik_id;
 	}
 	
 	public String getKood() {

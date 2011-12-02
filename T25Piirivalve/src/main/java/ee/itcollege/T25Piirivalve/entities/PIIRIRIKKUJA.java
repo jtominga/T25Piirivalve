@@ -28,10 +28,6 @@ import javax.persistence.OneToMany;
 
 public class PIIRIRIKKUJA extends BaseEntity implements Serializable {
 
-	   
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long piiririkkuja_ID;
 	@Size(min = 1, max = 20)
 	@NotNull
 	private String isikukood;
@@ -54,13 +50,7 @@ public class PIIRIRIKKUJA extends BaseEntity implements Serializable {
 	public PIIRIRIKKUJA() {
 		super();
 	}   
-	public Long getPiiririkkuja_ID() {
-		return this.piiririkkuja_ID;
-	}
-
-	public void setPiiririkkuja_ID(Long piiririkkuja_ID) {
-		this.piiririkkuja_ID = piiririkkuja_ID;
-	}   
+	
 	public String getIsikukood() {
 		return this.isikukood;
 	}
