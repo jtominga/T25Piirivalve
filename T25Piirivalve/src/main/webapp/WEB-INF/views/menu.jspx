@@ -87,5 +87,9 @@
             <menu:item id="i_vahtkonna_liige_new" messageCode="global_menu_new" url="/vahtkonna_liiges?form" z="kM+n0nuAJGyoZqcVJfAxDmU/ZJg="/>
             <menu:item id="i_vahtkonna_liige_list" messageCode="global_menu_list" url="/vahtkonna_liiges?page=1&amp;size=${empty param.size ? 10 : param.size}" z="alglFsFtzPZms2ki/eP7J8jk698="/>
         </menu:category>
+        <menu:category id="c_isik_intsidendis" z="2mbkJMj3BLjtlol3X2j22sjCJPg=">
+            <menu:item id="i_isik_intsidendis_new" messageCode="global_menu_new" url="/isik_intsidendiss?form" z="ekT9e7G5iHorLBR0Md3Kfy7Rk2U="/>
+            <menu:item id="i_isik_intsidendis_list" messageCode="global_menu_list" url="/isik_intsidendiss?page=1&amp;size=${empty param.size ? 10 : param.size}" z="CJVHSvu02z/FTC5wqZMGviER8Yg="/>
+        </menu:category>
     </menu:menu>
 </div>

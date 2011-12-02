@@ -7,10 +7,13 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
+import javax.persistence.PrePersist;
 import javax.validation.constraints.*;
 
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.tostring.RooToString;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.format.annotation.*;
 
 /**
@@ -28,31 +31,33 @@ public abstract class BaseEntity implements Serializable {
 	private Long id;
 	
 	@Size(min = 1, max = 32)
-	@NotNull
 	private String avaja;
 	
 	@DateTimeFormat(pattern = "dd.MM.yyyy")
-	@NotNull
 	private Date avatud;
 	
 	@Size(min = 1, max = 32)
-	@NotNull
 	private String muutja;
 	
 	@DateTimeFormat(pattern = "dd.MM.yyyy")
-	@NotNull
 	private Date muudetud;
 	
 	@Size(min = 1, max = 32)
-	@NotNull
 	private String sulgeja;
 	
 	@DateTimeFormat(pattern = "dd.MM.yyyy")
-	@NotNull
 	private Date suletud;
 	
 	private String kommentaar;
 	private static final long serialVersionUID = 1L;	
+	
+	@PrePersist
+	public void created() {
+		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+		setMuutja(auth.getName());
+		setMuudetud(new Date());
+	}
+	
 	
 	public Long getId() {
 		return id;
