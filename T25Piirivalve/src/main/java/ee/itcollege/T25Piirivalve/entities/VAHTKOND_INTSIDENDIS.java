@@ -2,20 +2,20 @@ package ee.itcollege.T25Piirivalve.entities;
 
 import java.io.Serializable;
 import java.util.Date;
-import java.util.Set;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
 import javax.validation.constraints.NotNull;
 
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.tostring.RooToString;
-import ee.itcollege.T25Piirivalve.entities.INTSIDENT;
+import ee.itcollege.T25Piirivalve.entities.PIIRIVALVUR_INTSIDENDIS;
+import java.util.Collection;
+import javax.persistence.OneToMany;
 
 /**
  * Entity implementation class for Entity: VAHTKOND_INTSIDENDIS
@@ -42,10 +42,10 @@ public class VAHTKOND_INTSIDENDIS extends BaseEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
 	@ManyToOne
 	private VAHTKOND vAHTKOND;
-	@OneToMany(mappedBy = "vAHTKOND_INTSIDENDIS")
-	private Set<PIIRIVALVUR_INTSIDENDIS> pIIRIVALVUR_INTSIDENDIS;
 	@ManyToOne
 	private INTSIDENT iNTSIDENT;
+	@OneToMany(mappedBy = "vAHTKOND_INTSIDENDIS")
+	private Collection<PIIRIVALVUR_INTSIDENDIS> pIIRIVALVUR_INTSIDENDIS;
 	public VAHTKOND_INTSIDENDIS() {
 		super();
 	}   
@@ -80,17 +80,17 @@ public class VAHTKOND_INTSIDENDIS extends BaseEntity implements Serializable {
 	public void setVAHTKOND(VAHTKOND param) {
 	    this.vAHTKOND = param;
 	}
-	public Set<PIIRIVALVUR_INTSIDENDIS> getPIIRIVALVUR_INTSIDENDIS() {
-	    return pIIRIVALVUR_INTSIDENDIS;
-	}
-	public void setPIIRIVALVUR_INTSIDENDIS(Set<PIIRIVALVUR_INTSIDENDIS> param) {
-	    this.pIIRIVALVUR_INTSIDENDIS = param;
-	}
 	public INTSIDENT getINTSIDENT() {
 	    return iNTSIDENT;
 	}
 	public void setINTSIDENT(INTSIDENT param) {
 	    this.iNTSIDENT = param;
+	}
+	public Collection<PIIRIVALVUR_INTSIDENDIS> getPIIRIVALVUR_INTSIDENDIS() {
+	    return pIIRIVALVUR_INTSIDENDIS;
+	}
+	public void setPIIRIVALVUR_INTSIDENDIS(Collection<PIIRIVALVUR_INTSIDENDIS> param) {
+	    this.pIIRIVALVUR_INTSIDENDIS = param;
 	}
    
 }

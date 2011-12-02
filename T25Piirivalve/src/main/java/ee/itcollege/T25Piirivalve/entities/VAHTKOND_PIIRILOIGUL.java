@@ -7,14 +7,13 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.validation.constraints.NotNull;
 
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.tostring.RooToString;
 import ee.itcollege.T25Piirivalve.entities.PIIRILOIK;
-import javax.persistence.ManyToOne;
-import ee.itcollege.T25Piirivalve.entities.VAHTKOND;
 
 /**
  * Entity implementation class for Entity: VAHTKOND_PIIRILOIGUL
@@ -37,9 +36,9 @@ public class VAHTKOND_PIIRILOIGUL extends BaseEntity implements Serializable {
 	private Date kuni;	
 	private static final long serialVersionUID = 1L;
 	@ManyToOne
-	private PIIRILOIK pIIRILOIK;
-	@ManyToOne
 	private VAHTKOND vAHTKOND;
+	@ManyToOne
+	private PIIRILOIK pIIRILOIK;
 	public VAHTKOND_PIIRILOIGUL() {
 		super();
 	}
@@ -68,20 +67,20 @@ public class VAHTKOND_PIIRILOIGUL extends BaseEntity implements Serializable {
 		this.kuni = kuni;
 	}
 
-	public PIIRILOIK getPIIRILOIK() {
-	    return pIIRILOIK;
-	}
-
-	public void setPIIRILOIK(PIIRILOIK param) {
-	    this.pIIRILOIK = param;
-	}
-
 	public VAHTKOND getVAHTKOND() {
 	    return vAHTKOND;
 	}
 
 	public void setVAHTKOND(VAHTKOND param) {
 	    this.vAHTKOND = param;
+	}
+
+	public PIIRILOIK getPIIRILOIK() {
+	    return pIIRILOIK;
+	}
+
+	public void setPIIRILOIK(PIIRILOIK param) {
+	    this.pIIRILOIK = param;
 	}
    
 }

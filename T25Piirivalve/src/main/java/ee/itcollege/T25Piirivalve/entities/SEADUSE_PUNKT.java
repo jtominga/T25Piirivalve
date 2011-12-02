@@ -7,15 +7,16 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.tostring.RooToString;
+import ee.itcollege.T25Piirivalve.entities.SEADUS;
 import ee.itcollege.T25Piirivalve.entities.SEADUSE_PUNKT;
-import java.util.Set;
+import javax.persistence.ManyToOne;
+import java.util.Collection;
 import javax.persistence.OneToMany;
 
 /**
@@ -51,10 +52,9 @@ public class SEADUSE_PUNKT extends BaseEntity implements Serializable {
 	@ManyToOne
 	private SEADUS sEADUS;
 	@ManyToOne
-	private SEADUSE_PUNKT YLEMUS_SEADUSE_PUNKT;
-	@OneToMany(mappedBy = "YLEMUS_SEADUSE_PUNKT")
-	private Set<SEADUSE_PUNKT> ALAM_SEADUSE_PUNKTID;
-
+	private SEADUSE_PUNKT YLEM_SEADUSE_PUNKT;
+	@OneToMany(mappedBy = "YLEM_SEADUSE_PUNKT")
+	private Collection<SEADUSE_PUNKT> ALAM_SEADUSE_PUNKTID;
 	public SEADUSE_PUNKT() {
 		super();
 	}   
@@ -100,22 +100,22 @@ public class SEADUSE_PUNKT extends BaseEntity implements Serializable {
 	public void setTekst(String tekst) {
 		this.tekst = tekst;
 	}
-	public SEADUSE_PUNKT getYLEMUS_SEADUSE_PUNKT() {
-	    return YLEMUS_SEADUSE_PUNKT;
-	}
-	public void setYLEMUS_SEADUSE_PUNKT(SEADUSE_PUNKT param) {
-	    this.YLEMUS_SEADUSE_PUNKT = param;
-	}
 	public SEADUS getSEADUS() {
 	    return sEADUS;
 	}
 	public void setSEADUS(SEADUS param) {
 	    this.sEADUS = param;
 	}
-	public Set<SEADUSE_PUNKT> getALAM_SEADUSE_PUNKTID() {
+	public SEADUSE_PUNKT getYLEM_SEADUSE_PUNKT() {
+	    return YLEM_SEADUSE_PUNKT;
+	}
+	public void setYLEM_SEADUSE_PUNKT(SEADUSE_PUNKT param) {
+	    this.YLEM_SEADUSE_PUNKT = param;
+	}
+	public Collection<SEADUSE_PUNKT> getALAM_SEADUSE_PUNKTID() {
 	    return ALAM_SEADUSE_PUNKTID;
 	}
-	public void setALAM_SEADUSE_PUNKTID(Set<SEADUSE_PUNKT> param) {
+	public void setALAM_SSEADUSE_PUNKTID(Collection<SEADUSE_PUNKT> param) {
 	    this.ALAM_SEADUSE_PUNKTID = param;
 	}
    

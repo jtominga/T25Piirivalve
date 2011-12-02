@@ -13,9 +13,8 @@ import javax.validation.constraints.NotNull;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.tostring.RooToString;
-import ee.itcollege.T25Piirivalve.entities.INTSIDENT;
 import ee.itcollege.T25Piirivalve.entities.PIIRIVALVURI_SEADUS_INTSIDENDIS;
-import java.util.Set;
+import java.util.Collection;
 import javax.persistence.OneToMany;
 
 /**
@@ -48,7 +47,7 @@ public class PIIRIVALVUR_INTSIDENDIS extends BaseEntity implements Serializable 
 	@ManyToOne
 	private INTSIDENT iNTSIDENT;
 	@OneToMany(mappedBy = "pIIRIVALVUR_INTSIDENDIS")
-	private Set<PIIRIVALVURI_SEADUS_INTSIDENDIS> pIIRIVALVURI_SEADUS_INTSIDENDIS;
+	private Collection<PIIRIVALVURI_SEADUS_INTSIDENDIS> pIIRIVALVURI_SEADUS_INTSIDENDIS;
 
 	public PIIRIVALVUR_INTSIDENDIS() {
 		super();
@@ -96,10 +95,10 @@ public class PIIRIVALVUR_INTSIDENDIS extends BaseEntity implements Serializable 
 	public void setINTSIDENT(INTSIDENT param) {
 	    this.iNTSIDENT = param;
 	}
-	public Set<PIIRIVALVURI_SEADUS_INTSIDENDIS> getPIIRIVALVURI_SEADUS_INTSIDENDIS() {
+	public Collection<PIIRIVALVURI_SEADUS_INTSIDENDIS> getPIIRIVALVURI_SEADUS_INTSIDENDIS() {
 	    return pIIRIVALVURI_SEADUS_INTSIDENDIS;
 	}
-	public void setPIIRIVALVURI_SEADUS_INTSIDENDIS(Set<PIIRIVALVURI_SEADUS_INTSIDENDIS> param) {
+	public void setPIIRIVALVURI_SEADUS_INTSIDENDIS(Collection<PIIRIVALVURI_SEADUS_INTSIDENDIS> param) {
 	    this.pIIRIVALVURI_SEADUS_INTSIDENDIS = param;
 	}
    

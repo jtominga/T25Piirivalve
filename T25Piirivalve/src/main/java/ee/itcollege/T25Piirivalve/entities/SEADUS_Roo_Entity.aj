@@ -6,11 +6,8 @@ package ee.itcollege.T25Piirivalve.entities;
 import ee.itcollege.T25Piirivalve.entities.SEADUS;
 import java.lang.Long;
 import java.util.List;
-import javax.persistence.Entity;
 
 privileged aspect SEADUS_Roo_Entity {
-    
-    declare @type: SEADUS: @Entity;
     
     public static long SEADUS.countSEADUS() {
         return entityManager().createQuery("SELECT COUNT(o) FROM SEADUS o", Long.class).getSingleResult();

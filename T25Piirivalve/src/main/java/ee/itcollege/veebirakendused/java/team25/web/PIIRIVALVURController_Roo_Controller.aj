@@ -5,7 +5,6 @@ package ee.itcollege.veebirakendused.java.team25.web;
 
 import ee.itcollege.T25Piirivalve.entities.PIIRIVALVUR;
 import ee.itcollege.T25Piirivalve.entities.PIIRIVALVUR_INTSIDENDIS;
-import ee.itcollege.T25Piirivalve.entities.PIIRIVALVUR_PIIRIPUNKTIS;
 import ee.itcollege.T25Piirivalve.entities.PIIRIVALVUR_VAEOSAS;
 import ee.itcollege.T25Piirivalve.entities.VAHTKONNA_LIIGE;
 import java.io.UnsupportedEncodingException;
@@ -98,11 +97,6 @@ privileged aspect PIIRIVALVURController_Roo_Controller {
     @ModelAttribute("piirivalvur_intsidendiss")
     public Collection<PIIRIVALVUR_INTSIDENDIS> PIIRIVALVURController.populatePIIRIVALVUR_INTSIDENDISs() {
         return PIIRIVALVUR_INTSIDENDIS.findAllPIIRIVALVUR_INTSIDENDISs();
-    }
-    
-    @ModelAttribute("piirivalvur_piiripunktiss")
-    public Collection<PIIRIVALVUR_PIIRIPUNKTIS> PIIRIVALVURController.populatePIIRIVALVUR_PIIRIPUNKTISs() {
-        return PIIRIVALVUR_PIIRIPUNKTIS.findAllPIIRIVALVUR_PIIRIPUNKTISs();
     }
     
     @ModelAttribute("piirivalvur_vaeosass")

@@ -14,7 +14,7 @@ import javax.validation.constraints.NotNull;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.tostring.RooToString;
-import ee.itcollege.T25Piirivalve.entities.PIIRIVALVUR;
+import ee.itcollege.T25Piirivalve.entities.VAEOSA;
 
 /**
  * Entity implementation class for Entity: PIIRIVALVUR_VAEOSAS
@@ -40,9 +40,9 @@ public class PIIRIVALVUR_VAEOSAS extends BaseEntity implements Serializable {
 	private Double koormus;
 	private static final long serialVersionUID = 1L;
 	@ManyToOne
-	private AMET_VAEOSAS aMET_VAEOSAS;
-	@ManyToOne
 	private PIIRIVALVUR pIIRIVALVUR;
+	@ManyToOne
+	private VAEOSA vAEOSA;
 	public PIIRIVALVUR_VAEOSAS() {
 		super();
 	}   
@@ -72,17 +72,17 @@ public class PIIRIVALVUR_VAEOSAS extends BaseEntity implements Serializable {
 	public void setKoormus(Double koormus) {
 		this.koormus = koormus;
 	}
-	public AMET_VAEOSAS getAMET_VAEOSAS() {
-	    return aMET_VAEOSAS;
-	}
-	public void setAMET_VAEOSAS(AMET_VAEOSAS param) {
-	    this.aMET_VAEOSAS = param;
-	}
 	public PIIRIVALVUR getPIIRIVALVUR() {
 	    return pIIRIVALVUR;
 	}
 	public void setPIIRIVALVUR(PIIRIVALVUR param) {
 	    this.pIIRIVALVUR = param;
+	}
+	public VAEOSA getVAEOSA() {
+	    return vAEOSA;
+	}
+	public void setVAEOSA(VAEOSA param) {
+	    this.vAEOSA = param;
 	}
    
 }

@@ -11,7 +11,9 @@ import java.io.UnsupportedEncodingException;
 import java.lang.Integer;
 import java.lang.Long;
 import java.lang.String;
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 import org.springframework.ui.Model;
@@ -42,6 +44,14 @@ privileged aspect ISIK_INTSIDENDISController_Roo_Controller {
     public String ISIK_INTSIDENDISController.createForm(Model uiModel) {
         uiModel.addAttribute("ISIK_INTSIDENDIS", new ISIK_INTSIDENDIS());
         addDateTimeFormatPatterns(uiModel);
+        List dependencies = new ArrayList();
+        if (INTSIDENT.countINTSIDENTS() == 0) {
+            dependencies.add(new String[]{"intsident", "intsidents"});
+        }
+        if (PIIRIRIKKUJA.countPIIRIRIKKUJAS() == 0) {
+            dependencies.add(new String[]{"piiririkkuja", "piiririkkujas"});
+        }
+        uiModel.addAttribute("dependencies", dependencies);
         return "isik_intsidendiss/create";
     }
     

@@ -1,25 +1,20 @@
 package ee.itcollege.T25Piirivalve.entities;
 
 import java.io.Serializable;
+import java.util.Collection;
 import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.tostring.RooToString;
-import ee.itcollege.T25Piirivalve.entities.PIIRIPUNKT;
-import javax.persistence.ManyToOne;
-import ee.itcollege.T25Piirivalve.entities.VAHTKOND_PIIRILOIGUL;
-import java.util.Set;
-import javax.persistence.OneToMany;
-import ee.itcollege.T25Piirivalve.entities.VAHTKONNA_LIIGE;
-import ee.itcollege.T25Piirivalve.entities.VAHTKOND_INTSIDENDIS;
 
 /**
  * Entity implementation class for Entity: VAHTKOND
@@ -48,14 +43,12 @@ public class VAHTKOND extends BaseEntity implements Serializable {
 	@NotNull
 	private Date kuni;	
 	private static final long serialVersionUID = 1L;
-	@ManyToOne
-	private PIIRIPUNKT pIIRIPUNKT;
 	@OneToMany(mappedBy = "vAHTKOND")
-	private Set<VAHTKOND_PIIRILOIGUL> vAHTKOND_PIIRILOIGUL;
+	private Collection<VAHTKONNA_LIIGE> vAHTKONNA_LIIGE;
 	@OneToMany(mappedBy = "vAHTKOND")
-	private Set<VAHTKONNA_LIIGE> vAHTKONNA_LIIGE;
+	private Collection<VAHTKOND_PIIRILOIGUL> vAHTKOND_PIIRILOIGUL;
 	@OneToMany(mappedBy = "vAHTKOND")
-	private Set<VAHTKOND_INTSIDENDIS> vAHTKOND_INTSIDENDIS;
+	private Collection<VAHTKOND_INTSIDENDIS> vAHTKOND_INTSIDENDIS;
 	public VAHTKOND() {
 		super();
 	}   
@@ -90,28 +83,22 @@ public class VAHTKOND extends BaseEntity implements Serializable {
 	public void setKuni(Date kuni) {
 		this.kuni = kuni;
 	}
-	public PIIRIPUNKT getPIIRIPUNKT() {
-	    return pIIRIPUNKT;
-	}
-	public void setPIIRIPUNKT(PIIRIPUNKT param) {
-	    this.pIIRIPUNKT = param;
-	}
-	public Set<VAHTKOND_PIIRILOIGUL> getVAHTKOND_PIIRILOIGUL() {
-	    return vAHTKOND_PIIRILOIGUL;
-	}
-	public void setVAHTKOND_PIIRILOIGUL(Set<VAHTKOND_PIIRILOIGUL> param) {
-	    this.vAHTKOND_PIIRILOIGUL = param;
-	}
-	public Set<VAHTKONNA_LIIGE> getVAHTKONNA_LIIGE() {
+	public Collection<VAHTKONNA_LIIGE> getVAHTKONNA_LIIGE() {
 	    return vAHTKONNA_LIIGE;
 	}
-	public void setVAHTKONNA_LIIGE(Set<VAHTKONNA_LIIGE> param) {
+	public void setVAHTKONNA_LIIGE(Collection<VAHTKONNA_LIIGE> param) {
 	    this.vAHTKONNA_LIIGE = param;
 	}
-	public Set<VAHTKOND_INTSIDENDIS> getVAHTKOND_INTSIDENDIS() {
+	public Collection<VAHTKOND_PIIRILOIGUL> getVAHTKOND_PIIRILOIGUL() {
+	    return vAHTKOND_PIIRILOIGUL;
+	}
+	public void setVAHTKOND_PIIRILOIGUL(Collection<VAHTKOND_PIIRILOIGUL> param) {
+	    this.vAHTKOND_PIIRILOIGUL = param;
+	}
+	public Collection<VAHTKOND_INTSIDENDIS> getVAHTKOND_INTSIDENDIS() {
 	    return vAHTKOND_INTSIDENDIS;
 	}
-	public void setVAHTKOND_INTSIDENDIS(Set<VAHTKOND_INTSIDENDIS> param) {
+	public void setVAHTKOND_INTSIDENDIS(Collection<VAHTKOND_INTSIDENDIS> param) {
 	    this.vAHTKOND_INTSIDENDIS = param;
 	}
 	

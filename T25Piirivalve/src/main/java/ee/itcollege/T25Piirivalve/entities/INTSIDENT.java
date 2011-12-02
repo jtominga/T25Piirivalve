@@ -1,13 +1,14 @@
 package ee.itcollege.T25Piirivalve.entities;
 
 import java.io.Serializable;
+import java.util.Collection;
 import java.util.Date;
-import java.util.Set;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotNull;
@@ -16,11 +17,8 @@ import javax.validation.constraints.Size;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.tostring.RooToString;
-import ee.itcollege.T25Piirivalve.entities.INTSIDENDI_LIIK;
-import ee.itcollege.T25Piirivalve.entities.PIIRILOIK;
-import javax.persistence.ManyToOne;
-import ee.itcollege.T25Piirivalve.entities.VAHTKOND_INTSIDENDIS;
 import ee.itcollege.T25Piirivalve.entities.OBJEKT_INTSIDENDIS;
+import ee.itcollege.T25Piirivalve.entities.ISIK_INTSIDENDIS;
 
 /**
  * Entity implementation class for Entity: INTSIDENT
@@ -52,18 +50,19 @@ public class INTSIDENT extends BaseEntity implements Serializable {
 	@NotNull
 	private String kirjeldus;
 	private static final long serialVersionUID = 1L;
-	@OneToMany(mappedBy = "iNTSIDENT")
-	private Set<PIIRIVALVUR_INTSIDENDIS> pIIRIVALVUR_INTSIDENDIS;
-	@OneToMany(mappedBy = "iNTSIDENT")
-	private Set<ISIK_INTSIDENDIS> iSIK_INTSIDENDIS;
 	@ManyToOne
-	private INTSIDENDI_LIIK iNTSIDENDI_LIIK;
-	@ManyToOne
+	@NotNull
 	private PIIRILOIK pIIRILOIK;
 	@OneToMany(mappedBy = "iNTSIDENT")
-	private Set<VAHTKOND_INTSIDENDIS> vAHTKOND_INTSIDENDIS;
+	private Collection<VAHTKOND_INTSIDENDIS> vAHTKOND_INTSIDENDIS;
 	@OneToMany(mappedBy = "iNTSIDENT")
-	private Set<OBJEKT_INTSIDENDIS> oBJEKT_INTSIDENDIS;
+	private Collection<PIIRIVALVUR_INTSIDENDIS> pIIRIVALVUR_INTSIDENDIS;
+	@ManyToOne
+	private INTSIDENDI_LIIK iNTSIDENDI_LIIK;
+	@OneToMany(mappedBy = "iNTSIDENT")
+	private Collection<OBJEKT_INTSIDENDIS> oBJEKT_INTSIDENDIS;
+	@OneToMany(mappedBy = "iNTSIDENT")
+	private Collection<ISIK_INTSIDENDIS> iSIK_INTSIDENDIS;
 
 	public INTSIDENT() {
 		super();
@@ -118,17 +117,23 @@ public class INTSIDENT extends BaseEntity implements Serializable {
 	public void setKirjeldus(String kirjeldus) {
 		this.kirjeldus = kirjeldus;
 	}
-	public Set<PIIRIVALVUR_INTSIDENDIS> getPIIRIVALVUR_INTSIDENDIS() {
+	public PIIRILOIK getPIIRILOIK() {
+	    return pIIRILOIK;
+	}
+	public void setPIIRILOIK(PIIRILOIK param) {
+	    this.pIIRILOIK = param;
+	}
+	public Collection<VAHTKOND_INTSIDENDIS> getVAHTKOND_INTSIDENDIS() {
+	    return vAHTKOND_INTSIDENDIS;
+	}
+	public void setVAHTKOND_INTSIDENDIS(Collection<VAHTKOND_INTSIDENDIS> param) {
+	    this.vAHTKOND_INTSIDENDIS = param;
+	}
+	public Collection<PIIRIVALVUR_INTSIDENDIS> getPIIRIVALVUR_INTSIDENDIS() {
 	    return pIIRIVALVUR_INTSIDENDIS;
 	}
-	public void setPIIRIVALVUR_INTSIDENDIS(Set<PIIRIVALVUR_INTSIDENDIS> param) {
+	public void setPIIRIVALVUR_INTSIDENDIS(Collection<PIIRIVALVUR_INTSIDENDIS> param) {
 	    this.pIIRIVALVUR_INTSIDENDIS = param;
-	}
-	public Set<ISIK_INTSIDENDIS> getISIK_INTSIDENDIS() {
-	    return iSIK_INTSIDENDIS;
-	}
-	public void setISIK_INTSIDENDIS(Set<ISIK_INTSIDENDIS> param) {
-	    this.iSIK_INTSIDENDIS = param;
 	}
 	public INTSIDENDI_LIIK getINTSIDENDI_LIIK() {
 	    return iNTSIDENDI_LIIK;
@@ -136,23 +141,17 @@ public class INTSIDENT extends BaseEntity implements Serializable {
 	public void setINTSIDENDI_LIIK(INTSIDENDI_LIIK param) {
 	    this.iNTSIDENDI_LIIK = param;
 	}
-	public PIIRILOIK getPIIRILOIK() {
-	    return pIIRILOIK;
-	}
-	public void setPIIRILOIK(PIIRILOIK param) {
-	    this.pIIRILOIK = param;
-	}
-	public Set<VAHTKOND_INTSIDENDIS> getVAHTKOND_INTSIDENDIS() {
-	    return vAHTKOND_INTSIDENDIS;
-	}
-	public void setVAHTKOND_INTSIDENDIS(Set<VAHTKOND_INTSIDENDIS> param) {
-	    this.vAHTKOND_INTSIDENDIS = param;
-	}
-	public Set<OBJEKT_INTSIDENDIS> getOBJEKT_INTSIDENDIS() {
+	public Collection<OBJEKT_INTSIDENDIS> getOBJEKT_INTSIDENDIS() {
 	    return oBJEKT_INTSIDENDIS;
 	}
-	public void setOBJEKT_INTSIDENDIS(Set<OBJEKT_INTSIDENDIS> param) {
+	public void setOBJEKT_INTSIDENDIS(Collection<OBJEKT_INTSIDENDIS> param) {
 	    this.oBJEKT_INTSIDENDIS = param;
+	}
+	public Collection<ISIK_INTSIDENDIS> getISIK_INTSIDENDIS() {
+	    return iSIK_INTSIDENDIS;
+	}
+	public void setISIK_INTSIDENDIS(Collection<ISIK_INTSIDENDIS> param) {
+	    this.iSIK_INTSIDENDIS = param;
 	}
    
 }

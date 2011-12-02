@@ -12,7 +12,7 @@ import javax.validation.constraints.Size;
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.tostring.RooToString;
 import ee.itcollege.T25Piirivalve.entities.INTSIDENT;
-import java.util.Set;
+import java.util.Collection;
 import javax.persistence.OneToMany;
 
 /**
@@ -37,8 +37,7 @@ public class INTSIDENDI_LIIK extends BaseEntity implements Serializable  {
 	private String nimetus;
 	private static final long serialVersionUID = 1L;
 	@OneToMany(mappedBy = "iNTSIDENDI_LIIK")
-	private Set<INTSIDENT> iNTSIDENT;
-
+	private Collection<INTSIDENT> iNTSIDENT;
 	public INTSIDENDI_LIIK() {
 		super();
 	}   
@@ -65,10 +64,10 @@ public class INTSIDENDI_LIIK extends BaseEntity implements Serializable  {
 	public void setNimetus(String nimetus) {
 		this.nimetus = nimetus;
 	}
-	public Set<INTSIDENT> getINTSIDENT() {
+	public Collection<INTSIDENT> getINTSIDENT() {
 	    return iNTSIDENT;
 	}
-	public void setINTSIDENT(Set<INTSIDENT> param) {
+	public void setINTSIDENT(Collection<INTSIDENT> param) {
 	    this.iNTSIDENT = param;
 	}
    

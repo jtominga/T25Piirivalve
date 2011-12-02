@@ -13,7 +13,6 @@ import javax.validation.constraints.NotNull;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.tostring.RooToString;
-import ee.itcollege.T25Piirivalve.entities.PIIRILOIK;
 /**
  * Entity implementation class for Entity: PIIRILOIGU_HALDAJA
  *
@@ -37,8 +36,6 @@ public class PIIRILOIGU_HALDAJA extends BaseEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
 	@ManyToOne
 	private VAEOSA vAEOSA;
-	@ManyToOne
-	private PIIRIPUNKT pIIRIPUNKT;
 	@ManyToOne
 	private PIIRILOIK pIIRILOIK;
 	public PIIRILOIGU_HALDAJA() {
@@ -70,12 +67,6 @@ public class PIIRILOIGU_HALDAJA extends BaseEntity implements Serializable {
 	}
 	public void setVAEOSA(VAEOSA param) {
 	    this.vAEOSA = param;
-	}
-	public PIIRIPUNKT getPIIRIPUNKT() {
-	    return pIIRIPUNKT;
-	}
-	public void setPIIRIPUNKT(PIIRIPUNKT param) {
-	    this.pIIRIPUNKT = param;
 	}
 	public PIIRILOIK getPIIRILOIK() {
 	    return pIIRILOIK;

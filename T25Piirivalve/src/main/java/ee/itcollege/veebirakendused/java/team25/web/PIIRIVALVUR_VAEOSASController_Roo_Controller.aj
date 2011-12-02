@@ -3,9 +3,9 @@
 
 package ee.itcollege.veebirakendused.java.team25.web;
 
-import ee.itcollege.T25Piirivalve.entities.AMET_VAEOSAS;
 import ee.itcollege.T25Piirivalve.entities.PIIRIVALVUR;
 import ee.itcollege.T25Piirivalve.entities.PIIRIVALVUR_VAEOSAS;
+import ee.itcollege.T25Piirivalve.entities.VAEOSA;
 import java.io.UnsupportedEncodingException;
 import java.lang.Integer;
 import java.lang.Long;
@@ -94,11 +94,6 @@ privileged aspect PIIRIVALVUR_VAEOSASController_Roo_Controller {
         return "redirect:/piirivalvur_vaeosass";
     }
     
-    @ModelAttribute("amet_vaeosass")
-    public Collection<AMET_VAEOSAS> PIIRIVALVUR_VAEOSASController.populateAMET_VAEOSASs() {
-        return AMET_VAEOSAS.findAllAMET_VAEOSASs();
-    }
-    
     @ModelAttribute("piirivalvurs")
     public Collection<PIIRIVALVUR> PIIRIVALVUR_VAEOSASController.populatePIIRIVALVURS() {
         return PIIRIVALVUR.findAllPIIRIVALVURS();
@@ -107,6 +102,11 @@ privileged aspect PIIRIVALVUR_VAEOSASController_Roo_Controller {
     @ModelAttribute("piirivalvur_vaeosass")
     public Collection<PIIRIVALVUR_VAEOSAS> PIIRIVALVUR_VAEOSASController.populatePIIRIVALVUR_VAEOSASs() {
         return PIIRIVALVUR_VAEOSAS.findAllPIIRIVALVUR_VAEOSASs();
+    }
+    
+    @ModelAttribute("vaeosas")
+    public Collection<VAEOSA> PIIRIVALVUR_VAEOSASController.populateVAEOSAS() {
+        return VAEOSA.findAllVAEOSAS();
     }
     
     void PIIRIVALVUR_VAEOSASController.addDateTimeFormatPatterns(Model uiModel) {

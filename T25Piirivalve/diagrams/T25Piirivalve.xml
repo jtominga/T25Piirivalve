@@ -2,7 +2,7 @@
 	<entity>
 		<entity-name>ee.itcollege.T25Piirivalve.entities.SEADUS</entity-name>
 		<entity-width>120</entity-width>
-		<entity-height>246</entity-height>
+		<entity-height>30</entity-height>
 		<entity-X-Coordinate>1853</entity-X-Coordinate>
 		<entity-Y-Coordinate>901</entity-Y-Coordinate>
 		<primary-collapsed>false</primary-collapsed>
@@ -11,20 +11,9 @@
 	</entity>
 
 	<entity>
-		<entity-name>ee.itcollege.T25Piirivalve.entities.PIIRIPUNKT</entity-name>
-		<entity-width>120</entity-width>
-		<entity-height>306</entity-height>
-		<entity-X-Coordinate>820</entity-X-Coordinate>
-		<entity-Y-Coordinate>320</entity-Y-Coordinate>
-		<primary-collapsed>false</primary-collapsed>
-		<relation-collapsed>false</relation-collapsed>
-		<basic-collapsed>false</basic-collapsed>
-	</entity>
-
-	<entity>
 		<entity-name>ee.itcollege.T25Piirivalve.entities.VAHTKONNA_LIIGE</entity-name>
 		<entity-width>120</entity-width>
-		<entity-height>186</entity-height>
+		<entity-height>30</entity-height>
 		<entity-X-Coordinate>828</entity-X-Coordinate>
 		<entity-Y-Coordinate>759</entity-Y-Coordinate>
 		<primary-collapsed>false</primary-collapsed>
@@ -35,7 +24,7 @@
 	<entity>
 		<entity-name>ee.itcollege.T25Piirivalve.entities.PIIRILOIGU_HALDAJA</entity-name>
 		<entity-width>120</entity-width>
-		<entity-height>206</entity-height>
+		<entity-height>30</entity-height>
 		<entity-X-Coordinate>816</entity-X-Coordinate>
 		<entity-Y-Coordinate>20</entity-Y-Coordinate>
 		<primary-collapsed>false</primary-collapsed>
@@ -46,9 +35,9 @@
 	<entity>
 		<entity-name>ee.itcollege.T25Piirivalve.entities.PIIRIRIKKUJA</entity-name>
 		<entity-width>120</entity-width>
-		<entity-height>246</entity-height>
-		<entity-X-Coordinate>1620</entity-X-Coordinate>
-		<entity-Y-Coordinate>1046</entity-Y-Coordinate>
+		<entity-height>30</entity-height>
+		<entity-X-Coordinate>1584</entity-X-Coordinate>
+		<entity-Y-Coordinate>776</entity-Y-Coordinate>
 		<primary-collapsed>false</primary-collapsed>
 		<relation-collapsed>false</relation-collapsed>
 		<basic-collapsed>false</basic-collapsed>
@@ -57,9 +46,9 @@
 	<entity>
 		<entity-name>ee.itcollege.T25Piirivalve.entities.PIIRIVALVUR_INTSIDENDIS</entity-name>
 		<entity-width>120</entity-width>
-		<entity-height>246</entity-height>
+		<entity-height>30</entity-height>
 		<entity-X-Coordinate>1028</entity-X-Coordinate>
-		<entity-Y-Coordinate>900</entity-Y-Coordinate>
+		<entity-Y-Coordinate>1023</entity-Y-Coordinate>
 		<primary-collapsed>false</primary-collapsed>
 		<relation-collapsed>false</relation-collapsed>
 		<basic-collapsed>false</basic-collapsed>
@@ -68,9 +57,9 @@
 	<entity>
 		<entity-name>ee.itcollege.T25Piirivalve.entities.OBJEKT</entity-name>
 		<entity-width>120</entity-width>
-		<entity-height>148</entity-height>
-		<entity-X-Coordinate>1450</entity-X-Coordinate>
-		<entity-Y-Coordinate>365</entity-Y-Coordinate>
+		<entity-height>30</entity-height>
+		<entity-X-Coordinate>1558</entity-X-Coordinate>
+		<entity-Y-Coordinate>299</entity-Y-Coordinate>
 		<primary-collapsed>false</primary-collapsed>
 		<relation-collapsed>false</relation-collapsed>
 		<basic-collapsed>false</basic-collapsed>
@@ -79,20 +68,9 @@
 	<entity>
 		<entity-name>ee.itcollege.T25Piirivalve.entities.OBJEKTI_SEADUS_INTSIDENDIS</entity-name>
 		<entity-width>120</entity-width>
-		<entity-height>206</entity-height>
-		<entity-X-Coordinate>1680</entity-X-Coordinate>
-		<entity-Y-Coordinate>670</entity-Y-Coordinate>
-		<primary-collapsed>false</primary-collapsed>
-		<relation-collapsed>false</relation-collapsed>
-		<basic-collapsed>false</basic-collapsed>
-	</entity>
-
-	<entity>
-		<entity-name>ee.itcollege.T25Piirivalve.entities.AMET_PIIRIPUNKTIS</entity-name>
-		<entity-width>120</entity-width>
-		<entity-height>206</entity-height>
-		<entity-X-Coordinate>591</entity-X-Coordinate>
-		<entity-Y-Coordinate>491</entity-Y-Coordinate>
+		<entity-height>30</entity-height>
+		<entity-X-Coordinate>1722</entity-X-Coordinate>
+		<entity-Y-Coordinate>593</entity-Y-Coordinate>
 		<primary-collapsed>false</primary-collapsed>
 		<relation-collapsed>false</relation-collapsed>
 		<basic-collapsed>false</basic-collapsed>
@@ -112,9 +90,9 @@
 	<entity>
 		<entity-name>ee.itcollege.T25Piirivalve.entities.OBJEKT_INTSIDENDIS</entity-name>
 		<entity-width>120</entity-width>
-		<entity-height>226</entity-height>
-		<entity-X-Coordinate>1450</entity-X-Coordinate>
-		<entity-Y-Coordinate>599</entity-Y-Coordinate>
+		<entity-height>30</entity-height>
+		<entity-X-Coordinate>1494</entity-X-Coordinate>
+		<entity-Y-Coordinate>560</entity-Y-Coordinate>
 		<primary-collapsed>false</primary-collapsed>
 		<relation-collapsed>false</relation-collapsed>
 		<basic-collapsed>false</basic-collapsed>
@@ -123,7 +101,7 @@
 	<entity>
 		<entity-name>ee.itcollege.T25Piirivalve.entities.VAHTKOND</entity-name>
 		<entity-width>120</entity-width>
-		<entity-height>266</entity-height>
+		<entity-height>30</entity-height>
 		<entity-X-Coordinate>990</entity-X-Coordinate>
 		<entity-Y-Coordinate>481</entity-Y-Coordinate>
 		<primary-collapsed>false</primary-collapsed>
@@ -134,7 +112,7 @@
 	<entity>
 		<entity-name>ee.itcollege.T25Piirivalve.entities.PIIRIVALVUR</entity-name>
 		<entity-width>120</entity-width>
-		<entity-height>286</entity-height>
+		<entity-height>30</entity-height>
 		<entity-X-Coordinate>439</entity-X-Coordinate>
 		<entity-Y-Coordinate>899</entity-Y-Coordinate>
 		<primary-collapsed>false</primary-collapsed>
@@ -143,20 +121,9 @@
 	</entity>
 
 	<entity>
-		<entity-name>ee.itcollege.T25Piirivalve.entities.PIIRIVALVUR_PIIRIPUNKTIS</entity-name>
-		<entity-width>120</entity-width>
-		<entity-height>206</entity-height>
-		<entity-X-Coordinate>611</entity-X-Coordinate>
-		<entity-Y-Coordinate>731</entity-Y-Coordinate>
-		<primary-collapsed>false</primary-collapsed>
-		<relation-collapsed>false</relation-collapsed>
-		<basic-collapsed>false</basic-collapsed>
-	</entity>
-
-	<entity>
 		<entity-name>ee.itcollege.T25Piirivalve.entities.VAEOSA</entity-name>
 		<entity-width>120</entity-width>
-		<entity-height>226</entity-height>
+		<entity-height>30</entity-height>
 		<entity-X-Coordinate>510</entity-X-Coordinate>
 		<entity-Y-Coordinate>27</entity-Y-Coordinate>
 		<primary-collapsed>false</primary-collapsed>
@@ -167,9 +134,9 @@
 	<entity>
 		<entity-name>ee.itcollege.T25Piirivalve.entities.VAHTKOND_INTSIDENDIS</entity-name>
 		<entity-width>120</entity-width>
-		<entity-height>226</entity-height>
-		<entity-X-Coordinate>1137</entity-X-Coordinate>
-		<entity-Y-Coordinate>450</entity-Y-Coordinate>
+		<entity-height>30</entity-height>
+		<entity-X-Coordinate>1125</entity-X-Coordinate>
+		<entity-Y-Coordinate>358</entity-Y-Coordinate>
 		<primary-collapsed>false</primary-collapsed>
 		<relation-collapsed>false</relation-collapsed>
 		<basic-collapsed>false</basic-collapsed>
@@ -189,9 +156,9 @@
 	<entity>
 		<entity-name>ee.itcollege.T25Piirivalve.entities.OBJEKTI_LIIK</entity-name>
 		<entity-width>120</entity-width>
-		<entity-height>166</entity-height>
-		<entity-X-Coordinate>1450</entity-X-Coordinate>
-		<entity-Y-Coordinate>182</entity-Y-Coordinate>
+		<entity-height>30</entity-height>
+		<entity-X-Coordinate>1560</entity-X-Coordinate>
+		<entity-Y-Coordinate>135</entity-Y-Coordinate>
 		<primary-collapsed>false</primary-collapsed>
 		<relation-collapsed>false</relation-collapsed>
 		<basic-collapsed>false</basic-collapsed>
@@ -201,8 +168,8 @@
 		<entity-name>ee.itcollege.T25Piirivalve.entities.ISIKU_SEADUS_INTSIDENDIS</entity-name>
 		<entity-width>120</entity-width>
 		<entity-height>206</entity-height>
-		<entity-X-Coordinate>1450</entity-X-Coordinate>
-		<entity-Y-Coordinate>815</entity-Y-Coordinate>
+		<entity-X-Coordinate>1688</entity-X-Coordinate>
+		<entity-Y-Coordinate>1211</entity-Y-Coordinate>
 		<primary-collapsed>false</primary-collapsed>
 		<relation-collapsed>false</relation-collapsed>
 		<basic-collapsed>false</basic-collapsed>
@@ -211,9 +178,9 @@
 	<entity>
 		<entity-name>ee.itcollege.T25Piirivalve.entities.ISIK_INTSIDENDIS</entity-name>
 		<entity-width>120</entity-width>
-		<entity-height>226</entity-height>
-		<entity-X-Coordinate>1229</entity-X-Coordinate>
-		<entity-Y-Coordinate>971</entity-Y-Coordinate>
+		<entity-height>30</entity-height>
+		<entity-X-Coordinate>1391</entity-X-Coordinate>
+		<entity-Y-Coordinate>992</entity-Y-Coordinate>
 		<primary-collapsed>false</primary-collapsed>
 		<relation-collapsed>false</relation-collapsed>
 		<basic-collapsed>false</basic-collapsed>
@@ -222,7 +189,7 @@
 	<entity>
 		<entity-name>ee.itcollege.T25Piirivalve.entities.VAHTKOND_PIIRILOIGUL</entity-name>
 		<entity-width>120</entity-width>
-		<entity-height>186</entity-height>
+		<entity-height>30</entity-height>
 		<entity-X-Coordinate>1018</entity-X-Coordinate>
 		<entity-Y-Coordinate>220</entity-Y-Coordinate>
 		<primary-collapsed>false</primary-collapsed>
@@ -233,7 +200,7 @@
 	<entity>
 		<entity-name>ee.itcollege.T25Piirivalve.entities.PIIRIVALVURI_SEADUS_INTSIDENDIS</entity-name>
 		<entity-width>120</entity-width>
-		<entity-height>206</entity-height>
+		<entity-height>30</entity-height>
 		<entity-X-Coordinate>1189</entity-X-Coordinate>
 		<entity-Y-Coordinate>1250</entity-Y-Coordinate>
 		<primary-collapsed>false</primary-collapsed>
@@ -242,20 +209,9 @@
 	</entity>
 
 	<entity>
-		<entity-name>ee.itcollege.T25Piirivalve.entities.AMET_VAEOSAS</entity-name>
-		<entity-width>120</entity-width>
-		<entity-height>206</entity-height>
-		<entity-X-Coordinate>424</entity-X-Coordinate>
-		<entity-Y-Coordinate>390</entity-Y-Coordinate>
-		<primary-collapsed>false</primary-collapsed>
-		<relation-collapsed>false</relation-collapsed>
-		<basic-collapsed>false</basic-collapsed>
-	</entity>
-
-	<entity>
 		<entity-name>ee.itcollege.T25Piirivalve.entities.INTSIDENDI_LIIK</entity-name>
 		<entity-width>120</entity-width>
-		<entity-height>166</entity-height>
+		<entity-height>30</entity-height>
 		<entity-X-Coordinate>1310</entity-X-Coordinate>
 		<entity-Y-Coordinate>503</entity-Y-Coordinate>
 		<primary-collapsed>false</primary-collapsed>
@@ -266,7 +222,7 @@
 	<entity>
 		<entity-name>ee.itcollege.T25Piirivalve.entities.PIIRIVALVUR_VAEOSAS</entity-name>
 		<entity-width>120</entity-width>
-		<entity-height>206</entity-height>
+		<entity-height>30</entity-height>
 		<entity-X-Coordinate>439</entity-X-Coordinate>
 		<entity-Y-Coordinate>651</entity-Y-Coordinate>
 		<primary-collapsed>false</primary-collapsed>
@@ -275,20 +231,9 @@
 	</entity>
 
 	<entity>
-		<entity-name>ee.itcollege.T25Piirivalve.entities.AMET</entity-name>
-		<entity-width>120</entity-width>
-		<entity-height>186</entity-height>
-		<entity-X-Coordinate>591</entity-X-Coordinate>
-		<entity-Y-Coordinate>288</entity-Y-Coordinate>
-		<primary-collapsed>false</primary-collapsed>
-		<relation-collapsed>false</relation-collapsed>
-		<basic-collapsed>false</basic-collapsed>
-	</entity>
-
-	<entity>
 		<entity-name>ee.itcollege.T25Piirivalve.entities.PIIRILOIK</entity-name>
 		<entity-width>120</entity-width>
-		<entity-height>246</entity-height>
+		<entity-height>30</entity-height>
 		<entity-X-Coordinate>1202</entity-X-Coordinate>
 		<entity-Y-Coordinate>95</entity-Y-Coordinate>
 		<primary-collapsed>false</primary-collapsed>

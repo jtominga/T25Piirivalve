@@ -1,22 +1,18 @@
 package ee.itcollege.T25Piirivalve.entities;
 
 import java.io.Serializable;
+import java.util.Collection;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.tostring.RooToString;
-import ee.itcollege.T25Piirivalve.entities.PIIRIVALVUR_VAEOSAS;
-import java.util.Set;
-import ee.itcollege.T25Piirivalve.entities.PIIRIVALVUR_PIIRIPUNKTIS;
-import javax.persistence.OneToMany;
-import ee.itcollege.T25Piirivalve.entities.VAHTKONNA_LIIGE;
-import ee.itcollege.T25Piirivalve.entities.PIIRIVALVUR_INTSIDENDIS;
 
 /**
  * Entity implementation class for Entity: PIIRIVALVUR
@@ -48,14 +44,11 @@ public class PIIRIVALVUR extends BaseEntity implements Serializable {
 	private char sugu;
 	private static final long serialVersionUID = 1L;
 	@OneToMany(mappedBy = "pIIRIVALVUR")
-	private Set<PIIRIVALVUR_VAEOSAS> pIIRIVALVUR_VAEOSAS;
+	private Collection<PIIRIVALVUR_INTSIDENDIS> pIIRIVALVUR_INTSIDENDIS;
 	@OneToMany(mappedBy = "pIIRIVALVUR")
-	private Set<PIIRIVALVUR_PIIRIPUNKTIS> pIIRIVALVUR_PIIRIPUNKTIS;
+	private Collection<VAHTKONNA_LIIGE> vAHTKONNA_LIIGE;
 	@OneToMany(mappedBy = "pIIRIVALVUR")
-	private Set<VAHTKONNA_LIIGE> vAHTKONNA_LIIGE;
-	@OneToMany(mappedBy = "pIIRIVALVUR")
-	private Set<PIIRIVALVUR_INTSIDENDIS> pIIRIVALVUR_INTSIDENDIS;
-
+	private Collection<PIIRIVALVUR_VAEOSAS> pIIRIVALVUR_VAEOSAS;
 	public PIIRIVALVUR() {
 		super();
 	}   
@@ -100,29 +93,23 @@ public class PIIRIVALVUR extends BaseEntity implements Serializable {
 	public void setSugu(char sugu) {
 		this.sugu = sugu;
 	}
-	public Set<PIIRIVALVUR_VAEOSAS> getPIIRIVALVUR_VAEOSAS() {
-	    return pIIRIVALVUR_VAEOSAS;
-	}
-	public void setPIIRIVALVUR_VAEOSAS(Set<PIIRIVALVUR_VAEOSAS> param) {
-	    this.pIIRIVALVUR_VAEOSAS = param;
-	}
-	public Set<PIIRIVALVUR_PIIRIPUNKTIS> getPIIRIVALVUR_PIIRIPUNKTIS() {
-	    return pIIRIVALVUR_PIIRIPUNKTIS;
-	}
-	public void setPIIRIVALVUR_PIIRIPUNKTIS(Set<PIIRIVALVUR_PIIRIPUNKTIS> param) {
-	    this.pIIRIVALVUR_PIIRIPUNKTIS = param;
-	}
-	public Set<VAHTKONNA_LIIGE> getVAHTKONNA_LIIGE() {
-	    return vAHTKONNA_LIIGE;
-	}
-	public void setVAHTKONNA_LIIGE(Set<VAHTKONNA_LIIGE> param) {
-	    this.vAHTKONNA_LIIGE = param;
-	}
-	public Set<PIIRIVALVUR_INTSIDENDIS> getPIIRIVALVUR_INTSIDENDIS() {
+	public Collection<PIIRIVALVUR_INTSIDENDIS> getPIIRIVALVUR_INTSIDENDIS() {
 	    return pIIRIVALVUR_INTSIDENDIS;
 	}
-	public void setPIIRIVALVUR_INTSIDENDIS(Set<PIIRIVALVUR_INTSIDENDIS> param) {
+	public void setPIIRIVALVUR_INTSIDENDIS(Collection<PIIRIVALVUR_INTSIDENDIS> param) {
 	    this.pIIRIVALVUR_INTSIDENDIS = param;
+	}
+	public Collection<VAHTKONNA_LIIGE> getVAHTKONNA_LIIGE() {
+	    return vAHTKONNA_LIIGE;
+	}
+	public void setVAHTKONNA_LIIGE(Collection<VAHTKONNA_LIIGE> param) {
+	    this.vAHTKONNA_LIIGE = param;
+	}
+	public Collection<PIIRIVALVUR_VAEOSAS> getPIIRIVALVUR_VAEOSAS() {
+	    return pIIRIVALVUR_VAEOSAS;
+	}
+	public void setPIIRIVALVUR_VAEOSAS(Collection<PIIRIVALVUR_VAEOSAS> param) {
+	    this.pIIRIVALVUR_VAEOSAS = param;
 	}
    
 }

@@ -3,7 +3,6 @@
 
 package ee.itcollege.veebirakendused.java.team25.web;
 
-import ee.itcollege.T25Piirivalve.entities.PIIRIPUNKT;
 import ee.itcollege.T25Piirivalve.entities.VAHTKOND;
 import ee.itcollege.T25Piirivalve.entities.VAHTKOND_INTSIDENDIS;
 import ee.itcollege.T25Piirivalve.entities.VAHTKOND_PIIRILOIGUL;
@@ -94,11 +93,6 @@ privileged aspect VAHTKONDController_Roo_Controller {
         uiModel.addAttribute("page", (page == null) ? "1" : page.toString());
         uiModel.addAttribute("size", (size == null) ? "10" : size.toString());
         return "redirect:/vahtkonds";
-    }
-    
-    @ModelAttribute("piiripunkts")
-    public Collection<PIIRIPUNKT> VAHTKONDController.populatePIIRIPUNKTS() {
-        return PIIRIPUNKT.findAllPIIRIPUNKTS();
     }
     
     @ModelAttribute("vahtkonds")
