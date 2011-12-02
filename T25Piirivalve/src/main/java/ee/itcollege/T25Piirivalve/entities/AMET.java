@@ -36,7 +36,7 @@ public class AMET extends BaseEntity implements Serializable {
 	public AMET() {
 		super();
 	}   
-	@Id    
+   
 	public Long getAmet_ID() {
 		return this.amet_ID;
 	}

@@ -6,7 +6,6 @@ package ee.itcollege.veebirakendused.java.team25.web;
 import ee.itcollege.T25Piirivalve.entities.AMET;
 import ee.itcollege.T25Piirivalve.entities.AMET_PIIRIPUNKTIS;
 import ee.itcollege.T25Piirivalve.entities.AMET_VAEOSAS;
-import ee.itcollege.T25Piirivalve.entities.BaseEntity;
 import ee.itcollege.T25Piirivalve.entities.INTSIDENDI_LIIK;
 import ee.itcollege.T25Piirivalve.entities.INTSIDENT;
 import ee.itcollege.T25Piirivalve.entities.ISIKU_SEADUS_INTSIDENDIS;
@@ -41,7 +40,6 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         registry.addConverter(new AMETConverter());
         registry.addConverter(new AMET_PIIRIPUNKTISConverter());
         registry.addConverter(new AMET_VAEOSASConverter());
-        registry.addConverter(new BaseEntityConverter());
         registry.addConverter(new INTSIDENDI_LIIKConverter());
         registry.addConverter(new INTSIDENTConverter());
         registry.addConverter(new ISIKU_SEADUS_INTSIDENDISConverter());
@@ -90,13 +88,6 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     static class ee.itcollege.veebirakendused.java.team25.web.ApplicationConversionServiceFactoryBean.AMET_VAEOSASConverter implements Converter<AMET_VAEOSAS, String> {
         public String convert(AMET_VAEOSAS aMET_VAEOSAS) {
             return new StringBuilder().append(aMET_VAEOSAS.getAvaja()).append(" ").append(aMET_VAEOSAS.getAvatud()).append(" ").append(aMET_VAEOSAS.getMuutja()).append(" ").append(aMET_VAEOSAS.getMuudetud()).toString();
-        }
-        
-    }
-    
-    static class ee.itcollege.veebirakendused.java.team25.web.ApplicationConversionServiceFactoryBean.BaseEntityConverter implements Converter<BaseEntity, String> {
-        public String convert(BaseEntity baseEntity) {
-            return new StringBuilder().append(baseEntity.getAvaja()).append(" ").append(baseEntity.getAvatud()).append(" ").append(baseEntity.getMuutja()).append(" ").append(baseEntity.getMuudetud()).toString();
         }
         
     }

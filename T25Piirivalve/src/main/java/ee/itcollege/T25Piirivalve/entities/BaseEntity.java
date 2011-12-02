@@ -47,9 +47,6 @@ public abstract class BaseEntity implements Serializable {
 	private String kommentaar;
 	private static final long serialVersionUID = 1L;	
 	
-	public BaseEntity() {
-		super();
-	}
 	public String getAvaja() {
 		return this.avaja;
 	}
