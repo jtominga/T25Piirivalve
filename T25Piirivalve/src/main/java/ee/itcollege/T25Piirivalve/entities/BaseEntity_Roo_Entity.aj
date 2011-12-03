@@ -37,17 +37,6 @@ privileged aspect BaseEntity_Roo_Entity {
     }
     
     @Transactional
-    public void BaseEntity.remove() {
-        if (this.entityManager == null) this.entityManager = entityManager();
-        if (this.entityManager.contains(this)) {
-            this.entityManager.remove(this);
-        } else {
-            BaseEntity attached = BaseEntity.findBaseEntity(this.id);
-            this.entityManager.remove(attached);
-        }
-    }
-    
-    @Transactional
     public void BaseEntity.flush() {
         if (this.entityManager == null) this.entityManager = entityManager();
         this.entityManager.flush();

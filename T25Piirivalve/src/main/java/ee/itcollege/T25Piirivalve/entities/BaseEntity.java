@@ -1,6 +1,7 @@
 package ee.itcollege.T25Piirivalve.entities;
 
 import java.io.Serializable;
+import java.util.Calendar;
 import java.util.Date;
 
 import javax.persistence.GeneratedValue;
@@ -8,12 +9,14 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 import javax.persistence.PrePersist;
+import javax.persistence.PreUpdate;
 import javax.validation.constraints.*;
 
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.tostring.RooToString;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.format.annotation.*;
 
 /**
@@ -52,12 +55,31 @@ public abstract class BaseEntity implements Serializable {
 	private static final long serialVersionUID = 1L;	
 	
 	@PrePersist
-	public void created() {
+	public void onCreate() {
+		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+		setAvaja(auth.getName());
+		Calendar cal = Calendar.getInstance();
+		setAvatud(new Date());
+		cal.set(9999, 11, 31);
+		setMuutja("N/A");
+		setSulgeja("N/A");
+		setMuudetud(cal.getTime());
+		setSuletud(cal.getTime());
+	}
+	
+	@PreUpdate
+	public void onUpdate() {
 		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
 		setMuutja(auth.getName());
 		setMuudetud(new Date());
 	}
 	
+	@Transactional
+	public void remove() {
+		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+		setSulgeja(auth.getName());
+		setSuletud(new Date());
+	}
 	
 	public Long getId() {
 		return id;
