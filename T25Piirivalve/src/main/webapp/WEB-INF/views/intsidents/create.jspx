@@ -3,12 +3,6 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <form:create id="fc_ee_itcollege_T25Piirivalve_entities_INTSIDENT" modelAttribute="INTSIDENT" path="/intsidents" render="${empty dependencies}" z="+X0iPGAntpt+hCCjT+2BA9QIEUQ=">
-        <field:input field="avaja" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_avaja" z="eS2+J63JJqFSZVksR0H589wTGpU="/>
-        <field:datetime dateTimePattern="${INTSIDENT_avatud_date_format}" field="avatud" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_avatud" z="miWH9vCf6Uwg9N7WQ9EPP5Nv+KI="/>
-        <field:input field="muutja" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_muutja" z="YPZq0xTz2839q8wR8Q64XdZO3bI="/>
-        <field:datetime dateTimePattern="${INTSIDENT_muudetud_date_format}" field="muudetud" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_muudetud" z="LHLutSfKB2+T+x2JrHZb8jmExr8="/>
-        <field:input field="sulgeja" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_sulgeja" z="uSm8rsTJlBhS5kkG2pYgg/9JQNI="/>
-        <field:datetime dateTimePattern="${INTSIDENT_suletud_date_format}" field="suletud" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_suletud" z="6sblBn5BYZ/hmI7ByJQMY7hXPZc="/>
         <field:input field="kommentaar" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_kommentaar" z="qZJMOvFRlivXXo7Vbgu+4VY7C4g="/>
         <field:input field="kood" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_kood" max="20" min="1" required="true" z="rpiDRK7Jm/22f+RVQT6XAe9dlT8="/>
         <field:datetime dateTimePattern="${INTSIDENT_toimumise_algus_date_format}" field="toimumise_algus" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_toimumise_algus" required="true" z="cXcQ4WLkZAz0yHnhvPOSapbpyzs="/>
