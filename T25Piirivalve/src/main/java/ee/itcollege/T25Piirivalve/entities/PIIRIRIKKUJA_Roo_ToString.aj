@@ -10,7 +10,7 @@ privileged aspect PIIRIRIKKUJA_Roo_ToString {
     public String PIIRIRIKKUJA.toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("Avaja: ").append(getAvaja()).append(", ");
-        sb.append("Avatud: ").append(getAvatud()).append(", ");
+        sb.append("Avatud: ").append(getAvatud() == null ? "null" : getAvatud().getTime()).append(", ");
         sb.append("Eesnimi: ").append(getEesnimi()).append(", ");
         sb.append("ISIK_INTSIDENDIS: ").append(getISIK_INTSIDENDIS() == null ? "null" : getISIK_INTSIDENDIS().size()).append(", ");
         sb.append("Id: ").append(getId()).append(", ");

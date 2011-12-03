@@ -10,6 +10,7 @@ import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
+import javax.swing.text.html.parser.Entity;
 import javax.validation.constraints.*;
 
 import org.springframework.roo.addon.entity.RooEntity;
@@ -37,7 +38,7 @@ public abstract class BaseEntity implements Serializable {
 	private String avaja;
 	
 	@DateTimeFormat(pattern = "dd.MM.yyyy")
-	private Date avatud;
+	private Calendar avatud;
 	
 	@Size(min = 1, max = 32)
 	private String muutja;
@@ -59,7 +60,7 @@ public abstract class BaseEntity implements Serializable {
 		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
 		setAvaja(auth.getName());
 		Calendar cal = Calendar.getInstance();
-		setAvatud(new Date());
+		setAvatud(cal);
 		cal.set(9999, 11, 31);
 		setMuutja("N/A");
 		setSulgeja("N/A");
@@ -77,8 +78,12 @@ public abstract class BaseEntity implements Serializable {
 	@Transactional
 	public void remove() {
 		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-		setSulgeja(auth.getName());
-		setSuletud(new Date());
+		if (auth.getName().equals("admin") || auth.getName().equals("ylem")) {
+			setSulgeja(auth.getName());
+			setSuletud(new Date());
+		}
+		else
+			throw new SecurityException("Some part of this remove operation prohibted");
 	}
 	
 	public Long getId() {
@@ -96,11 +101,11 @@ public abstract class BaseEntity implements Serializable {
 	public void setAvaja(String avaja) {
 		this.avaja = avaja;
 	}   
-	public Date getAvatud() {
+	public Calendar getAvatud() {
 		return this.avatud;
 	}
 
-	public void setAvatud(Date avatud) {
+	public void setAvatud(Calendar avatud) {
 		this.avatud = avatud;
 	}   
 	public String getMuutja() {

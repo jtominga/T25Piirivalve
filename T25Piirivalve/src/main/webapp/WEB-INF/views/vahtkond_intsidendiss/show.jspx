@@ -4,7 +4,7 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:show id="ps_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS" object="${vahtkond_intsidendis}" path="/vahtkond_intsidendiss" z="tilO3CV7GIqcLndBuKK4gV9Bfh8=">
         <field:display field="avaja" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_avaja" object="${vahtkond_intsidendis}" z="fMrNjGgdpR5DgCVP28jR7FiIXLA="/>
-        <field:display date="true" dateTimePattern="${VAHTKOND_INTSIDENDIS_avatud_date_format}" field="avatud" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_avatud" object="${vahtkond_intsidendis}" z="EBS66iK4OvkYQ6MQVHIwhdvHj+I="/>
+        <field:display calendar="true" dateTimePattern="${VAHTKOND_INTSIDENDIS_avatud_date_format}" field="avatud" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_avatud" object="${vahtkond_intsidendis}" z="Im6oUfav+3ZnWZ7FZ29oHX/fuyk="/>
         <field:display field="muutja" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_muutja" object="${vahtkond_intsidendis}" z="KbQk9f83Xnp8Tu12h+Svlzo7qLA="/>
         <field:display date="true" dateTimePattern="${VAHTKOND_INTSIDENDIS_muudetud_date_format}" field="muudetud" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_muudetud" object="${vahtkond_intsidendis}" z="AmjCpq8q4GJWtiTo/6Vi/4D8zfk="/>
         <field:display field="sulgeja" id="s_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_sulgeja" object="${vahtkond_intsidendis}" z="9e01eJhqEt2dACSPlEtGARAR0sU="/>

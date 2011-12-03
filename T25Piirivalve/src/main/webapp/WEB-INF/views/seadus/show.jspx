@@ -4,7 +4,7 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:show id="ps_ee_itcollege_T25Piirivalve_entities_SEADUS" object="${seadus}" path="/seadus" z="3jMiXlRivwXtiHO05yXU7fLdyZE=">
         <field:display field="avaja" id="s_ee_itcollege_T25Piirivalve_entities_SEADUS_avaja" object="${seadus}" z="eqwZehkd31qU5qp/NYxkbfiIQIg="/>
-        <field:display date="true" dateTimePattern="${SEADUS_avatud_date_format}" field="avatud" id="s_ee_itcollege_T25Piirivalve_entities_SEADUS_avatud" object="${seadus}" z="kqPPnLQQhnaZJsiSVOhPyH+pBRU="/>
+        <field:display calendar="true" dateTimePattern="${SEADUS_avatud_date_format}" field="avatud" id="s_ee_itcollege_T25Piirivalve_entities_SEADUS_avatud" object="${seadus}" z="gjDCkVQWXeR4eBeQM5+tefqGL0w="/>
         <field:display field="muutja" id="s_ee_itcollege_T25Piirivalve_entities_SEADUS_muutja" object="${seadus}" z="fhaXtVHCgsEXIjPzHDLctzuo2HA="/>
         <field:display date="true" dateTimePattern="${SEADUS_muudetud_date_format}" field="muudetud" id="s_ee_itcollege_T25Piirivalve_entities_SEADUS_muudetud" object="${seadus}" z="mWCjM2Lyqws+4AFBduPBJVLqKGk="/>
         <field:display field="sulgeja" id="s_ee_itcollege_T25Piirivalve_entities_SEADUS_sulgeja" object="${seadus}" z="Mgsy+zbM82lvFceytvPzm5QAXXc="/>

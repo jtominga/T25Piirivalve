@@ -11,7 +11,7 @@ privileged aspect ISIKU_SEADUS_INTSIDENDIS_Roo_ToString {
         StringBuilder sb = new StringBuilder();
         sb.append("Alates: ").append(getAlates()).append(", ");
         sb.append("Avaja: ").append(getAvaja()).append(", ");
-        sb.append("Avatud: ").append(getAvatud()).append(", ");
+        sb.append("Avatud: ").append(getAvatud() == null ? "null" : getAvatud().getTime()).append(", ");
         sb.append("ISIK_INTSIDENDIS: ").append(getISIK_INTSIDENDIS()).append(", ");
         sb.append("Id: ").append(getId()).append(", ");
         sb.append("Kirjeldus: ").append(getKirjeldus()).append(", ");

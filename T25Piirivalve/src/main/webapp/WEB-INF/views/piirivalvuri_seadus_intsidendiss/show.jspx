@@ -4,7 +4,7 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:show id="ps_ee_itcollege_T25Piirivalve_entities_PIIRIVALVURI_SEADUS_INTSIDENDIS" object="${piirivalvuri_seadus_intsidendis}" path="/piirivalvuri_seadus_intsidendiss" z="C/cC5myfAprYAmDM0jiOL8xcULg=">
         <field:display field="avaja" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVURI_SEADUS_INTSIDENDIS_avaja" object="${piirivalvuri_seadus_intsidendis}" z="hWU6Z8SSWsSriTt36hzOSGaI058="/>
-        <field:display date="true" dateTimePattern="${PIIRIVALVURI_SEADUS_INTSIDENDIS_avatud_date_format}" field="avatud" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVURI_SEADUS_INTSIDENDIS_avatud" object="${piirivalvuri_seadus_intsidendis}" z="9G9coo2y0Zo7myfuzIzqjq/eZGM="/>
+        <field:display calendar="true" dateTimePattern="${PIIRIVALVURI_SEADUS_INTSIDENDIS_avatud_date_format}" field="avatud" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVURI_SEADUS_INTSIDENDIS_avatud" object="${piirivalvuri_seadus_intsidendis}" z="iN48B98+XaN9t9kXwvFC+L7s9v0="/>
         <field:display field="muutja" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVURI_SEADUS_INTSIDENDIS_muutja" object="${piirivalvuri_seadus_intsidendis}" z="T4vFPVwH4ag6vdMev4/UaxQDjLI="/>
         <field:display date="true" dateTimePattern="${PIIRIVALVURI_SEADUS_INTSIDENDIS_muudetud_date_format}" field="muudetud" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVURI_SEADUS_INTSIDENDIS_muudetud" object="${piirivalvuri_seadus_intsidendis}" z="MI66U+Q62RuG7S3SoujWStj5ceU="/>
         <field:display field="sulgeja" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVURI_SEADUS_INTSIDENDIS_sulgeja" object="${piirivalvuri_seadus_intsidendis}" z="pMqh6Gy4+5YsrxG7pccCJXbECe0="/>

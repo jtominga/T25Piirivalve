@@ -4,7 +4,7 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:show id="ps_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_VAEOSAS" object="${piirivalvur_vaeosas}" path="/piirivalvur_vaeosass" z="CHV24LMc4hqiNB5F2OhUz+tL4Aw=">
         <field:display field="avaja" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_VAEOSAS_avaja" object="${piirivalvur_vaeosas}" z="YF8S5V7QXXFz9Jc/f3tXklgmU0o="/>
-        <field:display date="true" dateTimePattern="${PIIRIVALVUR_VAEOSAS_avatud_date_format}" field="avatud" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_VAEOSAS_avatud" object="${piirivalvur_vaeosas}" z="yUdDkQfFnMtZIOsJQZMidB1ekAY="/>
+        <field:display calendar="true" dateTimePattern="${PIIRIVALVUR_VAEOSAS_avatud_date_format}" field="avatud" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_VAEOSAS_avatud" object="${piirivalvur_vaeosas}" z="ULYLVtRYaQ6H8FduI7RB0YeakHA="/>
         <field:display field="muutja" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_VAEOSAS_muutja" object="${piirivalvur_vaeosas}" z="KPEnTrQ+2cZeMXFDW6+QLyg+c/c="/>
         <field:display date="true" dateTimePattern="${PIIRIVALVUR_VAEOSAS_muudetud_date_format}" field="muudetud" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_VAEOSAS_muudetud" object="${piirivalvur_vaeosas}" z="lgNlk+v8UA3SBOdyk175UBisbb8="/>
         <field:display field="sulgeja" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_VAEOSAS_sulgeja" object="${piirivalvur_vaeosas}" z="cPAdW9FI53RSBsS1tW36kZldXUs="/>

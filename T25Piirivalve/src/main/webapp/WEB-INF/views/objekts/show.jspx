@@ -4,7 +4,7 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:show id="ps_ee_itcollege_T25Piirivalve_entities_OBJEKT" object="${objekt}" path="/objekts" z="2CjamwpiCpSx+wPmpXbe3V0yUno=">
         <field:display field="avaja" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKT_avaja" object="${objekt}" z="fr0F598tIhNjqSBj856yfrqC56E="/>
-        <field:display date="true" dateTimePattern="${OBJEKT_avatud_date_format}" field="avatud" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKT_avatud" object="${objekt}" z="G1XITB+2tGqm+inxt4z0EpdgZjs="/>
+        <field:display calendar="true" dateTimePattern="${OBJEKT_avatud_date_format}" field="avatud" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKT_avatud" object="${objekt}" z="9RBmCQYMYKcczYnElv9p7S//w9s="/>
         <field:display field="muutja" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKT_muutja" object="${objekt}" z="gUlA96ukJQ4aOXX3xvyMKmwea4E="/>
         <field:display date="true" dateTimePattern="${OBJEKT_muudetud_date_format}" field="muudetud" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKT_muudetud" object="${objekt}" z="jaqT9+Ytql+ce+zT9L3sZd2+1RQ="/>
         <field:display field="sulgeja" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKT_sulgeja" object="${objekt}" z="hsZ7CnCzhljxcjDnPF+JCwk35qA="/>

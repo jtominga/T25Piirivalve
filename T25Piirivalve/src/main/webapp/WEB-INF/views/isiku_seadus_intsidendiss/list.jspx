@@ -5,7 +5,7 @@
     <page:list id="pl_ee_itcollege_T25Piirivalve_entities_ISIKU_SEADUS_INTSIDENDIS" items="${isiku_seadus_intsidendiss}" z="pnX8vG43ddgCXmdIcb/bHl3jXfw=">
         <table:table data="${isiku_seadus_intsidendiss}" id="l_ee_itcollege_T25Piirivalve_entities_ISIKU_SEADUS_INTSIDENDIS" path="/isiku_seadus_intsidendiss" z="sMg/jPo/0qVIOvy+N0GWXi3XaNk=">
             <table:column id="c_ee_itcollege_T25Piirivalve_entities_ISIKU_SEADUS_INTSIDENDIS_avaja" property="avaja" z="qGUeq04mRtW5B5stf8WygCaPijY="/>
-            <table:column date="true" dateTimePattern="${ISIKU_SEADUS_INTSIDENDIS_avatud_date_format}" id="c_ee_itcollege_T25Piirivalve_entities_ISIKU_SEADUS_INTSIDENDIS_avatud" property="avatud" z="9+OGPwSYNn1j6tFP4hjbysgPYbo="/>
+            <table:column calendar="true" dateTimePattern="${ISIKU_SEADUS_INTSIDENDIS_avatud_date_format}" id="c_ee_itcollege_T25Piirivalve_entities_ISIKU_SEADUS_INTSIDENDIS_avatud" property="avatud" z="OGEEr+BjGtziwbvHf23G+ZZ5/p4="/>
             <table:column id="c_ee_itcollege_T25Piirivalve_entities_ISIKU_SEADUS_INTSIDENDIS_muutja" property="muutja" z="upDb8NACXVURsG3+NhxCDCAsfzA="/>
             <table:column date="true" dateTimePattern="${ISIKU_SEADUS_INTSIDENDIS_muudetud_date_format}" id="c_ee_itcollege_T25Piirivalve_entities_ISIKU_SEADUS_INTSIDENDIS_muudetud" property="muudetud" z="CTKBpCMTVQQoCnekhnZNpBmj6J0="/>
             <table:column id="c_ee_itcollege_T25Piirivalve_entities_ISIKU_SEADUS_INTSIDENDIS_sulgeja" property="sulgeja" z="6+et/6tNR7fAzR62fLqYGsllNYY="/>

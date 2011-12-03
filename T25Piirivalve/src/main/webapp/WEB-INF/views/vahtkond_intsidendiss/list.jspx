@@ -5,7 +5,7 @@
     <page:list id="pl_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS" items="${vahtkond_intsidendiss}" z="0uL07rjNzkjHlilWhbhPdknwWMo=">
         <table:table data="${vahtkond_intsidendiss}" id="l_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS" path="/vahtkond_intsidendiss" z="RJMjMDg3W6wiso1DMDhHott2N6I=">
             <table:column id="c_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_avaja" property="avaja" z="4R6gXxVSK87lDVCrZ58pnx7GtHI="/>
-            <table:column date="true" dateTimePattern="${VAHTKOND_INTSIDENDIS_avatud_date_format}" id="c_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_avatud" property="avatud" z="uNgRXy7RAYk8AKhuDaRgc2iSRHI="/>
+            <table:column calendar="true" dateTimePattern="${VAHTKOND_INTSIDENDIS_avatud_date_format}" id="c_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_avatud" property="avatud" z="/lEmPCiJ7gVjFXS3UQfz5dD/mZw="/>
             <table:column id="c_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_muutja" property="muutja" z="AWA0NMvkjfKH1ELKexZgxh0ZllM="/>
             <table:column date="true" dateTimePattern="${VAHTKOND_INTSIDENDIS_muudetud_date_format}" id="c_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_muudetud" property="muudetud" z="pPkZ/IjyGGVE34h1bj/iTUYk+zY="/>
             <table:column id="c_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_sulgeja" property="sulgeja" z="2f586JYlVrBov8z1lKIfRlPwqFw="/>

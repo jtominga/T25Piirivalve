@@ -10,7 +10,7 @@ privileged aspect SEADUS_Roo_ToString {
     public String SEADUS.toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("Avaja: ").append(getAvaja()).append(", ");
-        sb.append("Avatud: ").append(getAvatud()).append(", ");
+        sb.append("Avatud: ").append(getAvatud() == null ? "null" : getAvatud().getTime()).append(", ");
         sb.append("ISIKU_SEADUS_INTSIDENDIS: ").append(getISIKU_SEADUS_INTSIDENDIS() == null ? "null" : getISIKU_SEADUS_INTSIDENDIS().size()).append(", ");
         sb.append("Id: ").append(getId()).append(", ");
         sb.append("Kehtiv_alates: ").append(getKehtiv_alates()).append(", ");

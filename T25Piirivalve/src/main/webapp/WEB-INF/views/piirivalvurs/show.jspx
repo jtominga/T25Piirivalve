@@ -4,7 +4,7 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:show id="ps_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR" object="${piirivalvur}" path="/piirivalvurs" z="OVVnpTU/E+l8TaKwRALmquo9mUI=">
         <field:display field="avaja" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_avaja" object="${piirivalvur}" z="AcHV3hRiexg+MXgiWzLwDxYe2Sg="/>
-        <field:display date="true" dateTimePattern="${PIIRIVALVUR_avatud_date_format}" field="avatud" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_avatud" object="${piirivalvur}" z="+F0QlQk78DaCuVg9R9fzYWXv2XA="/>
+        <field:display calendar="true" dateTimePattern="${PIIRIVALVUR_avatud_date_format}" field="avatud" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_avatud" object="${piirivalvur}" z="a1W4YR3FPkGTW49SnqQr/iui/7Q="/>
         <field:display field="muutja" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_muutja" object="${piirivalvur}" z="QWg0dKQLmQh+sHuOjOioxcPHylo="/>
         <field:display date="true" dateTimePattern="${PIIRIVALVUR_muudetud_date_format}" field="muudetud" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_muudetud" object="${piirivalvur}" z="h7gAWg3UBEJ3MaRLK5uqXhPEq4Y="/>
         <field:display field="sulgeja" id="s_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_sulgeja" object="${piirivalvur}" z="WsxuytFJmc545Iy1muYLraEUjx8="/>

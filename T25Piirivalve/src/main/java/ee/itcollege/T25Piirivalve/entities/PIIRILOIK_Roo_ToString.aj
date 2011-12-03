@@ -10,7 +10,7 @@ privileged aspect PIIRILOIK_Roo_ToString {
     public String PIIRILOIK.toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("Avaja: ").append(getAvaja()).append(", ");
-        sb.append("Avatud: ").append(getAvatud()).append(", ");
+        sb.append("Avatud: ").append(getAvatud() == null ? "null" : getAvatud().getTime()).append(", ");
         sb.append("GPS_Latitude: ").append(getGPS_Latitude()).append(", ");
         sb.append("GPS_Longtitude: ").append(getGPS_Longtitude()).append(", ");
         sb.append("INTSIDENT: ").append(getINTSIDENT() == null ? "null" : getINTSIDENT().size()).append(", ");

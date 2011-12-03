@@ -5,7 +5,7 @@
     <page:list id="pl_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_VAEOSAS" items="${piirivalvur_vaeosass}" z="xu+rU4cw+yJkFKWAOWIH/1GBfWI=">
         <table:table data="${piirivalvur_vaeosass}" id="l_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_VAEOSAS" path="/piirivalvur_vaeosass" z="JXvDWDP5a0fX+ZQrMtJqlsXaO8k=">
             <table:column id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_VAEOSAS_avaja" property="avaja" z="mYU/lBmUHtNxwPQwT0sbFI46Z88="/>
-            <table:column date="true" dateTimePattern="${PIIRIVALVUR_VAEOSAS_avatud_date_format}" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_VAEOSAS_avatud" property="avatud" z="G0YJSAJTdqrrwuXKLi97JwaBQfY="/>
+            <table:column calendar="true" dateTimePattern="${PIIRIVALVUR_VAEOSAS_avatud_date_format}" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_VAEOSAS_avatud" property="avatud" z="7Mi/3QvCqmfDyCL9Ta1Szso1/c4="/>
             <table:column id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_VAEOSAS_muutja" property="muutja" z="4WWT7h2VcG283Bh98rOwO4+yosM="/>
             <table:column date="true" dateTimePattern="${PIIRIVALVUR_VAEOSAS_muudetud_date_format}" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_VAEOSAS_muudetud" property="muudetud" z="/q4LVi5BFNSX7+NgnvpJzkv71EA="/>
             <table:column id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_VAEOSAS_sulgeja" property="sulgeja" z="C8Ri+lT1SzpDQjLDJKrhhUAvzoQ="/>

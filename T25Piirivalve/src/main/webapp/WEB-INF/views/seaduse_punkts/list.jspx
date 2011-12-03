@@ -5,7 +5,7 @@
     <page:list id="pl_ee_itcollege_T25Piirivalve_entities_SEADUSE_PUNKT" items="${seaduse_punkts}" z="Ms1lVMiPnua/lOMUl37bEwyHunI=">
         <table:table data="${seaduse_punkts}" id="l_ee_itcollege_T25Piirivalve_entities_SEADUSE_PUNKT" path="/seaduse_punkts" z="hAaR/MT/vicE2gjcpycKsw5hanM=">
             <table:column id="c_ee_itcollege_T25Piirivalve_entities_SEADUSE_PUNKT_avaja" property="avaja" z="0EQKbriiZ1Hve2B1KgJ4JqLg0pI="/>
-            <table:column date="true" dateTimePattern="${SEADUSE_PUNKT_avatud_date_format}" id="c_ee_itcollege_T25Piirivalve_entities_SEADUSE_PUNKT_avatud" property="avatud" z="Jt2SfRLLJzS19kvq7LKzlTOGPMs="/>
+            <table:column calendar="true" dateTimePattern="${SEADUSE_PUNKT_avatud_date_format}" id="c_ee_itcollege_T25Piirivalve_entities_SEADUSE_PUNKT_avatud" property="avatud" z="Ga7TMLO3JHccMeHSJlElk4iRMcw="/>
             <table:column id="c_ee_itcollege_T25Piirivalve_entities_SEADUSE_PUNKT_muutja" property="muutja" z="DBCmmWF1lhKykEIki89600uzNMU="/>
             <table:column date="true" dateTimePattern="${SEADUSE_PUNKT_muudetud_date_format}" id="c_ee_itcollege_T25Piirivalve_entities_SEADUSE_PUNKT_muudetud" property="muudetud" z="tNMj+Xbb5Hsc2c47ywJDnU66Szk="/>
             <table:column id="c_ee_itcollege_T25Piirivalve_entities_SEADUSE_PUNKT_sulgeja" property="sulgeja" z="qTdWOjR1KxY8+WCQ2fuau+XSHcI="/>

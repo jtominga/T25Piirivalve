@@ -4,7 +4,7 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:show id="ps_ee_itcollege_T25Piirivalve_entities_PIIRILOIGU_HALDAJA" object="${piiriloigu_haldaja}" path="/piiriloigu_haldajas" z="BmVW0HXY900BUS5HfUesC8JChBI=">
         <field:display field="avaja" id="s_ee_itcollege_T25Piirivalve_entities_PIIRILOIGU_HALDAJA_avaja" object="${piiriloigu_haldaja}" z="TkvK40LFpvc+I4NlhLLFNSO+t8s="/>
-        <field:display date="true" dateTimePattern="${PIIRILOIGU_HALDAJA_avatud_date_format}" field="avatud" id="s_ee_itcollege_T25Piirivalve_entities_PIIRILOIGU_HALDAJA_avatud" object="${piiriloigu_haldaja}" z="WK56eZSEHv91Ms90hwB8+Co/b1I="/>
+        <field:display calendar="true" dateTimePattern="${PIIRILOIGU_HALDAJA_avatud_date_format}" field="avatud" id="s_ee_itcollege_T25Piirivalve_entities_PIIRILOIGU_HALDAJA_avatud" object="${piiriloigu_haldaja}" z="oYgUxmtg2H0nGMAD/semIfnmW7c="/>
         <field:display field="muutja" id="s_ee_itcollege_T25Piirivalve_entities_PIIRILOIGU_HALDAJA_muutja" object="${piiriloigu_haldaja}" z="6lI0oRM0ySS1noaYgj0RqZeLwsw="/>
         <field:display date="true" dateTimePattern="${PIIRILOIGU_HALDAJA_muudetud_date_format}" field="muudetud" id="s_ee_itcollege_T25Piirivalve_entities_PIIRILOIGU_HALDAJA_muudetud" object="${piiriloigu_haldaja}" z="zRvzEd+kCc5lp+AbF05u7qH9D7M="/>
         <field:display field="sulgeja" id="s_ee_itcollege_T25Piirivalve_entities_PIIRILOIGU_HALDAJA_sulgeja" object="${piiriloigu_haldaja}" z="MMMM5WVW/4UcMzI5hqVoH1v/5HA="/>

@@ -4,7 +4,7 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:show id="ps_ee_itcollege_T25Piirivalve_entities_OBJEKTI_LIIK" object="${objekti_liik}" path="/objekti_liiks" z="ychP1kA1tdg/No2N9GBb2OiGRVI=">
         <field:display field="avaja" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKTI_LIIK_avaja" object="${objekti_liik}" z="V12aTLEej3mimtXtwChJbW2CVBY="/>
-        <field:display date="true" dateTimePattern="${OBJEKTI_LIIK_avatud_date_format}" field="avatud" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKTI_LIIK_avatud" object="${objekti_liik}" z="tWidpSg5RQ3YryKp0eKwJv48zHU="/>
+        <field:display calendar="true" dateTimePattern="${OBJEKTI_LIIK_avatud_date_format}" field="avatud" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKTI_LIIK_avatud" object="${objekti_liik}" z="RvZuwhowHcqUVz4Xysil6OesncA="/>
         <field:display field="muutja" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKTI_LIIK_muutja" object="${objekti_liik}" z="nX+ZO76phr7odQRbj6P0sUyNYFs="/>
         <field:display date="true" dateTimePattern="${OBJEKTI_LIIK_muudetud_date_format}" field="muudetud" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKTI_LIIK_muudetud" object="${objekti_liik}" z="LwY0vzw3KgZdMDpDsfIORjJd8cY="/>
         <field:display field="sulgeja" id="s_ee_itcollege_T25Piirivalve_entities_OBJEKTI_LIIK_sulgeja" object="${objekti_liik}" z="h0kHwPnO09Qnv7XTn5Bn+FI2oBI="/>

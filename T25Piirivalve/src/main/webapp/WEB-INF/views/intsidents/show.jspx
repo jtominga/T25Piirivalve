@@ -4,7 +4,7 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:show id="ps_ee_itcollege_T25Piirivalve_entities_INTSIDENT" object="${intsident}" path="/intsidents" z="bQQw75fA5vkdP5sOX4OxMyrpQEs=">
         <field:display field="avaja" id="s_ee_itcollege_T25Piirivalve_entities_INTSIDENT_avaja" object="${intsident}" z="XamD33rWouQFanuKfMZNCgsjSJo="/>
-        <field:display date="true" dateTimePattern="${INTSIDENT_avatud_date_format}" field="avatud" id="s_ee_itcollege_T25Piirivalve_entities_INTSIDENT_avatud" object="${intsident}" z="cW+dzZ/d++OrU5DK4Owzy2AgkIU="/>
+        <field:display calendar="true" dateTimePattern="${INTSIDENT_avatud_date_format}" field="avatud" id="s_ee_itcollege_T25Piirivalve_entities_INTSIDENT_avatud" object="${intsident}" z="SGfQO7PXBMAEhY2dC0GLOnWpEY0="/>
         <field:display field="muutja" id="s_ee_itcollege_T25Piirivalve_entities_INTSIDENT_muutja" object="${intsident}" z="cFnp+7H5mD+uRaHCpCMN1dZbAT8="/>
         <field:display date="true" dateTimePattern="${INTSIDENT_muudetud_date_format}" field="muudetud" id="s_ee_itcollege_T25Piirivalve_entities_INTSIDENT_muudetud" object="${intsident}" z="rWfWYSLuSara9nZc8MUTmcqosuY="/>
         <field:display field="sulgeja" id="s_ee_itcollege_T25Piirivalve_entities_INTSIDENT_sulgeja" object="${intsident}" z="w61kcVuKpt6RevP5+XgrtDhF7Lo="/>

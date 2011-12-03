@@ -4,7 +4,7 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:show id="ps_ee_itcollege_T25Piirivalve_entities_SEADUSE_PUNKT" object="${seaduse_punkt}" path="/seaduse_punkts" z="i290AZiErFRYSImfBZBxCBK+KX0=">
         <field:display field="avaja" id="s_ee_itcollege_T25Piirivalve_entities_SEADUSE_PUNKT_avaja" object="${seaduse_punkt}" z="GDFDJLczJKxYMEw6yeEShf16CQc="/>
-        <field:display date="true" dateTimePattern="${SEADUSE_PUNKT_avatud_date_format}" field="avatud" id="s_ee_itcollege_T25Piirivalve_entities_SEADUSE_PUNKT_avatud" object="${seaduse_punkt}" z="YviM38mC7ZInwRdwWIYrE/dMA7w="/>
+        <field:display calendar="true" dateTimePattern="${SEADUSE_PUNKT_avatud_date_format}" field="avatud" id="s_ee_itcollege_T25Piirivalve_entities_SEADUSE_PUNKT_avatud" object="${seaduse_punkt}" z="J6f+Pwc28W1jw4VRz04vQM0u6KM="/>
         <field:display field="muutja" id="s_ee_itcollege_T25Piirivalve_entities_SEADUSE_PUNKT_muutja" object="${seaduse_punkt}" z="fmLNZUg5BH1Lm0nknmCJgISMjIY="/>
         <field:display date="true" dateTimePattern="${SEADUSE_PUNKT_muudetud_date_format}" field="muudetud" id="s_ee_itcollege_T25Piirivalve_entities_SEADUSE_PUNKT_muudetud" object="${seaduse_punkt}" z="dmW8DGLef/aGvw/eWTpQyeJLu9c="/>
         <field:display field="sulgeja" id="s_ee_itcollege_T25Piirivalve_entities_SEADUSE_PUNKT_sulgeja" object="${seaduse_punkt}" z="t0cOUUOAA1s5hY9chX2BxJ2Urjc="/>

@@ -5,7 +5,7 @@
     <page:list id="pl_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR" items="${piirivalvurs}" z="4b5EHKgYgL2C6qaU/HNYjkcDMpo=">
         <table:table data="${piirivalvurs}" id="l_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR" path="/piirivalvurs" z="1pEl8iOZDgtrmFUbWMaSZ87DJEk=">
             <table:column id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_avaja" property="avaja" z="3hM5N5pJqHD+x9fXm9d2zHH5S98="/>
-            <table:column date="true" dateTimePattern="${PIIRIVALVUR_avatud_date_format}" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_avatud" property="avatud" z="Mh3zkSHemDMjpgnfTFtpiToxydo="/>
+            <table:column calendar="true" dateTimePattern="${PIIRIVALVUR_avatud_date_format}" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_avatud" property="avatud" z="ObKTJDv9aAr62ZgtILzeXa2Hz50="/>
             <table:column id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_muutja" property="muutja" z="NkiiK8t1Gqbx5lj1j9F8KS0cGWk="/>
             <table:column date="true" dateTimePattern="${PIIRIVALVUR_muudetud_date_format}" id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_muudetud" property="muudetud" z="jiszXcWhyKc6oSeZNJ9XABiAe9c="/>
             <table:column id="c_ee_itcollege_T25Piirivalve_entities_PIIRIVALVUR_sulgeja" property="sulgeja" z="iSwmYwHeWrHvedrpHDL+zlvfg/s="/>

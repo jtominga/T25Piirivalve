@@ -5,7 +5,7 @@
     <page:list id="pl_ee_itcollege_T25Piirivalve_entities_OBJEKTI_LIIK" items="${objekti_liiks}" z="VUudBpLImV7di3oA64BTQNogTJg=">
         <table:table data="${objekti_liiks}" id="l_ee_itcollege_T25Piirivalve_entities_OBJEKTI_LIIK" path="/objekti_liiks" z="2xonPVM0GuyxgZKVIESIMUHS1H4=">
             <table:column id="c_ee_itcollege_T25Piirivalve_entities_OBJEKTI_LIIK_avaja" property="avaja" z="DSkFbb7RyCDUqoItaLC5qGxa33U="/>
-            <table:column date="true" dateTimePattern="${OBJEKTI_LIIK_avatud_date_format}" id="c_ee_itcollege_T25Piirivalve_entities_OBJEKTI_LIIK_avatud" property="avatud" z="7kGDA4W7SbDd4FigwPpXiWccLo4="/>
+            <table:column calendar="true" dateTimePattern="${OBJEKTI_LIIK_avatud_date_format}" id="c_ee_itcollege_T25Piirivalve_entities_OBJEKTI_LIIK_avatud" property="avatud" z="4OnfgqF0jP5cx3lxnELQgFP060Q="/>
             <table:column id="c_ee_itcollege_T25Piirivalve_entities_OBJEKTI_LIIK_muutja" property="muutja" z="92T5Ag9mjt85JOhvPmz/cSsvMeQ="/>
             <table:column date="true" dateTimePattern="${OBJEKTI_LIIK_muudetud_date_format}" id="c_ee_itcollege_T25Piirivalve_entities_OBJEKTI_LIIK_muudetud" property="muudetud" z="9KpWDAigjZhB+QFAlh2RIVKTTzw="/>
             <table:column id="c_ee_itcollege_T25Piirivalve_entities_OBJEKTI_LIIK_sulgeja" property="sulgeja" z="ByYYCZ5Sk+jXnFa2/jJcdndvt+Q="/>

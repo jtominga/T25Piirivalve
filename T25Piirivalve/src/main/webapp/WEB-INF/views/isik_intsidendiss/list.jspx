@@ -5,7 +5,7 @@
     <page:list id="pl_ee_itcollege_T25Piirivalve_entities_ISIK_INTSIDENDIS" items="${isik_intsidendiss}" z="grtdfzE0HoTIgnQRIfRIsnW4Wew=">
         <table:table data="${isik_intsidendiss}" id="l_ee_itcollege_T25Piirivalve_entities_ISIK_INTSIDENDIS" path="/isik_intsidendiss" z="S5hNOrSMPuh50GZ6tVYgiZnxBDs=">
             <table:column id="c_ee_itcollege_T25Piirivalve_entities_ISIK_INTSIDENDIS_avaja" property="avaja" z="qiWgoQa1e0lH6OIR8BhX2v4cxBo="/>
-            <table:column date="true" dateTimePattern="${ISIK_INTSIDENDIS_avatud_date_format}" id="c_ee_itcollege_T25Piirivalve_entities_ISIK_INTSIDENDIS_avatud" property="avatud" z="7WTCtLOWgjZO+mLaSZnBnT1hUAY="/>
+            <table:column calendar="true" dateTimePattern="${ISIK_INTSIDENDIS_avatud_date_format}" id="c_ee_itcollege_T25Piirivalve_entities_ISIK_INTSIDENDIS_avatud" property="avatud" z="msKL9BXcGGxBjZ5OKmFvFXS1Rqo="/>
             <table:column id="c_ee_itcollege_T25Piirivalve_entities_ISIK_INTSIDENDIS_muutja" property="muutja" z="In2bFtarPqAfpXn1jq1ODGXiL8Y="/>
             <table:column date="true" dateTimePattern="${ISIK_INTSIDENDIS_muudetud_date_format}" id="c_ee_itcollege_T25Piirivalve_entities_ISIK_INTSIDENDIS_muudetud" property="muudetud" z="YJ7HokWQo/pZCdVFsUvb1XBhhFs="/>
             <table:column id="c_ee_itcollege_T25Piirivalve_entities_ISIK_INTSIDENDIS_sulgeja" property="sulgeja" z="gig4sWEYMhZBuAZZpJnSENbRfRc="/>

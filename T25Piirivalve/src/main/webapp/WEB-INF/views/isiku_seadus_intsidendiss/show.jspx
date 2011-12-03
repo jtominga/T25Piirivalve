@@ -4,7 +4,7 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:show id="ps_ee_itcollege_T25Piirivalve_entities_ISIKU_SEADUS_INTSIDENDIS" object="${isiku_seadus_intsidendis}" path="/isiku_seadus_intsidendiss" z="ja9G7O2OjYlIc4cgL7TlUSPG5io=">
         <field:display field="avaja" id="s_ee_itcollege_T25Piirivalve_entities_ISIKU_SEADUS_INTSIDENDIS_avaja" object="${isiku_seadus_intsidendis}" z="zn0S1SU4uDH/yhB0FfPPNaRLZg8="/>
-        <field:display date="true" dateTimePattern="${ISIKU_SEADUS_INTSIDENDIS_avatud_date_format}" field="avatud" id="s_ee_itcollege_T25Piirivalve_entities_ISIKU_SEADUS_INTSIDENDIS_avatud" object="${isiku_seadus_intsidendis}" z="GVnKcEGPQswnr7OgnhUBvwsNHiI="/>
+        <field:display calendar="true" dateTimePattern="${ISIKU_SEADUS_INTSIDENDIS_avatud_date_format}" field="avatud" id="s_ee_itcollege_T25Piirivalve_entities_ISIKU_SEADUS_INTSIDENDIS_avatud" object="${isiku_seadus_intsidendis}" z="zWa6KRq1kZaeQAZq8LjLfhbqmeI="/>
         <field:display field="muutja" id="s_ee_itcollege_T25Piirivalve_entities_ISIKU_SEADUS_INTSIDENDIS_muutja" object="${isiku_seadus_intsidendis}" z="1ZWqXkWW9lRct8PfiiYFlIhliX8="/>
         <field:display date="true" dateTimePattern="${ISIKU_SEADUS_INTSIDENDIS_muudetud_date_format}" field="muudetud" id="s_ee_itcollege_T25Piirivalve_entities_ISIKU_SEADUS_INTSIDENDIS_muudetud" object="${isiku_seadus_intsidendis}" z="ECSUh1Pzf2yKHMiqei5GQnN1OhA="/>
         <field:display field="sulgeja" id="s_ee_itcollege_T25Piirivalve_entities_ISIKU_SEADUS_INTSIDENDIS_sulgeja" object="${isiku_seadus_intsidendis}" z="km/cT6CKceU5Yh4CSlNKzdkeOjU="/>

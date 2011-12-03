@@ -4,7 +4,7 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:show id="ps_ee_itcollege_T25Piirivalve_entities_PIIRILOIK" object="${piiriloik}" path="/piiriloiks" z="9EuBcqJ+ReLkq+ck3J7DnssYmVQ=">
         <field:display field="avaja" id="s_ee_itcollege_T25Piirivalve_entities_PIIRILOIK_avaja" object="${piiriloik}" z="40rvV1PLt/KNdlI7ywiYe2g/0V0="/>
-        <field:display date="true" dateTimePattern="${PIIRILOIK_avatud_date_format}" field="avatud" id="s_ee_itcollege_T25Piirivalve_entities_PIIRILOIK_avatud" object="${piiriloik}" z="ChxS95+mq+p08Rv7RYylU1cdI64="/>
+        <field:display calendar="true" dateTimePattern="${PIIRILOIK_avatud_date_format}" field="avatud" id="s_ee_itcollege_T25Piirivalve_entities_PIIRILOIK_avatud" object="${piiriloik}" z="bJSd7fAZl0Y0Xw97DELKEy2ymGg="/>
         <field:display field="muutja" id="s_ee_itcollege_T25Piirivalve_entities_PIIRILOIK_muutja" object="${piiriloik}" z="iAtd+hdMitKe4il3sEp9XQb4/3Y="/>
         <field:display date="true" dateTimePattern="${PIIRILOIK_muudetud_date_format}" field="muudetud" id="s_ee_itcollege_T25Piirivalve_entities_PIIRILOIK_muudetud" object="${piiriloik}" z="40AQUKpoghtdn3cvLpu4SMc8SZA="/>
         <field:display field="sulgeja" id="s_ee_itcollege_T25Piirivalve_entities_PIIRILOIK_sulgeja" object="${piiriloik}" z="klsfOmhpTN+p7kgoU26odFzJPjY="/>

@@ -4,7 +4,7 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:show id="ps_ee_itcollege_T25Piirivalve_entities_VAEOSA" object="${vaeosa}" path="/vaeosas" z="uxQk8PXYHPHLgke7rAoT6XB0BJA=">
         <field:display field="avaja" id="s_ee_itcollege_T25Piirivalve_entities_VAEOSA_avaja" object="${vaeosa}" z="yWulk27IKp1YGAbj04hINyq770g="/>
-        <field:display date="true" dateTimePattern="${VAEOSA_avatud_date_format}" field="avatud" id="s_ee_itcollege_T25Piirivalve_entities_VAEOSA_avatud" object="${vaeosa}" z="9/YGfCwtYysJuUKOtawfnNo/xzs="/>
+        <field:display calendar="true" dateTimePattern="${VAEOSA_avatud_date_format}" field="avatud" id="s_ee_itcollege_T25Piirivalve_entities_VAEOSA_avatud" object="${vaeosa}" z="nZsRfZG8FdT2Ck5wrpVR1S7Ky1E="/>
         <field:display field="muutja" id="s_ee_itcollege_T25Piirivalve_entities_VAEOSA_muutja" object="${vaeosa}" z="cfgtDiNuCl3T4waxFnW2Y0yB2M4="/>
         <field:display date="true" dateTimePattern="${VAEOSA_muudetud_date_format}" field="muudetud" id="s_ee_itcollege_T25Piirivalve_entities_VAEOSA_muudetud" object="${vaeosa}" z="9NGGgEJwKOk5uMTxFuuVOs83UwA="/>
         <field:display field="sulgeja" id="s_ee_itcollege_T25Piirivalve_entities_VAEOSA_sulgeja" object="${vaeosa}" z="yP6WF6SAZj1hooCDFA+iN+Mo084="/>
