@@ -6,13 +6,13 @@
         <field:input field="kommentaar" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_kommentaar" z="9Ca3En1sU1v5hjAiqMK2lGaM5EI="/>
         <field:input field="kood" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_kood" max="20" min="1" required="true" z="ofEBzmsOzvxHn/QELC0ugqocZSM="/>
         <field:textarea field="nimetus" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_nimetus" required="true" z="+FY+KKIVDY0ObmJ5kEZmAgB7DHo="/>
-        <field:simple field="iNTSIDENT" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_iNTSIDENT" messageCode="entity_reference_not_managed" messageCodeAttribute="I N T S I D E N T" z="Ji2+3iNHae8vNRa+qrvU14wS7Ek="/>
-        <field:input field="avaja" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_avaja" z="GWPwkxMHavanScnm9WU3ipktGPg="/>
-        <field:datetime dateTimePattern="${INTSIDENDI_LIIK_avatud_date_format}" field="avatud" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_avatud" z="Wmr7VtDUSa5VbXlpwAC3ygjLEpc="/>
-        <field:input field="muutja" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_muutja" z="wJx5HUsr0wijQLnyx6TDbWYio7s="/>
-        <field:datetime dateTimePattern="${INTSIDENDI_LIIK_muudetud_date_format}" field="muudetud" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_muudetud" z="Mb7uS5rl63cgfJ6itB7zwbKBS0A="/>
-        <field:input field="sulgeja" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_sulgeja" z="TsUX5VJplO2QG63wpt0Jn/y4/bA="/>
-        <field:datetime dateTimePattern="${INTSIDENDI_LIIK_suletud_date_format}" field="suletud" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_suletud" z="MguiJiROOZpneiNTlet0FlPpHyc="/>
+        <field:simple render="false" field="iNTSIDENT" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_iNTSIDENT" messageCode="entity_reference_not_managed" messageCodeAttribute="I N T S I D E N T" z="Ji2+3iNHae8vNRa+qrvU14wS7Ek="/>
+        <field:input render="false" field="avaja" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_avaja" z="GWPwkxMHavanScnm9WU3ipktGPg="/>
+        <field:datetime render="false" dateTimePattern="${INTSIDENDI_LIIK_avatud_date_format}" field="avatud" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_avatud" z="Wmr7VtDUSa5VbXlpwAC3ygjLEpc="/>
+        <field:input render="false" field="muutja" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_muutja" z="wJx5HUsr0wijQLnyx6TDbWYio7s="/>
+        <field:datetime render="false" dateTimePattern="${INTSIDENDI_LIIK_muudetud_date_format}" field="muudetud" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_muudetud" z="Mb7uS5rl63cgfJ6itB7zwbKBS0A="/>
+        <field:input render="false" field="sulgeja" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_sulgeja" z="TsUX5VJplO2QG63wpt0Jn/y4/bA="/>
+        <field:datetime render="false" dateTimePattern="${INTSIDENDI_LIIK_suletud_date_format}" field="suletud" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_suletud" z="MguiJiROOZpneiNTlet0FlPpHyc="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK" render="${not empty dependencies}" z="KX5t/xPTpZYRfkeu4mM4bUIGu3M="/>
 </div>
