@@ -13,10 +13,6 @@ privileged aspect INTSIDENDI_LIIK_Roo_Entity {
         return entityManager().createQuery("SELECT COUNT(o) FROM INTSIDENDI_LIIK o", Long.class).getSingleResult();
     }
     
-    public static List<INTSIDENDI_LIIK> INTSIDENDI_LIIK.findAllINTSIDENDI_LIIKs() {
-        return entityManager().createQuery("SELECT o FROM INTSIDENDI_LIIK o", INTSIDENDI_LIIK.class).getResultList();
-    }
-    
     public static INTSIDENDI_LIIK INTSIDENDI_LIIK.findINTSIDENDI_LIIK(Long id) {
         if (id == null) return null;
         return entityManager().find(INTSIDENDI_LIIK.class, id);
