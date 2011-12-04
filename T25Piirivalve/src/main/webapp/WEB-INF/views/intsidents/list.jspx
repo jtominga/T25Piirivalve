@@ -5,6 +5,12 @@
     <page:list id="pl_ee_itcollege_T25Piirivalve_entities_INTSIDENT" items="${intsidents}" z="FDy6Kp93lXUOGVdTHV5DGC0765s=">
         <table:table data="${intsidents}" id="l_ee_itcollege_T25Piirivalve_entities_INTSIDENT" path="/intsidents" z="4Dddobsfj9pzTS+65XdrDyyNQWM=">
             <table:column id="c_ee_itcollege_T25Piirivalve_entities_VAEOSA_kood" property="kood" z=""/>
+            <table:column id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_avaja" property="avaja" z="BjExoNZRieFyOVI+7DLX2/W7hZQ="/>
+            <table:column date="true" dateTimePattern="${INTSIDENT_avatud_date_format}" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_avatud" property="avatud" z="UGq2I6CnC/LwPly8QEoU2v2B3ho="/>
+            <table:column id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_muutja" property="muutja" z="ZGXThD9b2rZd4R69k9pKV2c59Fs="/>
+            <table:column date="true" dateTimePattern="${INTSIDENT_muudetud_date_format}" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_muudetud" property="muudetud" z="N/ZCnONqZ4EMrjhDroM+PXzgw6M="/>
+            <table:column id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_sulgeja" property="sulgeja" z="MLdEsyeh4kwo6RKpOmFtyX2F4XU="/>
+            <table:column date="true" dateTimePattern="${INTSIDENT_suletud_date_format}" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_suletud" property="suletud" z="+09J9AIDv0PWk9r6tOoiVE4q1CM="/>
         </table:table>
     </page:list>
 </div>

@@ -10,6 +10,12 @@
         <field:datetime dateTimePattern="${VAEOSA_kuni_date_format}" field="kuni" id="c_ee_itcollege_T25Piirivalve_entities_VAEOSA_kuni" required="true" z="yRpd+dlSrhlARcb5OgNfSX2W7ig="/>
         <field:simple field="pIIRILOIGU_HALDAJA" id="c_ee_itcollege_T25Piirivalve_entities_VAEOSA_pIIRILOIGU_HALDAJA" messageCode="entity_reference_not_managed" messageCodeAttribute="P I I R I L O I G U_ H A L D A J A" z="PcLayCpv+ryLdzcGjhfqwvsnQLE="/>
         <field:simple field="pIIRIVALVUR_VAEOSAS" id="c_ee_itcollege_T25Piirivalve_entities_VAEOSA_pIIRIVALVUR_VAEOSAS" messageCode="entity_reference_not_managed" messageCodeAttribute="P I I R I V A L V U R_ V A E O S A S" z="79deTAYSUiyrCqGv/POtbCB8hOA="/>
+        <field:input field="avaja" id="c_ee_itcollege_T25Piirivalve_entities_VAEOSA_avaja" z="Fgcn0WWVsBUbQvufVhbkgOaj3pc="/>
+        <field:datetime dateTimePattern="${VAEOSA_avatud_date_format}" field="avatud" id="c_ee_itcollege_T25Piirivalve_entities_VAEOSA_avatud" z="RnM9xKWLhvQaQqxGrNlEuDawdC4="/>
+        <field:input field="muutja" id="c_ee_itcollege_T25Piirivalve_entities_VAEOSA_muutja" z="XVWv+PSQd81mjeQb6/MzR0wUNgI="/>
+        <field:datetime dateTimePattern="${VAEOSA_muudetud_date_format}" field="muudetud" id="c_ee_itcollege_T25Piirivalve_entities_VAEOSA_muudetud" z="Xbl75Hi/WE+k/qwJ5ukKQEyFvN8="/>
+        <field:input field="sulgeja" id="c_ee_itcollege_T25Piirivalve_entities_VAEOSA_sulgeja" z="wtS20lX2YEHdP9CJ4/KAYN8bhaY="/>
+        <field:datetime dateTimePattern="${VAEOSA_suletud_date_format}" field="suletud" id="c_ee_itcollege_T25Piirivalve_entities_VAEOSA_suletud" z="3DK0yAZ4n1bvot9M+c2KQiXB8Zg="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_ee_itcollege_T25Piirivalve_entities_VAEOSA" render="${not empty dependencies}" z="+uZd/nfsCWGMPiymxgjeSz5a8zM="/>
 </div>
