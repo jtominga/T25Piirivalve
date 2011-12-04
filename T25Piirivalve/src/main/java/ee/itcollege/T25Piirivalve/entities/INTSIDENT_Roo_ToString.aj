@@ -21,6 +21,7 @@ privileged aspect INTSIDENT_Roo_ToString {
         sb.append("Kood: ").append(getKood()).append(", ");
         sb.append("Muudetud: ").append(getMuudetud()).append(", ");
         sb.append("Muutja: ").append(getMuutja()).append(", ");
+        sb.append("Nimetus: ").append(getNimetus()).append(", ");
         sb.append("OBJEKT_INTSIDENDIS: ").append(getOBJEKT_INTSIDENDIS() == null ? "null" : getOBJEKT_INTSIDENDIS().size()).append(", ");
         sb.append("PIIRILOIK: ").append(getPIIRILOIK()).append(", ");
         sb.append("PIIRIVALVUR_INTSIDENDIS: ").append(getPIIRIVALVUR_INTSIDENDIS() == null ? "null" : getPIIRIVALVUR_INTSIDENDIS().size()).append(", ");

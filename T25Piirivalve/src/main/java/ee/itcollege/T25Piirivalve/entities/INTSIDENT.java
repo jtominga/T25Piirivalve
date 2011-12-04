@@ -30,6 +30,9 @@ public class INTSIDENT extends BaseEntity implements Serializable {
 	@Size(min = 1, max = 20)
 	@NotNull
 	private String kood;
+	@Size(min = 1, max = 100)
+	@NotNull
+	private String nimetus;
 	@DateTimeFormat(pattern = "dd.MM.yyyy")
 	@NotNull
 	private Date toimumise_algus;
@@ -74,6 +77,14 @@ public class INTSIDENT extends BaseEntity implements Serializable {
 	public void setKood(String kood) {
 		this.kood = kood;
 	}
+	public String getNimetus() {
+		return nimetus;
+	}
+
+	public void setNimetus(String nimetus) {
+		this.nimetus = nimetus;
+	}
+
 	public Date getToimumise_algus() {
 		return this.toimumise_algus;
 	}

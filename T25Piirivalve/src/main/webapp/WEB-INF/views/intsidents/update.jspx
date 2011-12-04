@@ -22,5 +22,6 @@
         <field:select field="iNTSIDENDI_LIIK" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_iNTSIDENDI_LIIK" itemValue="id" items="${intsidendi_liiks}" path="/intsidendi_liiks" required="true" z="oexYg4OvE5UQPiATMCgdFGMi1xk="/>
         <field:simple field="oBJEKT_INTSIDENDIS" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_oBJEKT_INTSIDENDIS" messageCode="entity_reference_not_managed" messageCodeAttribute="O B J E K T_ I N T S I D E N D I S" z="a0RY5Bpr5oaNuf8Kicg7OwBlW5o="/>
         <field:simple field="iSIK_INTSIDENDIS" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_iSIK_INTSIDENDIS" messageCode="entity_reference_not_managed" messageCodeAttribute="I S I K_ I N T S I D E N D I S" z="d10D3B7PIY/gvHvp59GwKZXAbsw="/>
+        <field:textarea field="nimetus" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_nimetus" required="true" z="se3x2qgnkbNmWE//tyhzErmmUtA="/>
     </form:update>
 </div>

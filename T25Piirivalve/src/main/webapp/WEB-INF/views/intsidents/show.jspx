@@ -18,5 +18,6 @@
         <field:display field="kirjeldus" id="s_ee_itcollege_T25Piirivalve_entities_INTSIDENT_kirjeldus" object="${intsident}" z="aSsZtLCfes43v3P70mXVylM3iRg="/>
         <field:display field="PIIRILOIK" id="s_ee_itcollege_T25Piirivalve_entities_INTSIDENT_pIIRILOIK" object="${intsident}" z="3dZHOYOQHCNGyxZhWeHIuixjak0="/>
         <field:display field="INTSIDENDI_LIIK" id="s_ee_itcollege_T25Piirivalve_entities_INTSIDENT_iNTSIDENDI_LIIK" object="${intsident}" z="MCD5UavhJQgO2Ir4tabSB9XNNDA="/>
+        <field:display field="nimetus" id="s_ee_itcollege_T25Piirivalve_entities_INTSIDENT_nimetus" object="${intsident}" z="OIBTUsd9IPvMFigE/hox2ZEcKFQ="/>
     </page:show>
 </div>

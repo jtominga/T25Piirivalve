@@ -3,16 +3,16 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <form:create id="fc_ee_itcollege_T25Piirivalve_entities_OBJEKTI_LIIK" modelAttribute="OBJEKTI_LIIK" path="/objekti_liiks" render="${empty dependencies}" z="Ew/9jgRG4FckG2IwnWS9x681aGM=">
-        <field:input field="avaja" id="c_ee_itcollege_T25Piirivalve_entities_OBJEKTI_LIIK_avaja" z="7VSySiVomPO26qbQ7H6YuEkpx90="/>
-        <field:datetime dateTimePattern="${OBJEKTI_LIIK_avatud_date_format}" field="avatud" id="c_ee_itcollege_T25Piirivalve_entities_OBJEKTI_LIIK_avatud" z="Vhd0taVY/R5yE9TSthiidJGKtmU="/>
-        <field:input field="muutja" id="c_ee_itcollege_T25Piirivalve_entities_OBJEKTI_LIIK_muutja" z="EXUmJxx5Ln5KhThfLvMqE5tgn9A="/>
-        <field:datetime dateTimePattern="${OBJEKTI_LIIK_muudetud_date_format}" field="muudetud" id="c_ee_itcollege_T25Piirivalve_entities_OBJEKTI_LIIK_muudetud" z="8XfF0oggj3Igr7ZjWZCBo5Fm/D0="/>
-        <field:input field="sulgeja" id="c_ee_itcollege_T25Piirivalve_entities_OBJEKTI_LIIK_sulgeja" z="6PGhuIiYXj0xRTYw1Ezgcpcnu0Y="/>
         <field:datetime dateTimePattern="${OBJEKTI_LIIK_suletud_date_format}" field="suletud" id="c_ee_itcollege_T25Piirivalve_entities_OBJEKTI_LIIK_suletud" z="UJsaEM5+zpC8YaqD3Uc8yCwEx6Y="/>
         <field:input field="kommentaar" id="c_ee_itcollege_T25Piirivalve_entities_OBJEKTI_LIIK_kommentaar" z="nkQt2kYyRRATB7i6zIQGCPEOTNc="/>
         <field:input field="kood" id="c_ee_itcollege_T25Piirivalve_entities_OBJEKTI_LIIK_kood" max="20" min="1" required="true" z="oQtvysiJc6YeheTqZdXYsaGcjV8="/>
         <field:textarea field="nimetus" id="c_ee_itcollege_T25Piirivalve_entities_OBJEKTI_LIIK_nimetus" required="true" z="P/R/4dMifhn0W6tNxWQa1Umb768="/>
         <field:simple field="oBJEKT" id="c_ee_itcollege_T25Piirivalve_entities_OBJEKTI_LIIK_oBJEKT" messageCode="entity_reference_not_managed" messageCodeAttribute="O B J E K T" z="wVEIGWVf2ujp+8xqWFmrJdRLk8g="/>
+        <field:input field="avaja" id="c_ee_itcollege_T25Piirivalve_entities_OBJEKTI_LIIK_avaja" z="7VSySiVomPO26qbQ7H6YuEkpx90="/>
+        <field:datetime dateTimePattern="${OBJEKTI_LIIK_avatud_date_format}" field="avatud" id="c_ee_itcollege_T25Piirivalve_entities_OBJEKTI_LIIK_avatud" z="Vhd0taVY/R5yE9TSthiidJGKtmU="/>
+        <field:input field="muutja" id="c_ee_itcollege_T25Piirivalve_entities_OBJEKTI_LIIK_muutja" z="EXUmJxx5Ln5KhThfLvMqE5tgn9A="/>
+        <field:datetime dateTimePattern="${OBJEKTI_LIIK_muudetud_date_format}" field="muudetud" id="c_ee_itcollege_T25Piirivalve_entities_OBJEKTI_LIIK_muudetud" z="8XfF0oggj3Igr7ZjWZCBo5Fm/D0="/>
+        <field:input field="sulgeja" id="c_ee_itcollege_T25Piirivalve_entities_OBJEKTI_LIIK_sulgeja" z="6PGhuIiYXj0xRTYw1Ezgcpcnu0Y="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_ee_itcollege_T25Piirivalve_entities_OBJEKTI_LIIK" render="${not empty dependencies}" z="5z4nxXIPCPBw7XzohbS/KSj0j1U="/>
 </div>

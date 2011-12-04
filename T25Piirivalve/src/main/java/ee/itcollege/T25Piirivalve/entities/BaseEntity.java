@@ -59,7 +59,7 @@ public abstract class BaseEntity implements Serializable {
 		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
 		setAvaja(auth.getName());
 		Calendar cal = Calendar.getInstance();
-		setAvatud(new Date());
+		setAvatud(cal.getTime());
 		cal.set(9999, 11, 31);
 		setMuutja("N/A");
 		setSulgeja("N/A");

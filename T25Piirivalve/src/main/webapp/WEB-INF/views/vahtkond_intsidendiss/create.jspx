@@ -3,12 +3,6 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <form:create id="fc_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS" modelAttribute="VAHTKOND_INTSIDENDIS" path="/vahtkond_intsidendiss" render="${empty dependencies}" z="u9kcYhBexCstXi9mPJt8NTpY6vA=">
-        <field:input field="avaja" id="c_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_avaja" z="utlb7scYBBbyZs68YFbL5LGrVb0="/>
-        <field:datetime dateTimePattern="${VAHTKOND_INTSIDENDIS_avatud_date_format}" field="avatud" id="c_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_avatud" z="JpvyoDunrO+OH5kn43G6K5zQG7w="/>
-        <field:input field="muutja" id="c_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_muutja" z="b5OHTHw06nUmOYzm0aFxuS+pTxU="/>
-        <field:datetime dateTimePattern="${VAHTKOND_INTSIDENDIS_muudetud_date_format}" field="muudetud" id="c_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_muudetud" z="KPryQg5LvD6sBHnOaQntoN9jUVs="/>
-        <field:input field="sulgeja" id="c_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_sulgeja" z="8SNLnDJry8lgGDENEwxs07axb+0="/>
-        <field:datetime dateTimePattern="${VAHTKOND_INTSIDENDIS_suletud_date_format}" field="suletud" id="c_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_suletud" z="oZLFWxiYNiQyE5bXfJxShUy0hZU="/>
         <field:input field="kommentaar" id="c_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_kommentaar" z="7AaH6texfoX/4IJCrTOpWMJ3z48="/>
         <field:datetime dateTimePattern="${VAHTKOND_INTSIDENDIS_alates_date_format}" field="alates" id="c_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_alates" required="true" z="GyhBxAdI/3iRM3Q3M1/NF1gkBYo="/>
         <field:datetime dateTimePattern="${VAHTKOND_INTSIDENDIS_kuni_date_format}" field="kuni" id="c_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_kuni" required="true" z="MXwQnQWXZDgvksJJesby57tDXnk="/>
@@ -16,6 +10,12 @@
         <field:select field="vAHTKOND" id="c_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_vAHTKOND" itemValue="id" items="${vahtkonds}" path="/vahtkonds" z="hEIg4jUJx198PsjS97M0oPDhkBQ="/>
         <field:select field="iNTSIDENT" id="c_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_iNTSIDENT" itemValue="id" items="${intsidents}" path="/intsidents" z="wIGU46Li65swa2Vbo9wg/nm/N/8="/>
         <field:simple field="pIIRIVALVUR_INTSIDENDIS" id="c_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_pIIRIVALVUR_INTSIDENDIS" messageCode="entity_reference_not_managed" messageCodeAttribute="P I I R I V A L V U R_ I N T S I D E N D I S" z="feyoRjjazudcJcs3mULh0c11ps8="/>
+        <field:input field="avaja" id="c_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_avaja" z="utlb7scYBBbyZs68YFbL5LGrVb0="/>
+        <field:datetime dateTimePattern="${VAHTKOND_INTSIDENDIS_avatud_date_format}" field="avatud" id="c_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_avatud" z="JpvyoDunrO+OH5kn43G6K5zQG7w="/>
+        <field:input field="muutja" id="c_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_muutja" z="b5OHTHw06nUmOYzm0aFxuS+pTxU="/>
+        <field:datetime dateTimePattern="${VAHTKOND_INTSIDENDIS_muudetud_date_format}" field="muudetud" id="c_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_muudetud" z="KPryQg5LvD6sBHnOaQntoN9jUVs="/>
+        <field:input field="sulgeja" id="c_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_sulgeja" z="8SNLnDJry8lgGDENEwxs07axb+0="/>
+        <field:datetime dateTimePattern="${VAHTKOND_INTSIDENDIS_suletud_date_format}" field="suletud" id="c_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS_suletud" z="oZLFWxiYNiQyE5bXfJxShUy0hZU="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_ee_itcollege_T25Piirivalve_entities_VAHTKOND_INTSIDENDIS" render="${not empty dependencies}" z="O+o8xOfCDwm0W6n/hwAFHU+nO28="/>
 </div>

@@ -3,12 +3,6 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <form:create id="fc_ee_itcollege_T25Piirivalve_entities_SEADUS" modelAttribute="SEADUS" path="/seadus" render="${empty dependencies}" z="pR9Yz7jtS7Ke85LwKCTlQngtt+A=">
-        <field:input field="avaja" id="c_ee_itcollege_T25Piirivalve_entities_SEADUS_avaja" z="FPtX2/iJGc5ssnH00EUW2NE+G/w="/>
-        <field:datetime dateTimePattern="${SEADUS_avatud_date_format}" field="avatud" id="c_ee_itcollege_T25Piirivalve_entities_SEADUS_avatud" z="HmQq1QGdQ2eU7jfksWtgEn8rgRo="/>
-        <field:input field="muutja" id="c_ee_itcollege_T25Piirivalve_entities_SEADUS_muutja" z="8tuMh9DbXT0FxYg14DxGsFmJ0Ws="/>
-        <field:datetime dateTimePattern="${SEADUS_muudetud_date_format}" field="muudetud" id="c_ee_itcollege_T25Piirivalve_entities_SEADUS_muudetud" z="13avC4AymD0wqFdzhLhm/hA6rC8="/>
-        <field:input field="sulgeja" id="c_ee_itcollege_T25Piirivalve_entities_SEADUS_sulgeja" z="bcbWAejfd21EWOqDNKlmfeBT/XQ="/>
-        <field:datetime dateTimePattern="${SEADUS_suletud_date_format}" field="suletud" id="c_ee_itcollege_T25Piirivalve_entities_SEADUS_suletud" z="3L91BFVZu+cTFft2DLJ5aTzg3mM="/>
         <field:input field="kommentaar" id="c_ee_itcollege_T25Piirivalve_entities_SEADUS_kommentaar" z="xE/xLK+vx5QY8Wcv9/ebH67uQNM="/>
         <field:input field="kood" id="c_ee_itcollege_T25Piirivalve_entities_SEADUS_kood" max="20" min="1" required="true" z="7UoFEWDf2ccOn+kzlA4Zy/Icj2I="/>
         <field:datetime dateTimePattern="${SEADUS_kehtiv_alates_date_format}" field="kehtiv_alates" id="c_ee_itcollege_T25Piirivalve_entities_SEADUS_kehtiv_alates" required="true" z="+bLPoamTxtmlXDK9YbuQ5uXCrqE="/>
@@ -17,6 +11,12 @@
         <field:simple field="sEADUSE_PUNKT" id="c_ee_itcollege_T25Piirivalve_entities_SEADUS_sEADUSE_PUNKT" messageCode="entity_reference_not_managed" messageCodeAttribute="S E A D U S E_ P U N K T" z="7piV7bXlcqgH2RzT9znr0LBAlog="/>
         <field:simple field="iSIKU_SEADUS_INTSIDENDIS" id="c_ee_itcollege_T25Piirivalve_entities_SEADUS_iSIKU_SEADUS_INTSIDENDIS" messageCode="entity_reference_not_managed" messageCodeAttribute="I S I K U_ S E A D U S_ I N T S I D E N D I S" z="se2jopYVSPvNDlbRML43m6v+jw8="/>
         <field:simple field="oBJEKTI_SEADUS_INTSIDENDIS" id="c_ee_itcollege_T25Piirivalve_entities_SEADUS_oBJEKTI_SEADUS_INTSIDENDIS" messageCode="entity_reference_not_managed" messageCodeAttribute="O B J E K T I_ S E A D U S_ I N T S I D E N D I S" z="3hasWS5+ZMdW1mw4DobVT3ydmS0="/>
+        <field:input field="avaja" id="c_ee_itcollege_T25Piirivalve_entities_SEADUS_avaja" z="FPtX2/iJGc5ssnH00EUW2NE+G/w="/>
+        <field:datetime dateTimePattern="${SEADUS_avatud_date_format}" field="avatud" id="c_ee_itcollege_T25Piirivalve_entities_SEADUS_avatud" z="HmQq1QGdQ2eU7jfksWtgEn8rgRo="/>
+        <field:input field="muutja" id="c_ee_itcollege_T25Piirivalve_entities_SEADUS_muutja" z="8tuMh9DbXT0FxYg14DxGsFmJ0Ws="/>
+        <field:datetime dateTimePattern="${SEADUS_muudetud_date_format}" field="muudetud" id="c_ee_itcollege_T25Piirivalve_entities_SEADUS_muudetud" z="13avC4AymD0wqFdzhLhm/hA6rC8="/>
+        <field:input field="sulgeja" id="c_ee_itcollege_T25Piirivalve_entities_SEADUS_sulgeja" z="bcbWAejfd21EWOqDNKlmfeBT/XQ="/>
+        <field:datetime dateTimePattern="${SEADUS_suletud_date_format}" field="suletud" id="c_ee_itcollege_T25Piirivalve_entities_SEADUS_suletud" z="3L91BFVZu+cTFft2DLJ5aTzg3mM="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_ee_itcollege_T25Piirivalve_entities_SEADUS" render="${not empty dependencies}" z="Kub5NJkTPTnBEL8u5UILuSCe0p8="/>
 </div>

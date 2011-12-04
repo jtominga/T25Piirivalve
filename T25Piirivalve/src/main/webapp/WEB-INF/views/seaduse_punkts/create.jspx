@@ -3,12 +3,6 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <form:create id="fc_ee_itcollege_T25Piirivalve_entities_SEADUSE_PUNKT" modelAttribute="SEADUSE_PUNKT" path="/seaduse_punkts" render="${empty dependencies}" z="LkAYVPbpw3BXVo90ud5PzvwhQEA=">
-        <field:input field="avaja" id="c_ee_itcollege_T25Piirivalve_entities_SEADUSE_PUNKT_avaja" z="v72T4ZKAIt9uTABj9UDUEZIgYik="/>
-        <field:datetime dateTimePattern="${SEADUSE_PUNKT_avatud_date_format}" field="avatud" id="c_ee_itcollege_T25Piirivalve_entities_SEADUSE_PUNKT_avatud" z="zyyeToJSeJu9oZytF+5kdP1dNN8="/>
-        <field:input field="muutja" id="c_ee_itcollege_T25Piirivalve_entities_SEADUSE_PUNKT_muutja" z="nTBxrx6mDR4SWHtjV1SLIjvI2+4="/>
-        <field:datetime dateTimePattern="${SEADUSE_PUNKT_muudetud_date_format}" field="muudetud" id="c_ee_itcollege_T25Piirivalve_entities_SEADUSE_PUNKT_muudetud" z="xsvmcE/29pnmP3nCqcDkPHy7VE0="/>
-        <field:input field="sulgeja" id="c_ee_itcollege_T25Piirivalve_entities_SEADUSE_PUNKT_sulgeja" z="K6WmZd42KWTxlpCqna7N1azf/Mo="/>
-        <field:datetime dateTimePattern="${SEADUSE_PUNKT_suletud_date_format}" field="suletud" id="c_ee_itcollege_T25Piirivalve_entities_SEADUSE_PUNKT_suletud" z="tVUzfW1x+QzJSICW4yLd/9+0V6E="/>
         <field:input field="kommentaar" id="c_ee_itcollege_T25Piirivalve_entities_SEADUSE_PUNKT_kommentaar" z="xpYPexCrlRTlPmVMvrsG786GN5Q="/>
         <field:input field="paragrahv" id="c_ee_itcollege_T25Piirivalve_entities_SEADUSE_PUNKT_paragrahv" max="20" min="1" required="true" z="YeIb/P94RBrDGoEg3NN1WnhfwOQ="/>
         <field:input field="pais" id="c_ee_itcollege_T25Piirivalve_entities_SEADUSE_PUNKT_pais" max="20" min="1" required="true" z="hsZzadU5as1NRzuRLc/bxKcyqgY="/>
@@ -17,6 +11,12 @@
         <field:input field="tekst" id="c_ee_itcollege_T25Piirivalve_entities_SEADUSE_PUNKT_tekst" max="20" min="1" required="true" z="ciKfrfQ+FCVKmaJB7wmlkTtQrH4="/>
         <field:select field="sEADUS" id="c_ee_itcollege_T25Piirivalve_entities_SEADUSE_PUNKT_sEADUS" itemValue="id" items="${seadus}" path="/seadus" z="vSy5wgIcalSm9svKW8NU0cpDo3E="/>
         <field:select field="YLEM_SEADUSE_PUNKT" id="c_ee_itcollege_T25Piirivalve_entities_SEADUSE_PUNKT_YLEM_SEADUSE_PUNKT" itemValue="id" items="${seaduse_punkts}" path="/seaduse_punkts" z="j+eUIVh6chkhwMx688+ST7UK/rw="/>
+        <field:input field="avaja" id="c_ee_itcollege_T25Piirivalve_entities_SEADUSE_PUNKT_avaja" z="v72T4ZKAIt9uTABj9UDUEZIgYik="/>
+        <field:datetime dateTimePattern="${SEADUSE_PUNKT_avatud_date_format}" field="avatud" id="c_ee_itcollege_T25Piirivalve_entities_SEADUSE_PUNKT_avatud" z="zyyeToJSeJu9oZytF+5kdP1dNN8="/>
+        <field:input field="muutja" id="c_ee_itcollege_T25Piirivalve_entities_SEADUSE_PUNKT_muutja" z="nTBxrx6mDR4SWHtjV1SLIjvI2+4="/>
+        <field:datetime dateTimePattern="${SEADUSE_PUNKT_muudetud_date_format}" field="muudetud" id="c_ee_itcollege_T25Piirivalve_entities_SEADUSE_PUNKT_muudetud" z="xsvmcE/29pnmP3nCqcDkPHy7VE0="/>
+        <field:input field="sulgeja" id="c_ee_itcollege_T25Piirivalve_entities_SEADUSE_PUNKT_sulgeja" z="K6WmZd42KWTxlpCqna7N1azf/Mo="/>
+        <field:datetime dateTimePattern="${SEADUSE_PUNKT_suletud_date_format}" field="suletud" id="c_ee_itcollege_T25Piirivalve_entities_SEADUSE_PUNKT_suletud" z="tVUzfW1x+QzJSICW4yLd/9+0V6E="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_ee_itcollege_T25Piirivalve_entities_SEADUSE_PUNKT" render="${not empty dependencies}" z="trflRM8P/noaz7YplbffoO7zAjI="/>
 </div>
