@@ -1,0 +1,67 @@
+label {
+	width: 9em;
+}
+
+#widget__kood_id {
+	width: 4em;
+}
+
+#widget__iNTSIDENDI_LIIK_id {
+	width: 12em;
+}
+
+#_iNTSIDENDI_LIIK_id_label {
+	width: auto;
+}
+
+#_c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_kood_id {
+	float:left;
+}
+
+#_c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_iNTSIDENDI_LIIK_id {
+	float: right;
+}
+
+#_c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_GPS_Latitude_id *{
+	float:left;
+	width: 3em; !important
+}
+
+#_c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_GPS_Longtitude_id *{
+	float: left;
+	width: 3em; !important
+}
+
+#intsident_form_column_left {
+	float:left;
+}
+
+#intsident_form_column_right {
+	float: right;
+}
+
+.dijitTextBox {
+	width: 20em; !important
+}
+
+#_c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_kommentaar_id {
+	width: 17em;
+}
+
+#_c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_kommentaar_id label {
+	float: none;
+}
+#_c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_kommentaar_id textarea {
+	display: block;
+}
+
+#_c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_kirjeldus_id {
+	width: 17em;
+}
+
+#_c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_kirjeldus_id label {
+	float: none;
+}
+#_c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_kirjeldus_id textarea {
+	display: block;
+}
