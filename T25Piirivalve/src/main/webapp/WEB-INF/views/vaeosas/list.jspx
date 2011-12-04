@@ -4,8 +4,14 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:list id="pl_ee_itcollege_T25Piirivalve_entities_VAEOSA" items="${vaeosas}" z="hPruScHpuIv9B4yW/o2UdC7i+E4=">
         <table:table data="${vaeosas}" id="l_ee_itcollege_T25Piirivalve_entities_VAEOSA" path="/vaeosas" z="K1AwnPkKUJSbwlocedozgVweM7k=">
-        	<table:column id="c_ee_itcollege_T25Piirivalve_entities_VAEOSA_kood" property="kood" z=""/>
-        	<table:column id="c_ee_itcollege_T25Piirivalve_entities_VAEOSA_nimetus" property="nimetus" z=""/>
+            <table:column id="c_ee_itcollege_T25Piirivalve_entities_VAEOSA_kood" property="kood" z=""/>
+            <table:column id="c_ee_itcollege_T25Piirivalve_entities_VAEOSA_nimetus" property="nimetus" z=""/>
+            <table:column id="c_ee_itcollege_T25Piirivalve_entities_VAEOSA_avaja" property="avaja" z="qgwNQf+FdRKKzKk1AHAaZKEoSZA="/>
+            <table:column date="true" dateTimePattern="${VAEOSA_avatud_date_format}" id="c_ee_itcollege_T25Piirivalve_entities_VAEOSA_avatud" property="avatud" z="OsVY8vZPQwItUK0u73tVY8NpKrI="/>
+            <table:column id="c_ee_itcollege_T25Piirivalve_entities_VAEOSA_muutja" property="muutja" z="CNFMcFhtMK4C7DLVuzAytJ8hvqI="/>
+            <table:column date="true" dateTimePattern="${VAEOSA_muudetud_date_format}" id="c_ee_itcollege_T25Piirivalve_entities_VAEOSA_muudetud" property="muudetud" z="E/u+7sXZjbzhbHiIwAV6W6izn6A="/>
+            <table:column id="c_ee_itcollege_T25Piirivalve_entities_VAEOSA_sulgeja" property="sulgeja" z="cEHldVlTmV9xaSasODobNvSKvAw="/>
+            <table:column date="true" dateTimePattern="${VAEOSA_suletud_date_format}" id="c_ee_itcollege_T25Piirivalve_entities_VAEOSA_suletud" property="suletud" z="Aism795LKsKxkpQmw8Ojj+HvtS8="/>
         </table:table>
     </page:list>
 </div>

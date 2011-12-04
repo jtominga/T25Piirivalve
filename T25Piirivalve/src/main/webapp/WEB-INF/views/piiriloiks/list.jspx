@@ -8,6 +8,12 @@
             <table:column id="c_ee_itcollege_T25Piirivalve_entities_PIIRILOIK_nimetus" property="nimetus" z=""/>
             <table:column id="c_ee_itcollege_T25Piirivalve_entities_PIIRILOIK_GPS_Longtitude" property="GPS_Longtitude" z=""/>
             <table:column id="c_ee_itcollege_T25Piirivalve_entities_PIIRILOIK_GPS_Latitude" property="_GPS_Latitude" z=""/>
+            <table:column id="c_ee_itcollege_T25Piirivalve_entities_PIIRILOIK_avaja" property="avaja" z="LBWxo78sLCj4uv9GkV/rKMK/IT8="/>
+            <table:column date="true" dateTimePattern="${PIIRILOIK_avatud_date_format}" id="c_ee_itcollege_T25Piirivalve_entities_PIIRILOIK_avatud" property="avatud" z="8ocPIJ6Xs27sOezs3aAEl8gw1Vc="/>
+            <table:column id="c_ee_itcollege_T25Piirivalve_entities_PIIRILOIK_muutja" property="muutja" z="pjssjUUg4kufgn1MKQrIzfgR+L0="/>
+            <table:column date="true" dateTimePattern="${PIIRILOIK_muudetud_date_format}" id="c_ee_itcollege_T25Piirivalve_entities_PIIRILOIK_muudetud" property="muudetud" z="BDPuza/VC4AM6f2Qei6nLM7u6xk="/>
+            <table:column id="c_ee_itcollege_T25Piirivalve_entities_PIIRILOIK_sulgeja" property="sulgeja" z="c7NbpsCKoYtQqaCATWiZtvweOqo="/>
+            <table:column date="true" dateTimePattern="${PIIRILOIK_suletud_date_format}" id="c_ee_itcollege_T25Piirivalve_entities_PIIRILOIK_suletud" property="suletud" z="DczyaeK/gy8gOE5g8RVcvVxXrp4="/>
         </table:table>
     </page:list>
 </div>
