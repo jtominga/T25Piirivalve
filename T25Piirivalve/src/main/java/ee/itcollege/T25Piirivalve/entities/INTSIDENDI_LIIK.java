@@ -46,6 +46,14 @@ public class INTSIDENDI_LIIK extends BaseEntity implements Serializable  {
         	return temp;
 	}
 	
+    public static long countINTSIDENDI_LIIKs() {
+        return entityManager().createQuery("SELECT COUNT(o) FROM INTSIDENDI_LIIK o WHERE suletud > curdate()", Long.class).getSingleResult();
+    }
+    
+    public static List<INTSIDENDI_LIIK> findINTSIDENDI_LIIKEntries(int firstResult, int maxResults) {
+        return entityManager().createQuery("SELECT o FROM INTSIDENDI_LIIK o WHERE suletud > curdate()", INTSIDENDI_LIIK.class).setFirstResult(firstResult).setMaxResults(maxResults).getResultList();
+    }
+	
 	public String getKood() {
 		return this.kood;
 	}

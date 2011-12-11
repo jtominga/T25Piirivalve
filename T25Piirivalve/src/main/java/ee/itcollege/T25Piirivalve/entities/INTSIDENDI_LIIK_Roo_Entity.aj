@@ -9,17 +9,8 @@ import java.util.List;
 
 privileged aspect INTSIDENDI_LIIK_Roo_Entity {
     
-    public static long INTSIDENDI_LIIK.countINTSIDENDI_LIIKs() {
-        return entityManager().createQuery("SELECT COUNT(o) FROM INTSIDENDI_LIIK o", Long.class).getSingleResult();
-    }
-    
     public static INTSIDENDI_LIIK INTSIDENDI_LIIK.findINTSIDENDI_LIIK(Long id) {
         if (id == null) return null;
         return entityManager().find(INTSIDENDI_LIIK.class, id);
     }
-    
-    public static List<INTSIDENDI_LIIK> INTSIDENDI_LIIK.findINTSIDENDI_LIIKEntries(int firstResult, int maxResults) {
-        return entityManager().createQuery("SELECT o FROM INTSIDENDI_LIIK o", INTSIDENDI_LIIK.class).setFirstResult(firstResult).setMaxResults(maxResults).getResultList();
-    }
-    
 }
