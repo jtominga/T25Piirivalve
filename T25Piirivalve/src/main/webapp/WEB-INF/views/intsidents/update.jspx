@@ -11,6 +11,7 @@
         <field:datetime dateTimePattern="${INTSIDENT_suletud_date_format}" field="suletud" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_suletud" z="6sblBn5BYZ/hmI7ByJQMY7hXPZc="/>
         <field:input field="kommentaar" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_kommentaar" z="qZJMOvFRlivXXo7Vbgu+4VY7C4g="/>
         <field:input field="kood" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_kood" max="20" min="1" required="true" z="rpiDRK7Jm/22f+RVQT6XAe9dlT8="/>
+        <field:textarea field="nimetus" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_nimetus" required="true" z="se3x2qgnkbNmWE//tyhzErmmUtA="/>
         <field:datetime dateTimePattern="${INTSIDENT_toimumise_algus_date_format}" field="toimumise_algus" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_toimumise_algus" required="true" z="cXcQ4WLkZAz0yHnhvPOSapbpyzs="/>
         <field:datetime dateTimePattern="${INTSIDENT_toimumise_lopp_date_format}" field="toimumise_lopp" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_toimumise_lopp" required="true" z="0EDOnBtXW6ylmlIzLrI/Lq2q2j4="/>
         <field:input field="GPS_Latitude" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_GPS_Latitude" validationMessageCode="field_invalid_number" z="KkmnJVXiWBOxtYAuMcaVg6vm2Ww="/>
@@ -22,6 +23,5 @@
         <field:select field="iNTSIDENDI_LIIK" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_iNTSIDENDI_LIIK" itemValue="id" items="${intsidendi_liiks}" path="/intsidendi_liiks" required="true" z="oexYg4OvE5UQPiATMCgdFGMi1xk="/>
         <field:simple field="oBJEKT_INTSIDENDIS" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_oBJEKT_INTSIDENDIS" messageCode="entity_reference_not_managed" messageCodeAttribute="O B J E K T_ I N T S I D E N D I S" z="a0RY5Bpr5oaNuf8Kicg7OwBlW5o="/>
         <field:simple field="iSIK_INTSIDENDIS" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_iSIK_INTSIDENDIS" messageCode="entity_reference_not_managed" messageCodeAttribute="I S I K_ I N T S I D E N D I S" z="d10D3B7PIY/gvHvp59GwKZXAbsw="/>
-        <field:textarea field="nimetus" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_nimetus" required="true" z="se3x2qgnkbNmWE//tyhzErmmUtA="/>
     </form:update>
 </div>
