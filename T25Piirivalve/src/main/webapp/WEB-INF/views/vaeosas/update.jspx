@@ -3,7 +3,8 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <form:update id="fu_ee_itcollege_T25Piirivalve_entities_VAEOSA" modelAttribute="VAEOSA" path="/vaeosas" versionField="Version" z="57rNWwGCQv4pFgEJ3Xy4rUhwuq4=">
-         <field:input field="kood" id="c_ee_itcollege_T25Piirivalve_entities_VAEOSA_kood" max="20" min="1" required="true" z="5BsODPRFYqp+ZDVsx55k4FC4g1E="/>
+        <field:input field="kommentaar" id="c_ee_itcollege_T25Piirivalve_entities_VAEOSA_kommentaar" z="j7XfLY8D8OUmVh5LaYgAZvfeEh8="/>
+        <field:input field="kood" id="c_ee_itcollege_T25Piirivalve_entities_VAEOSA_kood" max="20" min="1" required="true" z="5BsODPRFYqp+ZDVsx55k4FC4g1E="/>
         <field:textarea field="nimetus" id="c_ee_itcollege_T25Piirivalve_entities_VAEOSA_nimetus" required="true" z="F+KjDidBKeZ0n8JaFp5zRoolOJI="/>
         <field:datetime dateTimePattern="${VAEOSA_alates_date_format}" field="alates" id="c_ee_itcollege_T25Piirivalve_entities_VAEOSA_alates" required="true" z="A/YUQSwrKoI0Zh0uLoVl1Ho4WJM="/>
         <field:datetime dateTimePattern="${VAEOSA_kuni_date_format}" field="kuni" id="c_ee_itcollege_T25Piirivalve_entities_VAEOSA_kuni" required="true" z="yRpd+dlSrhlARcb5OgNfSX2W7ig="/>
