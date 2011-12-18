@@ -3,19 +3,12 @@
 
 package ee.itcollege.veebirakendused.java.team25.web;
 
-import ee.itcollege.T25Piirivalve.entities.INTSIDENT;
-import ee.itcollege.T25Piirivalve.entities.ISIKU_SEADUS_INTSIDENDIS;
-import ee.itcollege.T25Piirivalve.entities.ISIK_INTSIDENDIS;
-import ee.itcollege.T25Piirivalve.entities.PIIRIRIKKUJA;
 import java.io.UnsupportedEncodingException;
-import java.lang.Integer;
-import java.lang.Long;
-import java.lang.String;
-import java.util.ArrayList;
 import java.util.Collection;
-import java.util.List;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
+
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -25,6 +18,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.util.UriUtils;
 import org.springframework.web.util.WebUtils;
+
+import ee.itcollege.T25Piirivalve.entities.INTSIDENT;
+import ee.itcollege.T25Piirivalve.entities.ISIKU_SEADUS_INTSIDENDIS;
+import ee.itcollege.T25Piirivalve.entities.ISIK_INTSIDENDIS;
+import ee.itcollege.T25Piirivalve.entities.PIIRIRIKKUJA;
 
 privileged aspect ISIK_INTSIDENDISController_Roo_Controller {
     
@@ -38,21 +36,6 @@ privileged aspect ISIK_INTSIDENDISController_Roo_Controller {
         uiModel.asMap().clear();
         ISIK_INTSIDENDIS.persist();
         return "redirect:/isik_intsidendiss/" + encodeUrlPathSegment(ISIK_INTSIDENDIS.getId().toString(), httpServletRequest);
-    }
-    
-    @RequestMapping(params = "form", method = RequestMethod.GET)
-    public String ISIK_INTSIDENDISController.createForm(Model uiModel) {
-        uiModel.addAttribute("ISIK_INTSIDENDIS", new ISIK_INTSIDENDIS());
-        addDateTimeFormatPatterns(uiModel);
-        List dependencies = new ArrayList();
-        if (INTSIDENT.countINTSIDENTS() == 0) {
-            dependencies.add(new String[]{"intsident", "intsidents"});
-        }
-        if (PIIRIRIKKUJA.countPIIRIRIKKUJAS() == 0) {
-            dependencies.add(new String[]{"piiririkkuja", "piiririkkujas"});
-        }
-        uiModel.addAttribute("dependencies", dependencies);
-        return "isik_intsidendiss/create";
     }
     
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)

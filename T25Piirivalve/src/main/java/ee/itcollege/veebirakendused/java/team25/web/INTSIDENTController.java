@@ -37,7 +37,7 @@ public class INTSIDENTController {
     public String createForm(Model uiModel) {
         uiModel.addAttribute("INTSIDENT", new INTSIDENT());
         addDateTimeFormatPatterns(uiModel);
-        List dependencies = new ArrayList();
+        List<String[]> dependencies = new ArrayList<String[]>();
         if (PIIRILOIK.countPIIRILOIKS() == 0) {
             dependencies.add(new String[]{"piiriloik", "piiriloiks"});
         }
