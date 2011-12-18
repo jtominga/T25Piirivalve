@@ -34,13 +34,16 @@ public class VAEOSA extends BaseEntity implements Serializable {
 	@NotNull
 	private Date alates;
 	@DateTimeFormat(pattern = "dd.MM.yyyy")
-	@NotNull
+	@NotNull (message="Insert date kuni which is set no earlier than alates.")
 	private Date kuni;	
 	private static final long serialVersionUID = 1L;
 	@OneToMany(mappedBy = "vAEOSA")
 	private Collection<PIIRILOIGU_HALDAJA> pIIRILOIGU_HALDAJA;
 	@OneToMany(mappedBy = "vAEOSA")
 	private Collection<PIIRIVALVUR_VAEOSAS> pIIRIVALVUR_VAEOSAS;
+	
+	
+	
 	public VAEOSA() {
 		super();
 	}
@@ -75,8 +78,11 @@ public class VAEOSA extends BaseEntity implements Serializable {
 
 	public void setKuni(Date kuni) {
 		this.kuni = kuni;
+		if (kuni.compareTo(alates)<0)  {
+			this.kuni = null;
+		}
 	}
-
+		
 	public Collection<PIIRILOIGU_HALDAJA> getPIIRILOIGU_HALDAJA() {
 	    return pIIRILOIGU_HALDAJA;
 	}
@@ -93,5 +99,7 @@ public class VAEOSA extends BaseEntity implements Serializable {
 	    this.pIIRIVALVUR_VAEOSAS = param;
 	} 
 	
-   
-}
+	}
+	
+	
+
