@@ -10,7 +10,6 @@ import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
-import javax.validation.constraints.*;
 
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.tostring.RooToString;
@@ -33,22 +32,25 @@ public abstract class BaseEntity implements Serializable {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 	
-	@Size(min = 1, max = 32)
+	//@Size(min = 1, max = 32)
+	// It is not necessary to format size here, as the data is taken automatically from login.
 	private String avaja;
 	
-	@DateTimeFormat(pattern = "dd.MM.yyyy")
+	@DateTimeFormat(pattern = "d.MM.yyyy")
 	private Date avatud;
 	
-	@Size(min = 1, max = 32)
+	//@Size(min = 1, max = 32)
+	// It is not necessary to format size here, as the data is taken automatically from login.
 	private String muutja;
-	
-	@DateTimeFormat(pattern = "dd.MM.yyyy")
+
+	@DateTimeFormat(pattern = "d.MM.yyyy")
 	private Date muudetud;
 	
-	@Size(min = 1, max = 32)
+	// @Size(min = 1, max = 32)
+	// It is not necessary to format size here, as the data is taken automatically from login.
 	private String sulgeja;
 	
-	@DateTimeFormat(pattern = "dd.MM.yyyy")
+	@DateTimeFormat(pattern = "d.MM.yyyy")
 	private Date suletud;
 	
 	private String kommentaar;
