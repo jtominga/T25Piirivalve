@@ -23,7 +23,9 @@
     <c:out value=" | "/>
     <spring:message code="global_language"/>
     <c:out value=": "/>
-  <util:language label="English" locale="en"/>
+ 
+  <util:language label="Estonian" locale="et"/>
+    <util:language label="English" locale="en"/>
     </span>
   <util:theme/>
 

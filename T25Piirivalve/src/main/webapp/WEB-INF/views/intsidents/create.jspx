@@ -10,39 +10,46 @@
                 <field:input field="kood" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_kood" max="20" min="1" required="true" useLineBreak="false" z="user-managed"/>
                 <spring:message code="label_intsident_intsident_liik" var="intsident_liik"/>
                 <field:select field="iNTSIDENDI_LIIK" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_iNTSIDENDI_LIIK" itemLabel="nimetus" itemValue="id" items="${intsidendi_liiks}" label="${intsident_liik}" path="/intsidendi_liiks" required="true" useLineBreak="false" z="user-managed"/>
-                <div class="clear"><c:out value=""></c:out></div>
-                <BR />
+                <div class="clear">
+                    <c:out value=""/>
+                </div>
+                <BR/>
             </div>
             <spring:message code="label_intsident_nimetus" var="intsident_nimetus"/>
-            <field:input field="nimetus" label="${intsident_nimetus}" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_nimetus" max="20" min="1" required="true" z="user-managed"/>
+            <field:input field="nimetus" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_nimetus" label="${intsident_nimetus}" max="20" min="1" required="true" z="user-managed"/>
             <field:select field="pIIRILOIK" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_pIIRILOIK" itemLabel="nimetus" itemValue="id" items="${piiriloiks}" path="/piiriloiks" required="true" z="user-managed"/>
             <label for="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_GPS_Latitude">Koordinaadid</label>
             <div>
-	            <field:input useLineBreak="false" showLabel="false" field="GPS_Latitude" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_GPS_Latitude" validationMessageCode="field_invalid_number" z="KkmnJVXiWBOxtYAuMcaVg6vm2Ww="/>
-	            <field:input useLineBreak="false" showLabel="false" field="GPS_Longtitude" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_GPS_Longtitude" validationMessageCode="field_invalid_number" z="icFTtOB8jBK7sNVGAo4hKiGRwr0="/>
-	            <div class="clear"><c:out value=""></c:out></div>
-	            <BR />
-	        </div>
-	         <field:datetime dateTimePattern="${INTSIDENT_toimumise_algus_date_format}" field="toimumise_algus" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_toimumise_algus" required="true" z="cXcQ4WLkZAz0yHnhvPOSapbpyzs="/>
-        	<field:datetime dateTimePattern="${INTSIDENT_toimumise_lopp_date_format}" field="toimumise_lopp" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_toimumise_lopp" required="true" z="0EDOnBtXW6ylmlIzLrI/Lq2q2j4="/>
+                <field:input field="GPS_Latitude" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_GPS_Latitude" showLabel="false" useLineBreak="false" validationMessageCode="field_invalid_number" z="user-managed"/>
+                <field:input field="GPS_Longtitude" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_GPS_Longtitude" showLabel="false" useLineBreak="false" validationMessageCode="field_invalid_number" z="user-managed"/>
+                <div class="clear">
+                    <c:out value=""/>
+                </div>
+                <BR/>
+            </div>
+            <field:datetime dateTimePattern="${INTSIDENT_toimumise_algus_date_format}" field="toimumise_algus" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_toimumise_algus" required="true" z="cXcQ4WLkZAz0yHnhvPOSapbpyzs="/>
+            <field:datetime dateTimePattern="${INTSIDENT_toimumise_lopp_date_format}" field="toimumise_lopp" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_toimumise_lopp" required="true" z="0EDOnBtXW6ylmlIzLrI/Lq2q2j4="/>
         </div>
         <div id="intsident_form_column_right">
-        	<field:textarea field="kommentaar" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_kommentaar" z="qZJMOvFRlivXXo7Vbgu+4VY7C4g="/>
-        	<field:textarea field="kirjeldus" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_kirjeldus" required="true" z="prDzIBr6TA1b0pZTxNbU1x7VMvs="/>
-        	<div class="clear"><c:out value=""></c:out></div>
-        	
+            <field:textarea field="kommentaar" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_kommentaar" z="user-managed"/>
+            <field:textarea field="kirjeldus" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_kirjeldus" required="true" z="user-managed"/>
+            <div class="clear">
+                <c:out value=""/>
+            </div>
         </div>
-        <div class="clear"><c:out value=""></c:out></div>
-        <field:input render="false" field="avaja" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_avaja" z="eS2+J63JJqFSZVksR0H589wTGpU="/>
-        <field:datetime render="false" dateTimePattern="${INTSIDENT_avatud_date_format}" field="avatud" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_avatud" z="miWH9vCf6Uwg9N7WQ9EPP5Nv+KI="/>
-        <field:input render="false" field="muutja" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_muutja" z="YPZq0xTz2839q8wR8Q64XdZO3bI="/>
-        <field:datetime render="false" dateTimePattern="${INTSIDENT_muudetud_date_format}" field="muudetud" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_muudetud" z="LHLutSfKB2+T+x2JrHZb8jmExr8="/>
-        <field:input render="false" field="sulgeja" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_sulgeja" z="uSm8rsTJlBhS5kkG2pYgg/9JQNI="/>
-        <field:datetime render="false" dateTimePattern="${INTSIDENT_suletud_date_format}" field="suletud" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_suletud" z="6sblBn5BYZ/hmI7ByJQMY7hXPZc="/>
-        <field:simple render="false" field="vAHTKOND_INTSIDENDIS" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_vAHTKOND_INTSIDENDIS" messageCode="entity_reference_not_managed" messageCodeAttribute="V A H T K O N D_ I N T S I D E N D I S" z="vXlA09FisvIs5RRtFDcaz379nQc="/>
-        <field:simple render="false" field="pIIRIVALVUR_INTSIDENDIS" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_pIIRIVALVUR_INTSIDENDIS" messageCode="entity_reference_not_managed" messageCodeAttribute="P I I R I V A L V U R_ I N T S I D E N D I S" z="PlR/pe1YLt8uWcwSgoxSMrVKaes="/>
-        <field:simple render="false" field="oBJEKT_INTSIDENDIS" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_oBJEKT_INTSIDENDIS" messageCode="entity_reference_not_managed" messageCodeAttribute="O B J E K T_ I N T S I D E N D I S" z="a0RY5Bpr5oaNuf8Kicg7OwBlW5o="/>
-        <field:simple render="false" field="iSIK_INTSIDENDIS" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_iSIK_INTSIDENDIS" messageCode="entity_reference_not_managed" messageCodeAttribute="I S I K_ I N T S I D E N D I S" z="d10D3B7PIY/gvHvp59GwKZXAbsw="/>
+        <div class="clear">
+            <c:out value=""/>
+        </div>
+        <field:input field="avaja" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_avaja" render="false" z="user-managed"/>
+        <field:datetime dateTimePattern="${INTSIDENT_avatud_date_format}" field="avatud" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_avatud" render="false" z="user-managed"/>
+        <field:input field="muutja" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_muutja" render="false" z="user-managed"/>
+        <field:datetime dateTimePattern="${INTSIDENT_muudetud_date_format}" field="muudetud" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_muudetud" render="false" z="user-managed"/>
+        <field:input field="sulgeja" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_sulgeja" render="false" z="user-managed"/>
+        <field:datetime dateTimePattern="${INTSIDENT_suletud_date_format}" field="suletud" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_suletud" render="false" z="user-managed"/>
+        <field:simple field="vAHTKOND_INTSIDENDIS" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_vAHTKOND_INTSIDENDIS" messageCode="entity_reference_not_managed" messageCodeAttribute="V A H T K O N D_ I N T S I D E N D I S" render="false" z="user-managed"/>
+        <field:simple field="pIIRIVALVUR_INTSIDENDIS" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_pIIRIVALVUR_INTSIDENDIS" messageCode="entity_reference_not_managed" messageCodeAttribute="P I I R I V A L V U R_ I N T S I D E N D I S" render="false" z="user-managed"/>
+        <field:simple field="oBJEKT_INTSIDENDIS" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_oBJEKT_INTSIDENDIS" messageCode="entity_reference_not_managed" messageCodeAttribute="O B J E K T_ I N T S I D E N D I S" render="false" z="user-managed"/>
+        <field:simple field="iSIK_INTSIDENDIS" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENT_iSIK_INTSIDENDIS" messageCode="entity_reference_not_managed" messageCodeAttribute="I S I K_ I N T S I D E N D I S" render="false" z="user-managed"/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_ee_itcollege_T25Piirivalve_entities_INTSIDENT" render="${not empty dependencies}" z="VtQYFzPdn2OL2tGvfOwvChK54KU="/>
 </div>
