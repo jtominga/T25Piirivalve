@@ -4,7 +4,6 @@
 package ee.itcollege.veebirakendused.java.team25.web;
 
 import ee.itcollege.T25Piirivalve.entities.INTSIDENDI_LIIK;
-import ee.itcollege.T25Piirivalve.entities.INTSIDENT;
 import ee.itcollege.T25Piirivalve.entities.ISIKU_SEADUS_INTSIDENDIS;
 import ee.itcollege.T25Piirivalve.entities.ISIK_INTSIDENDIS;
 import ee.itcollege.T25Piirivalve.entities.OBJEKT;
@@ -12,7 +11,6 @@ import ee.itcollege.T25Piirivalve.entities.OBJEKTI_LIIK;
 import ee.itcollege.T25Piirivalve.entities.OBJEKTI_SEADUS_INTSIDENDIS;
 import ee.itcollege.T25Piirivalve.entities.OBJEKT_INTSIDENDIS;
 import ee.itcollege.T25Piirivalve.entities.PIIRILOIGU_HALDAJA;
-import ee.itcollege.T25Piirivalve.entities.PIIRILOIK;
 import ee.itcollege.T25Piirivalve.entities.PIIRIRIKKUJA;
 import ee.itcollege.T25Piirivalve.entities.PIIRIVALVUR;
 import ee.itcollege.T25Piirivalve.entities.PIIRIVALVURI_SEADUS_INTSIDENDIS;
@@ -20,9 +18,6 @@ import ee.itcollege.T25Piirivalve.entities.PIIRIVALVUR_INTSIDENDIS;
 import ee.itcollege.T25Piirivalve.entities.PIIRIVALVUR_VAEOSAS;
 import ee.itcollege.T25Piirivalve.entities.SEADUS;
 import ee.itcollege.T25Piirivalve.entities.SEADUSE_PUNKT;
-import ee.itcollege.T25Piirivalve.entities.VAEOSA;
-import ee.itcollege.T25Piirivalve.entities.VAHTKOND;
-import ee.itcollege.T25Piirivalve.entities.VAHTKOND_INTSIDENDIS;
 import ee.itcollege.T25Piirivalve.entities.VAHTKOND_PIIRILOIGUL;
 import ee.itcollege.T25Piirivalve.entities.VAHTKONNA_LIIGE;
 import java.lang.String;
@@ -33,7 +28,6 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     
     public void ApplicationConversionServiceFactoryBean.installLabelConverters(FormatterRegistry registry) {
         registry.addConverter(new INTSIDENDI_LIIKConverter());
-        registry.addConverter(new INTSIDENTConverter());
         registry.addConverter(new ISIKU_SEADUS_INTSIDENDISConverter());
         registry.addConverter(new ISIK_INTSIDENDISConverter());
         registry.addConverter(new OBJEKTConverter());
@@ -41,7 +35,6 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         registry.addConverter(new OBJEKTI_SEADUS_INTSIDENDISConverter());
         registry.addConverter(new OBJEKT_INTSIDENDISConverter());
         registry.addConverter(new PIIRILOIGU_HALDAJAConverter());
-        registry.addConverter(new PIIRILOIKConverter());
         registry.addConverter(new PIIRIRIKKUJAConverter());
         registry.addConverter(new PIIRIVALVURConverter());
         registry.addConverter(new PIIRIVALVURI_SEADUS_INTSIDENDISConverter());
@@ -49,9 +42,6 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         registry.addConverter(new PIIRIVALVUR_VAEOSASConverter());
         registry.addConverter(new SEADUSConverter());
         registry.addConverter(new SEADUSE_PUNKTConverter());
-        registry.addConverter(new VAEOSAConverter());
-        registry.addConverter(new VAHTKONDConverter());
-        registry.addConverter(new VAHTKOND_INTSIDENDISConverter());
         registry.addConverter(new VAHTKOND_PIIRILOIGULConverter());
         registry.addConverter(new VAHTKONNA_LIIGEConverter());
     }
@@ -64,13 +54,6 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     static class ee.itcollege.veebirakendused.java.team25.web.ApplicationConversionServiceFactoryBean.INTSIDENDI_LIIKConverter implements Converter<INTSIDENDI_LIIK, String> {
         public String convert(INTSIDENDI_LIIK iNTSIDENDI_LIIK) {
             return new StringBuilder().append(iNTSIDENDI_LIIK.getAvaja()).append(" ").append(iNTSIDENDI_LIIK.getAvatud()).append(" ").append(iNTSIDENDI_LIIK.getMuutja()).append(" ").append(iNTSIDENDI_LIIK.getMuudetud()).toString();
-        }
-        
-    }
-    
-    static class ee.itcollege.veebirakendused.java.team25.web.ApplicationConversionServiceFactoryBean.INTSIDENTConverter implements Converter<INTSIDENT, String> {
-        public String convert(INTSIDENT iNTSIDENT) {
-            return new StringBuilder().append(iNTSIDENT.getAvaja()).append(" ").append(iNTSIDENT.getAvatud()).append(" ").append(iNTSIDENT.getMuutja()).append(" ").append(iNTSIDENT.getMuudetud()).toString();
         }
         
     }
@@ -124,13 +107,6 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         
     }
     
-    static class ee.itcollege.veebirakendused.java.team25.web.ApplicationConversionServiceFactoryBean.PIIRILOIKConverter implements Converter<PIIRILOIK, String> {
-        public String convert(PIIRILOIK pIIRILOIK) {
-            return new StringBuilder().append(pIIRILOIK.getAvaja()).append(" ").append(pIIRILOIK.getAvatud()).append(" ").append(pIIRILOIK.getMuutja()).append(" ").append(pIIRILOIK.getMuudetud()).toString();
-        }
-        
-    }
-    
     static class ee.itcollege.veebirakendused.java.team25.web.ApplicationConversionServiceFactoryBean.PIIRIRIKKUJAConverter implements Converter<PIIRIRIKKUJA, String> {
         public String convert(PIIRIRIKKUJA pIIRIRIKKUJA) {
             return new StringBuilder().append(pIIRIRIKKUJA.getAvaja()).append(" ").append(pIIRIRIKKUJA.getAvatud()).append(" ").append(pIIRIRIKKUJA.getMuutja()).append(" ").append(pIIRIRIKKUJA.getMuudetud()).toString();
@@ -176,27 +152,6 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     static class ee.itcollege.veebirakendused.java.team25.web.ApplicationConversionServiceFactoryBean.SEADUSE_PUNKTConverter implements Converter<SEADUSE_PUNKT, String> {
         public String convert(SEADUSE_PUNKT sEADUSE_PUNKT) {
             return new StringBuilder().append(sEADUSE_PUNKT.getAvaja()).append(" ").append(sEADUSE_PUNKT.getAvatud()).append(" ").append(sEADUSE_PUNKT.getMuutja()).append(" ").append(sEADUSE_PUNKT.getMuudetud()).toString();
-        }
-        
-    }
-    
-    static class ee.itcollege.veebirakendused.java.team25.web.ApplicationConversionServiceFactoryBean.VAEOSAConverter implements Converter<VAEOSA, String> {
-        public String convert(VAEOSA vAEOSA) {
-            return new StringBuilder().append(vAEOSA.getAvaja()).append(" ").append(vAEOSA.getAvatud()).append(" ").append(vAEOSA.getMuutja()).append(" ").append(vAEOSA.getMuudetud()).toString();
-        }
-        
-    }
-    
-    static class ee.itcollege.veebirakendused.java.team25.web.ApplicationConversionServiceFactoryBean.VAHTKONDConverter implements Converter<VAHTKOND, String> {
-        public String convert(VAHTKOND vAHTKOND) {
-            return new StringBuilder().append(vAHTKOND.getAvaja()).append(" ").append(vAHTKOND.getAvatud()).append(" ").append(vAHTKOND.getMuutja()).append(" ").append(vAHTKOND.getMuudetud()).toString();
-        }
-        
-    }
-    
-    static class ee.itcollege.veebirakendused.java.team25.web.ApplicationConversionServiceFactoryBean.VAHTKOND_INTSIDENDISConverter implements Converter<VAHTKOND_INTSIDENDIS, String> {
-        public String convert(VAHTKOND_INTSIDENDIS vAHTKOND_INTSIDENDIS) {
-            return new StringBuilder().append(vAHTKOND_INTSIDENDIS.getAvaja()).append(" ").append(vAHTKOND_INTSIDENDIS.getAvatud()).append(" ").append(vAHTKOND_INTSIDENDIS.getMuutja()).append(" ").append(vAHTKOND_INTSIDENDIS.getMuudetud()).toString();
         }
         
     }
