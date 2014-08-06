@@ -3,15 +3,15 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <form:update id="fu_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK" modelAttribute="INTSIDENDI_LIIK" path="/intsidendi_liiks" versionField="Version" z="2q3Fx9wpktjoV8l5DPumYI2OaOc=">
-        <field:input field="avaja" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_avaja" z="GWPwkxMHavanScnm9WU3ipktGPg="/>
-        <field:datetime dateTimePattern="${INTSIDENDI_LIIK_avatud_date_format}" field="avatud" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_avatud" z="Wmr7VtDUSa5VbXlpwAC3ygjLEpc="/>
-        <field:input field="muutja" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_muutja" z="wJx5HUsr0wijQLnyx6TDbWYio7s="/>
-        <field:datetime dateTimePattern="${INTSIDENDI_LIIK_muudetud_date_format}" field="muudetud" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_muudetud" z="Mb7uS5rl63cgfJ6itB7zwbKBS0A="/>
-        <field:input field="sulgeja" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_sulgeja" z="TsUX5VJplO2QG63wpt0Jn/y4/bA="/>
-        <field:datetime dateTimePattern="${INTSIDENDI_LIIK_suletud_date_format}" field="suletud" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_suletud" z="MguiJiROOZpneiNTlet0FlPpHyc="/>
+        <field:input render="false" field="avaja" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_avaja" z="user-managed"/>
+        <field:datetime render="false" dateTimePattern="${INTSIDENDI_LIIK_avatud_date_format}" field="avatud" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_avatud" z="user-managed"/>
+        <field:input render="false" field="muutja" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_muutja" z="user-managed"/>
+        <field:datetime render="false" dateTimePattern="${INTSIDENDI_LIIK_muudetud_date_format}" field="muudetud" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_muudetud" z="user-managed"/>
+        <field:input render="false" field="sulgeja" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_sulgeja" z="user-managed"/>
+        <field:datetime render="false" dateTimePattern="${INTSIDENDI_LIIK_suletud_date_format}" field="suletud" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_suletud" z="user-managed"/>
         <field:input field="kommentaar" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_kommentaar" z="9Ca3En1sU1v5hjAiqMK2lGaM5EI="/>
         <field:input field="kood" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_kood" max="20" min="1" required="true" z="ofEBzmsOzvxHn/QELC0ugqocZSM="/>
         <field:textarea field="nimetus" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_nimetus" required="true" z="+FY+KKIVDY0ObmJ5kEZmAgB7DHo="/>
-        <field:simple field="iNTSIDENT" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_iNTSIDENT" messageCode="entity_reference_not_managed" messageCodeAttribute="I N T S I D E N T" z="Ji2+3iNHae8vNRa+qrvU14wS7Ek="/>
+        <field:simple render="false" field="iNTSIDENT" id="c_ee_itcollege_T25Piirivalve_entities_INTSIDENDI_LIIK_iNTSIDENT" messageCode="entity_reference_not_managed" messageCodeAttribute="I N T S I D E N T" z="user-managed"/>
     </form:update>
 </div>
